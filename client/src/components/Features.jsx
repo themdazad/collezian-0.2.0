@@ -29,9 +29,9 @@ const Features = () => {
             <h2 className="CardTittle text-3xl font-bold uppercase text-center">Feature</h2>
                 
             {data.map(
-                (data) => {
+                (data,index) => {
                     return (
-                        <div key={1} className="max-w-full gap-8  py-[64px] m-auto grid lg:grid-cols-2 grid-cols-1  ">
+                        <div key={index} className="max-w-full gap-8  py-[64px] m-auto grid lg:grid-cols-2 grid-cols-1  ">
                        
                             <div >
                                 <img className=" ease-in duration-200 delay-0 hover:-rotate-3  z-0 w-full h-full hover:scale-90  object-cover" src={data.image} alt="" />

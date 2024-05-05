@@ -1,8 +1,7 @@
 
 import { useState } from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem,Button} from "@nextui-org/react";
-// icons 
-import {NavLink} from "react-router-dom";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, Link, NavbarMenuItem,Button} from "@nextui-org/react";
+
 
 import { LuUploadCloud } from "react-icons/lu";
 // import {AcmeLogo} from "./AcmeLogo.jsx";
@@ -19,43 +18,43 @@ export default function Nav() {
         />
         <NavbarBrand>
           {/* <AcmeLogo /> */}
-          <NavLink to="/" className="font-bold text-inherit">COLLEZIAN</NavLink>
+          <Link href="/" className="font-bold text-inherit">COLLEZIAN</Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
       
       <NavbarItem>
-          <NavLink color="foreground" href="result">Result</NavLink>
+          <Link color="foreground" href="result">Result</Link>
         </NavbarItem>
         <NavbarItem>
-          <NavLink color="foreground" href="engineering">
+          <Link color="foreground" href="engineering">
             Engineering
-          </NavLink>
+          </Link>
         </NavbarItem>
         <NavbarItem >
-          <NavLink color="foreground" href="roadmap" aria-current="page">
+          <Link color="foreground" href="roadmap" aria-current="page">
             Roadmap
-          </NavLink>
+          </Link>
         </NavbarItem>
         <NavbarItem>
-          <NavLink color="foreground" href="projects">
+          <Link color="foreground" href="projects">
             Projects
-          </NavLink>
+          </Link>
         </NavbarItem>
         <NavbarItem>
-          <NavLink color="foreground" href="career">Career</NavLink>
+          <Link color="foreground" href="career">Career</Link>
         </NavbarItem>
         
         
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="flex">
-          <NavLink href="#"><LuUploadCloud className="mr-2 text-xl"/> Upload </NavLink>
+          <Link href="#"><LuUploadCloud className="mr-2 text-xl"/> Upload </Link>
         </NavbarItem>
         
         <NavbarItem>
-          <Button as={NavLink} color="primary" href="#" variant="flat">
+          <Button as={Link} color="primary" href="#" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>
