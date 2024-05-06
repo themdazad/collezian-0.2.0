@@ -2,6 +2,7 @@
 import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
 
 export const Content = (props) => {
+  
   return (
     <>
      <div className="content col-span-12 lg:col-span-8">
@@ -9,10 +10,10 @@ export const Content = (props) => {
         {/*  Banner: Carousel  */}
 
         {/* Credits  */}
-        <h1 className="text-3xl">{props.title}</h1>
+        <h1 className="text-3xl">{Object(props)?.title}</h1>
 
         <div className="Introduction  my-4 ">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut consequatur, ipsa fuga officia molestias suscipit minus, cupiditate dolorem tenetur dicta itaque tempore et quos aliquam voluptatibus dolor est quidem vero sed sit. Ad et quae non quis aperiam reiciendis, consequatur minus facere a enim dicta.</p>
+          <p>{Object(props)?.description}</p>
         </div>
 
 

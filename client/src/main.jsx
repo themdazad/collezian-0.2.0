@@ -11,5 +11,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Nav />
       <Path />
     </NextUIProvider>
-    </BrowserRouter>,
+  </BrowserRouter>,
 )
