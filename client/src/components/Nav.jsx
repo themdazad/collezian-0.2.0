@@ -1,10 +1,8 @@
 
 import { useState } from "react";
-import { Navbar, NavbarBrand, NavbarMenu, NavbarContent, NavbarItem, NavbarMenuToggle, Link, Button } from "@nextui-org/react";
-
-
+import { Navbar, NavbarBrand, NavbarMenu, NavbarContent, NavbarItem,Link, NavbarMenuToggle,Button } from "@nextui-org/react";
 import { LuUploadCloud } from "react-icons/lu";
-// import {AcmeLogo} from "./AcmeLogo.jsx";
+import { NavLink } from "react-router-dom";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +15,7 @@ export default function Nav() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Link href="/" className="font-bold text-inherit">COLLEZIAN</Link>
+          <NavLink  to="/" className="font-bold text-inherit">COLLEZIAN</NavLink>
         </NavbarBrand>
       </NavbarContent>
 
@@ -25,25 +23,25 @@ export default function Nav() {
       {/*Desktop*/}
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="result">Result</Link>
+          <NavLink color="foreground" to="/result">Result</NavLink>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="engineering">
+          <NavLink  color="foreground" to="/engineering">
             Engineering
-          </Link>
+          </NavLink>
         </NavbarItem>
         <NavbarItem >
-          <Link color="foreground" href="roadmap" aria-current="page">
+          <NavLink  color="foreground" to="/roadmap" aria-current="page">
             Roadmap
-          </Link>
+          </NavLink>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="projects">
+          <NavLink  color="foreground" to="/projects">
             Projects
-          </Link>
+          </NavLink>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="career">Career</Link>
+          <NavLink  color="foreground" to="/career">Career</NavLink>
         </NavbarItem>
 
 
@@ -51,11 +49,11 @@ export default function Nav() {
 
       <NavbarContent justify="end">
         <NavbarItem className="flex">
-          <Link href="#"><LuUploadCloud className="mr-2 text-xl" /> Upload </Link>
+          <Link  as={NavLink} to="#"><LuUploadCloud className="mr-2 text-xl" /> Upload </Link>
         </NavbarItem>
 
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button  as={NavLink} color="primary" to="#" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>
@@ -67,25 +65,25 @@ export default function Nav() {
       {/*NavbarMenu will show only when menu is pressed*/}
       <NavbarMenu className="md:hidden sm:flex gap-4 bg-transparent items-center justify-center ">
         <NavbarItem  >
-          <Link className="text-gray-300" href="result">Result</Link>
+          <NavLink  className="text-gray-300" to="/result">Result</NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <Link className="text-gray-300" href="engineering">
+          <NavLink  className="text-gray-300" to="/engineering">
             Engineering
-          </Link>
+          </NavLink >
         </NavbarItem>
         <NavbarItem >
-          <Link className="text-gray-300" href="roadmap" aria-current="page">
+          <NavLink  className="text-gray-300" to="/roadmap" aria-current="page">
             Roadmap
-          </Link>
+          </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <Link className="text-gray-300" href="projects">
+          <NavLink  className="text-gray-300" to="/projects">
             Projects
-          </Link>
+          </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <Link className="text-gray-300" href="career">Career</Link>
+          <NavLink  className="text-gray-300" to="/career">Career</NavLink>
         </NavbarItem>
 
       </NavbarMenu>

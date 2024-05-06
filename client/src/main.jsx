@@ -1,17 +1,15 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { NextUIProvider } from '@nextui-org/react'
-import App from './App.jsx'
+import Path from './Path.jsx'
+import Nav from './components/Nav.jsx'
 import './index.css'
-import Nav from './components/Nav'
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <BrowserRouter>
     <NextUIProvider className="dark text-foreground bg-background">
-      {/* Naviagtion appear in each pages   */}
       <Nav />
-      {/* contained all Routes /App.jsx */}
-      <App />
+      <Path />
     </NextUIProvider>
-  </React.StrictMode>,
+    </BrowserRouter>,
 )
