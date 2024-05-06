@@ -10,21 +10,22 @@ import { Content } from "./pages/Engineering/Content.jsx";
 
 
 export default function App() {
- return (
-  <BrowserRouter>
-  <Routes>
-      <Route index element={<LandingPage />} />          
-      <Route path="result" element={<Result />} />          
-      <Route path="engineering" element={<Engineering />}>          
-          <Route path="ee" element={<Content/>}/>
-          <Route path="me" element={<Content/>}/>
-          <Route path="ce" element={<Content/>}/>
-          <Route path="cse" element={<Content/>}/>
-          <Route path="ece" element={<Content/>}/>
-      </Route>          
-      <Route path="roadmap" element={<Roadmap />} />          
-      <Route path="projects" element={<Projects />} />          
-  </Routes>
-</BrowserRouter>    
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<LandingPage />} />
+        <Route path="/result" element={<Result />} />
+        <Route path="/engineering" element={<Engineering />}>
+          <Route path="ee" element={<Content />} />
+          <Route path="me" element={<Content />} />
+          <Route path="ce" element={<Content />} />
+          <Route path="cse" element={<Content />} />
+          <Route path="ece" element={<Content />} />
+        </Route>
+        <Route path="/roadmap" element={<Roadmap />} />
+        <Route path="/projects" element={<Projects />} />
+
+      </Routes>
+    </BrowserRouter >
   );
 }
