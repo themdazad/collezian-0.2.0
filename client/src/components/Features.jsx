@@ -27,6 +27,7 @@ const Features = () => {
         <>
             {/* Features  */}
             <h2 className="CardTittle text-3xl font-bold uppercase text-center">Feature</h2>
+            <p className="CardTittle my-4 text-center">We aim to be your one-stop destination for all things related to Engineering. Here`$apos`s what you can expect to find on our platform.</p>
                 
             {data.map(
                 (data,index) => {

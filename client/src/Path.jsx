@@ -9,8 +9,8 @@ import ElectricalEngineering from "./pages/Engineering/EE.jsx";
 import MechanicalEngineering from "./pages/Engineering/ME.jsx";
 import CivilEngineering from "./pages/Engineering/CE.jsx";
 import ComputerScienceEngineering from "./pages/Engineering/CSE.jsx";
-import ECE from "./pages/Engineering/ECE.jsx";
-import EEE from "./pages/Engineering/EEE.jsx";
+import ECEngineering from "./pages/Engineering/ECE.jsx";
+import ElectricalElectronicsEngineering from "./pages/Engineering/EEE.jsx";
 
 export default function Path() {
   return (
@@ -23,12 +23,12 @@ export default function Path() {
           <Route path="result" element={<Result/>} />
           <Route path="engineering" element={<Engineering/>}>
             {/* outlet under engineering page  */}
-            <Route path="ee" element={<ElectricalEngineering/>} />
-            <Route path="me" element={<MechanicalEngineering/>} />
+            <Route path="EE" element={<ElectricalEngineering/>} />
+            <Route path="ME" element={<MechanicalEngineering/>} />
             <Route path="CE" element={<CivilEngineering/>} />
             <Route path="CSE" element={<ComputerScienceEngineering/>} />
-            <Route path="ECE" element={<ECE/>} />
-            <Route path="EEE" element={<EEE/>} />
+            <Route path="ECE" element={<ECEngineering/>} />
+            <Route path="EEE" element={<ElectricalElectronicsEngineering/>} />
           </Route>
           <Route path="roadmap" element={<Roadmap/>} />
           <Route path="projects" element={<Projects/>} />

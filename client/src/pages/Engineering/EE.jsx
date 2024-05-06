@@ -1,14 +1,17 @@
+/* eslint-disable no-unused-vars */
 
+import { useState } from "react"
 import { Content } from "./Content"
 
 
 const ElectricalEngineering = () => {
-  const data = [{
-      title:"Electrical Engineering",
-      description:"Explore electrical engineering: lectures, notes, and practice questions for a comprehensive understanding of key concepts."
-      
-      
-  },]
+
+  const [data, setData] = useState({
+    title:"Electrical Engineering",
+    description:"We aim to be your one-stop destination for all things related to electrical engineering. Here's what you can expect to find on our platform.",      
+  },)
+
+  console.log(data.title)
   
   return (
     <>

@@ -23,30 +23,29 @@ export default function Nav() {
       {/*Desktop*/}
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <NavLink color="foreground" to="/result">Result</NavLink>
+          <NavLink color="foreground" to="result">Result</NavLink>
         </NavbarItem>
         <NavbarItem>
-          <NavLink  color="foreground" to="/engineering">
+          <NavLink  color="foreground" to="engineering">
             Engineering
           </NavLink>
         </NavbarItem>
         <NavbarItem >
-          <NavLink  color="foreground" to="/roadmap" aria-current="page">
+          <NavLink  color="foreground" to="roadmap" aria-current="page">
             Roadmap
           </NavLink>
         </NavbarItem>
         <NavbarItem>
-          <NavLink  color="foreground" to="/projects">
+          <NavLink  color="foreground" to="projects">
             Projects
           </NavLink>
         </NavbarItem>
         <NavbarItem>
-          <NavLink  color="foreground" to="/career">Career</NavLink>
+          <NavLink  color="foreground" to="career">Career</NavLink>
         </NavbarItem>
 
 
       </NavbarContent>
-
       <NavbarContent justify="end">
         <NavbarItem className="flex">
           <Link  as={NavLink} to="#"><LuUploadCloud className="mr-2 text-xl" /> Upload </Link>
@@ -60,30 +59,29 @@ export default function Nav() {
       </NavbarContent>
 
 
-
       {/*Mobile*/}
       {/*NavbarMenu will show only when menu is pressed*/}
       <NavbarMenu className="md:hidden sm:flex gap-4 bg-transparent items-center justify-center ">
         <NavbarItem  >
-          <NavLink  className="text-gray-300" to="/result">Result</NavLink>
+          <NavLink  className="text-gray-300" to="result">Result</NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink  className="text-gray-300" to="/engineering">
+          <NavLink  className="text-gray-300" to="engineering">
             Engineering
           </NavLink >
         </NavbarItem>
         <NavbarItem >
-          <NavLink  className="text-gray-300" to="/roadmap" aria-current="page">
+          <NavLink  className="text-gray-300" to="roadmap" aria-current="page">
             Roadmap
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink  className="text-gray-300" to="/projects">
+          <NavLink  className="text-gray-300" to="projects">
             Projects
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink  className="text-gray-300" to="/career">Career</NavLink>
+          <NavLink  className="text-gray-300" to="career">Career</NavLink>
         </NavbarItem>
 
       </NavbarMenu>

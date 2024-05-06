@@ -12,12 +12,12 @@ function Dashboard() {
         <Sidebar.Items >
           <Sidebar.ItemGroup>
             {/* also will be on loop */}
-            <Link to="ee"><Sidebar.Item >Electrical Engineering</Sidebar.Item></Link>
-            <Link to="me"><Sidebar.Item >Mechanical Engineering</Sidebar.Item></Link>
-            <Link to="ce"><Sidebar.Item >Civil Engineering</Sidebar.Item></Link>
-            <Link to="cse"><Sidebar.Item >CS and Engineering</Sidebar.Item></Link>
-            <Link to="ece"><Sidebar.Item >ECE</Sidebar.Item></Link>
-            <Link to="eee"><Sidebar.Item >EEE</Sidebar.Item></Link>
+            <Link to="EE"><Sidebar.Item >Electrical Engineering</Sidebar.Item></Link>
+            <Link to="ME"><Sidebar.Item >Mechanical Engineering</Sidebar.Item></Link>
+            <Link to="CE"><Sidebar.Item >Civil Engineering</Sidebar.Item></Link>
+            <Link to="CSE"><Sidebar.Item >CS and Engineering</Sidebar.Item></Link>
+            <Link to="ECE"><Sidebar.Item >ECE</Sidebar.Item></Link>
+            <Link to="EEE"><Sidebar.Item >EEE</Sidebar.Item></Link>
           </Sidebar.ItemGroup>
           {/* After horizontal seperator line */}
           <Sidebar.ItemGroup>

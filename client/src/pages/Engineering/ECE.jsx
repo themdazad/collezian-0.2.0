@@ -1,15 +1,20 @@
 
 import { Content } from "./Content"
+import { useState } from "react"
 
-
-const ECE = () => {
+const ECEngineering = () => {
   
+  const [data, setData] = useState({
+    title:"Electronics & Communication Engineering",
+    description:"Explore EC Engineering: lectures, notes, and practice questions for a comprehensive understanding of key concepts.",      
+  },)
+
   return (
     <>
-        <Content title="Electronics and Communication Engineering" />
+        <Content title={data.title} description = {data.description}/>
     </>
   )
   
 }
 
-export default ECE
+export default ECEngineering
