@@ -20,8 +20,8 @@ export default function Path() {
             {/* default page     */}
           <Route path="/" element={<LandingPage />}/>
           {/* Adding pages in outlet portion of Layout */}
-          <Route path="result" element={<Result/>} />
-          <Route path="engineering" element={<Engineering/>}>
+          <Route path="/result" element={<Result/>} />
+          <Route path="/engineering" element={<Engineering/>}>
             {/* outlet under engineering page  */}
             <Route path="EE" element={<ElectricalEngineering/>} />
             <Route path="ME" element={<MechanicalEngineering/>} />
@@ -30,8 +30,8 @@ export default function Path() {
             <Route path="ECE" element={<ECEngineering/>} />
             <Route path="EEE" element={<ElectricalElectronicsEngineering/>} />
           </Route>
-          <Route path="roadmap" element={<Roadmap/>} />
-          <Route path="projects" element={<Projects/>} />
+          <Route path="/roadmap" element={<Roadmap/>} />
+          <Route path="/projects" element={<Projects/>} />
         </Route>
       </Routes>
    

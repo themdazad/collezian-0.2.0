@@ -13,15 +13,15 @@ export default function Nav() {
     
     <Navbar  onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
+        <NavbarBrand>
+          <Image src={Collezian} className=" w-12 -rotate-[20deg] hover:-rotate-[360deg] transition-transform duration-[2000]"/>
+          <NavLink  to="/" className=" max-sm:hidden font-bold text-inherit ">
+            COLLEZIAN</NavLink>
+        </NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
-        <NavbarBrand>
-          <Image src={Collezian} className=" w-12 -rotate-[20deg] hover:-rotate-[360deg] transition-transform duration-[2000]"/>
-          <NavLink  to="/" className=" max-sm:hidded font-bold text-inherit ">
-            COLLEZIAN</NavLink>
-        </NavbarBrand>
       </NavbarContent>
 
 
@@ -51,8 +51,7 @@ export default function Nav() {
 
 
       </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="flex">
+      <NavbarItem className="flex">
           <Link  as={NavLink} to="#"><LuUploadCloud className="mr-2 text-xl" /></Link>
         </NavbarItem>
 
@@ -61,12 +60,11 @@ export default function Nav() {
             Sign Up
           </Button>
         </NavbarItem>
-      </NavbarContent>
 
 
       {/*Mobile*/}
       {/*NavbarMenu will show only when menu is pressed*/}
-      <NavbarMenu className="md:hidden sm:flex gap-4 bg-transparent items-center  justify-center ">
+      <NavbarMenu className="-mt-10 md:hidden sm:flex gap-4 bg-transparent items-center  justify-center ">
         <NavbarItem  >
           <NavLink  className="text-gray-300 text-2xl" to="result">Result</NavLink>
         </NavbarItem>
@@ -87,6 +85,16 @@ export default function Nav() {
         </NavbarItem>
         <NavbarItem  >
           <NavLink  className="text-gray-300 text-2xl" to="career">Career</NavLink>
+        </NavbarItem>
+
+        <NavbarItem className="flex">
+          <Link  as={NavLink} to="#"><LuUploadCloud className="mr-2 text-xl" /></Link>
+        </NavbarItem>
+
+        <NavbarItem>
+          <Button  as={NavLink} color="primary" to="#" variant="flat">
+            Sign Up
+          </Button>
         </NavbarItem>
 
       </NavbarMenu>
