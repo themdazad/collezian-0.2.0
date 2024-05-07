@@ -3,20 +3,20 @@ import { Button } from "@nextui-org/react";
 const data = [
     {
         tittle: "GOLU AI",
-        description: " assist in your learning process, stay organized and on track with your assignments and deadlines. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo optio dolore, reprehenderit incidunt fuga vitae saepe dolorem corrupti totam. Exercitationem quisquam quis doloremque rem veniam voluptas ad facere, dolores laborum officia at mollitia et neque? Excepturi optio dolorem corrupti possimus incidunt quasi ipsam aperiam nesciunt!",
+        description: " assist in your learning process, stay organized and on track with your assignments and deadlines. Explicabo optio dolore, reprehenderit incidunt fuga vitae saepe dolorem corrupti totam.",
         image: "/images/blue-cyborg.jpg",
         link:"Free Chat"
     },
     
     {
         tittle: "Engineering Materials",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo optio dolore, reprehenderit incidunt fuga vitae saepe dolorem corrupti totam. Exercitationem quisquam quis doloremque rem veniam voluptas ad facere, dolores laborum officia at mollitia et neque? Excepturi optio dolorem corrupti possimus incidunt quasi ipsam aperiam nesciunt!Commodi iusto vitae id eaque voluptatem iure, mollitia dignissimos cum. Velit cupiditate vel nisi rerum reiciendis hic officia nulla quis asperiores voluptates.",
+        description: " assist in your learning process, stay organized and on track with your assignments and deadlines. Explicabo optio dolore, reprehenderit incidunt fuga vitae saepe dolorem corrupti totam.",
         image: "/images/book.jpg",
         link:"Explore"
     },
     {
         tittle: "Study groups",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iusto vitae id eaque voluptatem iure, mollitia dignissimos cum. Velit cupiditate vel nisi rerum reiciendis hic officia nulla quis asperiores voluptates. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo optio dolore, reprehenderit incidunt fuga vitae saepe dolorem corrupti totam. Exercitationem quisquam quis doloremque rem veniam voluptas ad facere, dolores laborum officia at mollitia et neque? Excepturi optio dolorem corrupti possimus incidunt quasi ipsam aperiam nesciunt!Commodi iusto vitae id eaque voluptatem iure, mollitia dignissimos cum. Velit cupiditate vel nisi rerum reiciendis hic officia nulla quis asperiores voluptates",
+        description: " assist in your learning process, stay organized and on track with your assignments and deadlines. Explicabo optio dolore, reprehenderit incidunt fuga vitae saepe dolorem corrupti totam.",
         image: "/images/AI.jpg",
         link:"Join Groups "
     },
