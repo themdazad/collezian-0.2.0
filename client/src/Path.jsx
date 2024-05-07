@@ -23,6 +23,7 @@ export default function Path() {
           <Route path="/result" element={<Result/>} />
           <Route path="/engineering" element={<Engineering/>}>
             {/* outlet under engineering page  */}
+            <Route path="/" element={<ElectricalEngineering/>} />
             <Route path="EE" element={<ElectricalEngineering/>} />
             <Route path="ME" element={<MechanicalEngineering/>} />
             <Route path="CE" element={<CivilEngineering/>} />
