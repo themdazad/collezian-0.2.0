@@ -49,9 +49,7 @@ export default function Nav() {
           <NavLink  color="foreground" to="career">Career</NavLink>
         </NavbarItem>
 
-
-      </NavbarContent>
-      <NavbarItem className="flex">
+        <NavbarItem className="flex">
           <Link  as={NavLink} to="#"><LuUploadCloud className="mr-2 text-xl" /></Link>
         </NavbarItem>
 
@@ -60,6 +58,9 @@ export default function Nav() {
             Sign Up
           </Button>
         </NavbarItem>
+        
+      </NavbarContent>
+      
 
 
       {/*Mobile*/}
