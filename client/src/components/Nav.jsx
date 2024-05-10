@@ -15,7 +15,7 @@ export default function Nav() {
         <NavbarBrand>
           <Image src={Collezian} className=" w-12 -rotate-[20deg] hover:-rotate-[360deg] transition-transform duration-[2000]" />
           <NavLink to="/" className=" max-sm:hidden font-bold text-inherit ">
-            COLLEZIAN</NavLink>
+            COLLEZIAN™</NavLink>
         </NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}

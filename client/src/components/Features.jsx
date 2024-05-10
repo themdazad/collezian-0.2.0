@@ -28,7 +28,7 @@ const Features = () => {
         <>
             {/* Features  */}
             <h2 className="CardTittle text-3xl font-bold uppercase text-center">Feature</h2>
-            <p className="CardTittle my-4 text-center">We aim to be your one-stop destination for all things related to Engineering. Here`$apos`s what you can expect to find on our platform.</p>
+            <p className="CardTittle my-4 text-center">We aim to be your one-stop destination for all things related to Engineering. <br/>Here&apos;s what you can expect to find on our platform.</p>
                 
             <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-16 px-[5%] content-start">
             {data.map((data,index) => {
