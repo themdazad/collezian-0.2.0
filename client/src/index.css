@@ -2,16 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-html{
-    background:black ;
-}
 body{
     margin:auto;    
-    max-width: 1440px;
+    max-width: 1980px;
+    background-color: whitesmoke;
+    font-family: 'poppins', "Syne", sans-serif;
 }
 
-
-h1,h2,h3,h4,h5,h6{
-    font-family: "Syne", sans-serif;
-}   
