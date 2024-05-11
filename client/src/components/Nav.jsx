@@ -15,7 +15,7 @@ export default function Nav() {
         <NavbarBrand>
           <Image src={Collezian} className=" w-12 -rotate-[20deg] hover:-rotate-[360deg] transition-transform duration-[2000]" />
           <NavLink to="/" className=" max-sm:hidden font-bold text-inherit ">
-            COLLEZIAN™</NavLink>
+            COLLEZIAN</NavLink>
         </NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -66,25 +66,25 @@ export default function Nav() {
       {/*NavbarMenu will show only when menu is pressed*/}
       <NavbarMenu className="-mt-10 md:hidden sm:flex gap-4 bg-transparent items-center  justify-center ">
         <NavbarItem  >
-          <NavLink className="text-gray-300 text-2xl" to="result">Result</NavLink>
+          <NavLink className="text-gray-600 text-2xl" to="result">Result</NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-gray-300 text-2xl" to="engineering">
+          <NavLink className="text-gray-600 text-2xl" to="engineering">
             Engineering
           </NavLink >
         </NavbarItem>
         <NavbarItem >
-          <NavLink className="text-gray-300 text-2xl" to="roadmap" aria-current="page">
+          <NavLink className="text-gray-600 text-2xl" to="roadmap" aria-current="page">
             Roadmap
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-gray-300 text-2xl" to="projects">
+          <NavLink className="text-gray-600 text-2xl" to="projects">
             Projects
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-gray-300 text-2xl" to="career">Career</NavLink>
+          <NavLink className="text-gray-600 text-2xl" to="career">Career</NavLink>
         </NavbarItem>
 
         <NavbarItem className="flex">

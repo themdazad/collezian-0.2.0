@@ -11,7 +11,7 @@ export function Footer_Component() {
             href="https://collezian.vercel.app"
             src={Collezian}
             alt="collezian Logo"
-            name="COLLEZIAN™"
+            name="COLLEZIAN"
           />
           <FooterLinkGroup>
             <FooterLink className="hover:text-decoration-none hover:text-sky-600" href="#">About</FooterLink>
@@ -22,7 +22,7 @@ export function Footer_Component() {
         </div>
         <FooterDivider />
         <FooterCopyright href="#" by="Collezian" year={currentYear} />
-        <p className="text-sm">Designed and Developed with <span className="text-red-600">❤</span> by <a className=" text-sky-600" target="_blank" href="https://www.instagram.com/the_mdazad/">Azad</a></p>
+        <p className="text-sm">Designed and Developed with <span className="text-red-600">❤</span> | Made in <a className=" text-sky-600" target="_blank" href="https://www.instagram.com/the_mdazad/">Bihar</a></p>
       </div>
     </Footer>
   );
