@@ -22,7 +22,7 @@ export function Footer_Component() {
         </div>
         <FooterDivider />
         <FooterCopyright href="#" by="Collezian" year={currentYear} />
-        <p>Designed and Developed with <span className="text-red-600">❤</span> by <a className=" text-sky-600" target="_blank" href="https://www.instagram.com/the_mdazad/">Azad</a></p>
+        <p className="text-sm">Designed and Developed with <span className="text-red-600">❤</span> by <a className=" text-sky-600" target="_blank" href="https://www.instagram.com/the_mdazad/">Azad</a></p>
       </div>
     </Footer>
   );
