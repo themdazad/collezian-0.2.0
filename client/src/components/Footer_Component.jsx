@@ -5,7 +5,7 @@ export function Footer_Component() {
   const currentYear = new Date().getFullYear();
   return (
     <Footer container>
-      <div className="w-full text-center mx-[5%]">
+      <div className="w-full text-center px-[5%]">
         <div className="w-full flex justify-between max-md:flex-col items-center">
           <FooterBrand
             href="https://collezian.vercel.app"
