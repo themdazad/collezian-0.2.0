@@ -63,8 +63,8 @@ export default function Nav() {
       <NavbarMenu className="-mt-10 md:hidden sm:flex gap-4 bg-transparent items-center  justify-center ">
        
         <NavbarItem  >
-          <NavLink className="text-gray-600 text-2xl" to="engineering">
-            Engineering
+          <NavLink className="text-gray-600 text-2xl" to="Materials">
+            Materials
           </NavLink >
         </NavbarItem>
         <NavbarItem >
