@@ -26,11 +26,9 @@ export default function Nav() {
 
       {/*Desktop*/}
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
+       
         <NavbarItem>
-          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="result">Result</NavLink>
-        </NavbarItem>
-        <NavbarItem>
-          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="engineering">
+          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="Materials">
             Materials
           </NavLink>
         </NavbarItem>
@@ -60,14 +58,10 @@ export default function Nav() {
 
       </NavbarContent>
 
-
-
       {/*Mobile*/}
       {/*NavbarMenu will show only when menu is pressed*/}
       <NavbarMenu className="-mt-10 md:hidden sm:flex gap-4 bg-transparent items-center  justify-center ">
-        <NavbarItem  >
-          <NavLink className="text-gray-600 text-2xl" to="result">Result</NavLink>
-        </NavbarItem>
+       
         <NavbarItem  >
           <NavLink className="text-gray-600 text-2xl" to="engineering">
             Engineering

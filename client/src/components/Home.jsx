@@ -19,8 +19,6 @@ const Home = () => {
                 <Button className="items-center " color="primary" variant="ghost" startContent={<GoPeople />}>
                     <Link href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5" target="_blank">Join Community</Link>
                 </Button>
-
-
             </div>
         </>
     )

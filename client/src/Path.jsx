@@ -11,6 +11,7 @@ import CivilEngineering from "./pages/Engineering/CE.jsx";
 import ComputerScienceEngineering from "./pages/Engineering/CSE.jsx";
 import ECEngineering from "./pages/Engineering/ECE.jsx";
 import ElectricalElectronicsEngineering from "./pages/Engineering/EEE.jsx";
+import  Materials  from "./pages/Materials/Materials.jsx";
 
 export default function Path() {
   return (
@@ -21,6 +22,7 @@ export default function Path() {
           <Route path="" element={<LandingPage />}/>
           {/* Adding pages in outlet portion of Layout */}
           <Route path="result" element={<Result/>} />
+          <Route path="Materials" element={<Materials/>} />
           <Route path="engineering" element={<Engineering/>}>
             {/* outlet under engineering page  */}
             <Route path="" element={<ElectricalEngineering />}/>
