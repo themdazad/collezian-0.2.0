@@ -12,11 +12,12 @@ const Features = () => {
     return (
         <>
             {/* Features  */}
-            <Carousel className="m-auto aspect-[16/9] -mt-[100px] overflow-hidden w-[95%] shadow-xl rounded-3xl relative lg:aspect-[2.73/1] " leftControl=" " rightControl=" ">
+            <Carousel className="m-auto aspect-[16/9] -mt-[100px] overflow-hidden lg:w-[80%] w-[95%] shadow-xl rounded-3xl relative lg:aspect-[2.73/1] " leftControl=" " rightControl=" ">
 
-                <img className="object-cover h-full w-full bg-no-repeat bg-center bg-[url('https://img.freepik.com/free-photo/person-with-books-digital-art-style-education-day_23-2151164307.jpg?t=st=1715369417~exp=1715373017~hmac=ecf7b99c9bd1c790bb1e29ca8616292834e06ce104ea100909dc93068706e121&w=826')]" />
-                <img className="object-cover  in h-full w-full" src="https://img.freepik.com/free-photo/person-with-books-digital-art-style-education-day_23-2151164314.jpg?t=st=1715370688~exp=1715374288~hmac=f60ab9c7a72d2f862fc8b54861732c8ab3544d1892c13fbbe3a3ea097781b0b2&w=826" />
-                <img className="object-cover h-full w-full" src="https://img.freepik.com/free-photo/person-with-books-digital-art-style-education-day_23-2151164311.jpg?t=st=1715370759~exp=1715374359~hmac=54a783e933b3562528d806d13b793dabda6a8a9c17e0f10f1b9b6366d9f502e9&w=826" />
+                
+                <img className="object-cover  in h-full w-full" src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <img className="object-cover  in h-full w-full" src="https://images.unsplash.com/photo-1510384742052-1abcb6282645?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                <img className="object-cover h-full w-full" src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
 
             </Carousel>
 
@@ -26,9 +27,9 @@ const Features = () => {
                 <p className="CardTittle my-4 lg:text-center text-sm text-justify px-4">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p>
 
                 <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-16 px-[5%] content-stretch">
-                    <div key={1} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white border border-gray-300 rounded-3xl  overflow-clip">
+                    <div key={1} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white border border-gray-300 rounded-3xl  overflow-clip"> 
                         <div>
-                            <img className="object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full hover:-translate-y-4 " src={image1} alt="" />
+                            <img className=" hover:animate-bounce object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full " src={image1} alt="" />
                         </div>
 
 
@@ -43,7 +44,7 @@ const Features = () => {
 
                     <div key={2} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white border border-gray-300 rounded-3xl  overflow-clip">
                         <div>
-                            <img className="object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full hover:-translate-y-4 " src={image2} alt="" />
+                            <img className="object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full hover:animate-bounce " src={image2} alt="" />
                         </div>
 
 
@@ -58,7 +59,7 @@ const Features = () => {
 
                     <div key={3} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white border border-gray-300 rounded-3xl  overflow-clip">
                         <div>
-                            <img className="object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full hover:-translate-y-4 " src={image3} alt="" />
+                            <img className="object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full hover:animate-bounce " src={image3} alt="" />
                         </div>
 
 

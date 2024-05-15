@@ -8,12 +8,15 @@ import { CgProfile } from "react-icons/cg";
 import { FiDownloadCloud } from "react-icons/fi";
 import { SlBasket } from "react-icons/sl";
 import {Button} from "@nextui-org/react";
+import { GoSidebarExpand } from "react-icons/go";
+
 
 function Projects() {
   return (
-    <div className=" grid md:grid-cols-12 gap-6 max-md:px-[5%] ">
+    <div className="grid md:grid-cols-12 gap-6 max-md:px-[5%] ">
       
-      <Sidebar className="col-span-3 max-md:hidden  " aria-label="">
+      <Sidebar className="relative col-span-3 max-md:hidden  " aria-label="">
+      <div className="absolute right-4 "><GoSidebarExpand /></div>
         <h1 className="text-center text-2xl font-bold "> Projects</h1>
         <hr className="my-2" />
       <Sidebar.Items >
@@ -43,6 +46,8 @@ function Projects() {
         {/* About Project  */}
         {/* Project Goals */}
         {/* Credits  */}
+
+
         <h1 className="text-3xl">Student’s Project Tittle</h1>
 
         <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 my-6">
