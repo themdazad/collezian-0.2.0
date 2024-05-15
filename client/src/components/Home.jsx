@@ -15,8 +15,6 @@ const Home = () => {
                     <Link href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5" target="_blank">Join here</Link>
                 </Button>
                 
-               
-
               
             </div>
         </>

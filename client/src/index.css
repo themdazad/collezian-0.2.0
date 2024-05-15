@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    user-select: none;
+}
+
 body{
     margin:auto;    
     max-width: 1980px;
