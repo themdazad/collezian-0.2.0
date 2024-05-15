@@ -11,13 +11,13 @@ const Features = () => {
         <>
 
             <div className="py-12">
-                <h2 className="CardTittle text-3xl font-bold uppercase text-center">Explore More</h2>
+                <h2 className="CardTittle text-2xl font-bold uppercase text-center text-sky-600 ">Explore More</h2>
                 <p className="CardTittle my-4 lg:text-center text-sm text-justify px-4">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p>
 
                 <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-16 px-[5%] content-stretch">
-                    <div key={1} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white border border-gray-300 rounded-3xl  overflow-clip"> 
+                    <div key={1} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-gray-300 rounded-2xl   overflow-clip"> 
                         <div>
-                            <img className=" hover:animate-bounce object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full " src={image1} alt="" />
+                            <img className=" hover:animate-bounce object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full " src={image1} alt="" />
                         </div>
 
 
@@ -30,9 +30,9 @@ const Features = () => {
                         </div>
                     </div>
 
-                    <div key={2} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white border border-gray-300 rounded-3xl  overflow-clip">
+                    <div key={2} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-gray-300 rounded-2xl   overflow-clip">
                         <div>
-                            <img className="object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full hover:animate-bounce " src={image2} alt="" />
+                            <img className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full hover:animate-bounce " src={image2} alt="" />
                         </div>
 
 
@@ -45,9 +45,9 @@ const Features = () => {
                         </div>
                     </div>
 
-                    <div key={3} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white border border-gray-300 rounded-3xl  overflow-clip">
+                    <div key={3} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-gray-300 rounded-2xl   overflow-clip">
                         <div>
-                            <img className="object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full hover:animate-bounce " src={image3} alt="" />
+                            <img className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full hover:animate-bounce " src={image3} alt="" />
                         </div>
 
 

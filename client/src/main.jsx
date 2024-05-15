@@ -8,7 +8,7 @@ import { Footer_Component } from './components/Footer_Component.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <NextUIProvider >
+    <NextUIProvider className="dark text-white bg-zinc-900" >
       <Nav />
       <Path />
       <Footer_Component/>

@@ -1,8 +1,7 @@
-import { Link } from "@nextui-org/react";
-import { MdOutlineArrowRight } from "react-icons/md";
+import { Link } from "@nextui-org/react";   
 import { Carousel } from "flowbite-react";
 
-const image1 = "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164378.jpg?t=st=1715367635~exp=1715371235~hmac=e902115f9106b161051057a3beeeac44e2cc42efcb27a186e21b1e2a47664b30&w=740";
+const image1 = "/events/techkshitiz_banner.jpg";
 const image2 = "https://img.freepik.com/free-photo/person-with-books-digital-art-style-education-day_23-2151164365.jpg?t=st=1715367255~exp=1715370855~hmac=6616b045dc59ed9880ec92f36067d364b27266aef0dbddfd46f5fba17ac27f44&w=740";
 const image3 = "https://img.freepik.com/premium-photo/floral-selfcare-human-brain-tree-generative-ai_94628-12606.jpg?w=740";
 
@@ -11,8 +10,8 @@ const Events = () => {
     return (
         <>
             {/* Features  */}
-            <div className="h-[250px] -mb-[250px] bg-sky-100"></div>
-            <div className="m-auto  aspect-[16/9] overflow-hidden lg:w-[80%] w-[95%] shadow-xl rounded-3xl relative lg:aspect-[2.73/1]">
+            <div className="h-[250px] -mb-[250px]"></div>
+            <div className="m-auto  aspect-[16/9] overflow-hidden lg:w-[90%] w-[95%] shadow-xl rounded-2xl relative lg:aspect-[2.73/1]">
             <Carousel leftControl=" " rightControl=" ">
 
                 
@@ -27,25 +26,22 @@ const Events = () => {
 
 
             <div className="py-12">
-                <h2 className="CardTittle text-3xl font-bold uppercase text-center">Upcoming Events</h2>
+                <h2 className="CardTittle text-2xl font-bold uppercase text-center text-sky-600 ">Upcoming Events</h2>
                 {/* <p className="CardTittle my-4 lg:text-center text-sm text-justify px-4">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p> */}
 
-                <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-16 px-[5%] content-stretch">
-                    <div key={1} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white border border-gray-300 rounded-3xl  overflow-clip"> 
+                <div className="card grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 py-6 px-[5%] content-stretch">
+                    <div className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-zinc-400 rounded-2xl  overflow-clip"> 
                         <div>
-                            <img className=" hover:animate-bounce object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full " src={image1} alt="" />
+                            <img className=" object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full " src={image1} alt="" />
                         </div>
 
-
-                        <div className="grid justify-center p-[5%]">
-                            <h1 className="uppercase text-lg font-semibold py-2">TechKshitiz '24</h1>
-                            <p className="text-sm">
-                                Access engineering study materials, including textbooks, lecture notes, and tutorials.
-                            </p>
-                            <Link to="Materials" className="cursor-pointer mt-4" color="primary" variant="flat">Register Now<MdOutlineArrowRight /> </Link>
+                        <div className="flex flex-col  w-full m-auto text-center py-2 p-[2%]">
+                            <h1 className="uppercase font-bold">TechKshitiz&apos;24</h1>
+                            <p className=" text-sm">Government Engineering College, Siwan</p>
+                            <Link to="Materials" className="cursor-pointer text-sm self-center py-2" color="primary" variant="flat">Register Now</Link>
                         </div>
                     </div>
-
+                    
                 </div>
             </div>
         </>
