@@ -1,4 +1,5 @@
 import Features from "./components/Features";
+import Events from "./components/Events";
 import Home from "./components/Home";
 
 export default function LandingPage() {
@@ -8,6 +9,7 @@ export default function LandingPage() {
         This website is currently under development.
       </marquee> */}
       <Home />
+      <Events/>
       <Features />
     </div>
   );

@@ -26,7 +26,9 @@ export default function Nav() {
 
       {/*Desktop*/}
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-       
+        <NavbarItem>
+          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="Events">Events</NavLink>
+        </NavbarItem>
         <NavbarItem>
           <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="Materials">
             Materials
@@ -42,9 +44,7 @@ export default function Nav() {
             Projects
           </NavLink>
         </NavbarItem>
-        <NavbarItem>
-          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="Events">Events</NavLink>
-        </NavbarItem>
+
 
         <NavbarItem className="flex">
           <Link as={NavLink} to="#"><LuUploadCloud className="mr-2 text-xl" /></Link>
@@ -61,7 +61,9 @@ export default function Nav() {
       {/*Mobile*/}
       {/*NavbarMenu will show only when menu is pressed*/}
       <NavbarMenu className="-mt-10 md:hidden sm:flex gap-4 bg-transparent items-center  justify-center ">
-       
+        <NavbarItem>
+          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="Events">Events</NavLink>
+        </NavbarItem>
         <NavbarItem  >
           <NavLink className="text-gray-600 text-2xl" to="Materials">
             Materials
