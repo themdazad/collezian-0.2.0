@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="w-full min-h-[500px] grid justify-center justify-items-center align-middle p-16 bg-sky-100 " >
+            <div className="w-full min-h-[550px] grid justify-center justify-items-center align-middle p-16 bg-sky-100 " >
     
             <h2 className="text-[56px] font-bold">Join Student Community</h2>
 
