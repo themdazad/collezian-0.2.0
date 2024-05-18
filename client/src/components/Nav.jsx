@@ -62,25 +62,25 @@ export default function Nav() {
       {/*NavbarMenu will show only when menu is pressed*/}
       <NavbarMenu className="-mt-10 md:hidden sm:flex gap-4 bg-transparent items-center  justify-center ">
         <NavbarItem>
-          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="Events">Events</NavLink>
+          <NavLink activeClassName="text-sky-600 text-2xl" className="hover:text-sky-600" color="foreground" to="Events">Events</NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-gray-600 text-2xl" to="Materials">
+          <NavLink className="text-gray-400 text-2xl" to="Materials">
             Materials
           </NavLink >
         </NavbarItem>
         <NavbarItem >
-          <NavLink className="text-gray-600 text-2xl" to="roadmap" aria-current="page">
+          <NavLink className="text-gray-400 text-2xl" to="roadmap" aria-current="page">
             Roadmap
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-gray-600 text-2xl" to="projects">
+          <NavLink className="text-gray-400 text-2xl" to="projects">
             Projects
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-gray-600 text-2xl" to="career">Career</NavLink>
+          <NavLink className="text-gray-400 text-2xl" to="career">Career</NavLink>
         </NavbarItem>
 
         <NavbarItem className="flex">
