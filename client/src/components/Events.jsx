@@ -5,6 +5,18 @@ const image1 = "/events/techkshitiz_banner.jpg";
 const image2 = "https://img.freepik.com/free-photo/person-with-books-digital-art-style-education-day_23-2151164365.jpg?t=st=1715367255~exp=1715370855~hmac=6616b045dc59ed9880ec92f36067d364b27266aef0dbddfd46f5fba17ac27f44&w=740";
 const image3 = "https://img.freepik.com/premium-photo/floral-selfcare-human-brain-tree-generative-ai_94628-12606.jpg?w=740";
 
+const event_data = [
+    {image:"/events/techkshitiz_banner.jpg",
+        tittle:"TechKshitiz '24",
+        description:"Government Engineeering College, Siwan",
+        registration_link:"https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
+    }.
+    {image:"https://img.freepik.com/free-photo/person-with-books-digital-art-style-education-day_23-2151164365.jpg?t=st=1715367255~exp=1715370855~hmac=6616b045dc59ed9880ec92f36067d364b27266aef0dbddfd46f5fba17ac27f44&w=740",
+        tittle:"coming soon",
+        description:"Government Engineeering College, Siwan",
+        registration_link:"/Materials",
+    }.
+];
 
 const Events = () => {
     return (
@@ -30,17 +42,23 @@ const Events = () => {
                 {/* <p className="CardTittle my-4 lg:text-center text-sm text-justify px-4">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p> */}
 
                 <div className="card grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 py-6 px-[5%] content-stretch">
-                    <div className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-zinc-400 rounded-2xl  overflow-clip"> 
-                        <div>
-                            <img className=" object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full " src={image1} alt="" />
-                        </div>
+                    {
+                        event_data.map((event,i) => (
+                            <div key={i} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-zinc-400 rounded-2xl  overflow-clip"> 
+                                <div>
+                                    <img className=" object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full " src={event.image} alt="" />
+                                </div>
 
-                        <div className="flex flex-col  w-full m-auto text-center py-2 p-[2%]">
-                            <h1 className="uppercase font-bold">TechKshitiz&apos;24</h1>
-                            <p className=" text-sm">Government Engineering College, Siwan</p>
-                            <Link to="Materials" className="cursor-pointer text-sm self-center py-2" color="primary" variant="flat">Register Now</Link>
-                        </div>
-                    </div>
+                                <div className="flex flex-col  w-full m-auto text-center py-2 p-[2%]">
+                                    <h1 className="uppercase font-bold">{event.tittle}</h1>
+                                    <p className=" text-sm">{event.description}</p>
+                                    <Link to={event.registration_link} target="_blank" className="cursor-pointer text-sm self-center py-2" color="primary" variant="flat">Register Now</Link>
+                                </div>
+                            </div>
+                        ))
+                    }
+                    
+                   
                     
                 </div>
             </div>
