@@ -40,7 +40,7 @@ const Events = () => {
                 <h2 className="CardTittle text-2xl font-bold uppercase text-center text-sky-600 ">Upcoming Events</h2>
                 {/* <p className="CardTittle my-4 lg:text-center text-sm text-justify px-4">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p> */}
 
-                <div className="pt-12  card grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 py-6 content-stretch">
+                <div className="pt-12 px-[2%]  card grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 py-6 content-stretch">
                     {
                         event_data.map((event,i) => (
                             <div key={i} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-zinc-400 rounded-2xl  overflow-clip"> 
