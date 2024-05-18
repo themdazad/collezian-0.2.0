@@ -8,14 +8,14 @@ const image3 = "https://img.freepik.com/premium-photo/floral-selfcare-human-brai
 const event_data = [
     {image:"/events/techkshitiz_banner.jpg",
         tittle:"TechKshitiz '24",
-        description:"Government Engineeering College, Siwan",
+        description:"Registration Started",
         registration_link:"https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
-    }.
-    {image:"https://img.freepik.com/free-photo/person-with-books-digital-art-style-education-day_23-2151164365.jpg?t=st=1715367255~exp=1715370855~hmac=6616b045dc59ed9880ec92f36067d364b27266aef0dbddfd46f5fba17ac27f44&w=740",
-        tittle:"coming soon",
-        description:"Government Engineeering College, Siwan",
-        registration_link:"/Materials",
-    }.
+    },
+    {image:"https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg",
+        tittle:"",
+        description:"",
+        registration_link:"",
+    },
 ];
 
 const Events = () => {
@@ -50,9 +50,11 @@ const Events = () => {
                                 </div>
 
                                 <div className="flex flex-col  w-full m-auto text-center py-2 p-[2%]">
-                                    <h1 className="uppercase font-bold">{event.tittle}</h1>
-                                    <p className=" text-sm">{event.description}</p>
-                                    <Link to={event.registration_link} target="_blank" className="cursor-pointer text-sm self-center py-2" color="primary" variant="flat">Register Now</Link>
+                                    <h1 className="uppercase font-bold">{event.tittle.length === 0 ? "Exited !" :event.tittle} </h1>
+                                    <p className=" text-sm">{event.description.length === 0 ? "For the events in Bihar" :event.description}</p>
+                                    <Link href={event.registration_link} target="_blank" className="cursor-pointer text-sm self-center py-2" color="primary" variant="flat">
+                                        {event.registration_link.length === 0 ? "Coming Soon" : "Register Now"}
+                                    </Link>
                                 </div>
                             </div>
                         ))
