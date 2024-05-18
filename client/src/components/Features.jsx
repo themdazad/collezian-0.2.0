@@ -39,7 +39,7 @@ const Features = () => {
                         <div className="grid justify-center p-[5%]">
                             <h1 className="uppercase text-lg font-semibold py-2">Career Roadmaps</h1>
                             <p className="text-sm">
-                                Plan your academic and professional journey with our curated roadmaps.
+                                Plan your academic and professional journey with curated roadmaps.
                             </p>
                             <Link className="mt-4 cursor-pointer" color="primary" variant="flat"> View Roadmaps<MdOutlineArrowRight /> </Link>
                         </div>
