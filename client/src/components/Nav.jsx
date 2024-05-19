@@ -13,8 +13,10 @@ export default function Nav() {
     <Navbar className="py-2" shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarBrand>
+          <NavLink to="/">
           <Image src={Collezian} className=" w-12 -rotate-[20deg] hover:-rotate-[360deg] transition-transform duration-[2000]" />
-          <NavLink to="/" className=" max-sm:hidden font-bold text-inherit ">
+            </NavLink>
+          <NavLink to="/" className="font-bold max-sm:hidden text-inherit">
             COLLEZIAN</NavLink>
         </NavbarBrand>
         <NavbarMenuToggle
@@ -25,22 +27,22 @@ export default function Nav() {
 
 
       {/*Desktop*/}
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden gap-4 sm:flex" justify="center">
         <NavbarItem>
-          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="Events">Events</NavLink>
+          <NavLink activeClassName="text-blue-600" className="hover:text-blue-600" color="foreground" to="Events">Events</NavLink>
         </NavbarItem>
         <NavbarItem>
-          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="Materials">
+          <NavLink activeClassName="text-blue-600" className="hover:text-blue-600" color="foreground" to="Materials">
             Materials
           </NavLink>
         </NavbarItem>
         <NavbarItem >
-          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="roadmap" aria-current="page">
+          <NavLink activeClassName="text-blue-600" className="hover:text-blue-600" color="foreground" to="roadmap" aria-current="page">
             Roadmap
           </NavLink>
         </NavbarItem>
         <NavbarItem>
-          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="projects">
+          <NavLink activeClassName="text-blue-600" className="hover:text-blue-600" color="foreground" to="projects">
             Projects
           </NavLink>
         </NavbarItem>
@@ -60,37 +62,42 @@ export default function Nav() {
 
       {/*Mobile*/}
       {/*NavbarMenu will show only when menu is pressed*/}
-      <NavbarMenu className="-mt-10 md:hidden sm:flex gap-4 bg-transparent items-center  justify-center ">
+      <NavbarMenu className="items-center justify-center gap-4 -mt-10 bg-transparent md:hidden sm:flex ">
         <NavbarItem>
-          <NavLink className="text-gray-400 text-2xl"  to="Events">
+          <NavLink className="text-2xl "  to="/">
+            Home
+          </NavLink>
+        </NavbarItem>
+        <NavbarItem>
+          <NavLink className="text-2xl "  to="Events">
             Events
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-gray-400 text-2xl" to="Materials">
+          <NavLink className="text-2xl t" to="Materials">
             Materials
           </NavLink >
         </NavbarItem>
         <NavbarItem >
-          <NavLink className="text-gray-400 text-2xl" to="roadmap" aria-current="page">
+          <NavLink className="text-2xl " to="roadmap" aria-current="page">
             Roadmap
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-gray-400 text-2xl" to="projects">
+          <NavLink className="text-2xl " to="projects">
             Projects
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-gray-400 text-2xl" to="career">Career</NavLink>
+          <NavLink className="text-2xl " to="career">Career</NavLink>
         </NavbarItem>
 
         <NavbarItem className="flex">
-          <Link as={NavLink} to="#"><LuUploadCloud className="mr-2 text-xl" /></Link>
+          <Link as={NavLink} to="#"><LuUploadCloud className="mr-2 text-3xl" /></Link>
         </NavbarItem>
 
         <NavbarItem>
-          <Button as={NavLink} color="primary" to="#" variant="flat">
+          <Button className="p-6 text-2xl rounded-3xl" as={NavLink} color="primary" to="#" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>

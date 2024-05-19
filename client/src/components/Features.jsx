@@ -10,34 +10,34 @@ const Features = () => {
     return (
         <>
 
-            <div className="py-12">
-                <h2 className="CardTittle text-2xl font-bold uppercase text-center text-sky-600 ">Explore More</h2>
-                <p className="CardTittle my-4 lg:text-center text-sm text-justify px-4">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p>
+            <div>
+                <h2 className="text-2xl font-bold text-center text-blue-600 uppercase CardTittle ">Explore More</h2>
+                <p className="px-4 my-4 text-sm text-justify CardTittle lg:text-center">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p>
 
                 <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-16 px-[5%] content-stretch">
-                    <div key={1} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-gray-300 rounded-2xl   overflow-clip"> 
+                    <div key={1} className="content-start h-full gap-12 m-auto border shadow-sm border-zinc-300/40 border--600 hover:shadow-xl bg-white/5 rounded-xl overflow-clip"> 
                         <div>
-                            <img className=" hover:animate-bounce object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full " src={image1} alt="" />
+                            <img className=" object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full " src={image1} alt="" />
                         </div>
 
 
                         <div className="grid justify-center p-[5%]">
-                            <h1 className="uppercase text-lg font-semibold py-2">Engineering Materials</h1>
+                            <h1 className="text-lg font-semibold uppercase ">Engineering Materials</h1>
                             <p className="text-sm">
                                 Access engineering study materials, including textbooks, lecture notes, and tutorials.
                             </p>
-                            <Link to="Materials" className="cursor-pointer mt-4" color="primary" variant="flat">Explore Materials<MdOutlineArrowRight /> </Link>
+                            <Link to="Materials" className="mt-4 cursor-pointer" color="primary" variant="flat">Explore Materials<MdOutlineArrowRight /> </Link>
                         </div>
                     </div>
 
-                    <div key={2} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-gray-300 rounded-2xl   overflow-clip">
+                    <div key={2} className="content-start h-full gap-12 m-auto border shadow-sm border-zinc-300/40 hover:shadow-xl bg-white/5 rounded-xl overflow-clip">
                         <div>
-                            <img className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full hover:animate-bounce " src={image2} alt="" />
+                            <img className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full " src={image2} alt="" />
                         </div>
 
 
                         <div className="grid justify-center p-[5%]">
-                            <h1 className="uppercase text-lg font-semibold py-2">Career Roadmaps</h1>
+                            <h1 className="text-lg font-semibold uppercase">Career Roadmaps</h1>
                             <p className="text-sm">
                                 Plan your academic and professional journey with curated roadmaps.
                             </p>
@@ -45,14 +45,14 @@ const Features = () => {
                         </div>
                     </div>
 
-                    <div key={3} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-gray-300 rounded-2xl   overflow-clip">
+                    <div key={3} className="content-start h-full gap-12 m-auto border shadow-sm border-zinc-300/40 hover:shadow-xl bg-white/5 rounded-xl overflow-clip">
                         <div>
-                            <img className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full hover:animate-bounce " src={image3} alt="" />
+                            <img className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full" src={image3} alt="" />
                         </div>
 
 
                         <div className="grid justify-center p-[5%]">
-                            <h1 className="uppercase text-lg font-semibold py-2">Exam Results</h1>
+                            <h1 className="text-lg font-semibold uppercase ">Exam Results</h1>
                             <p className="text-sm">
                                 Stay updated with the latest exam results and academic achievements.
                             </p>

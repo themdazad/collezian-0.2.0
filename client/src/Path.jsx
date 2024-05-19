@@ -13,6 +13,7 @@ import ECEngineering from "./pages/Engineering/ECE.jsx";
 import ElectricalElectronicsEngineering from "./pages/Engineering/EEE.jsx";
 import  Materials  from "./pages/Materials/Materials.jsx";
 import Events from "./components/Events";
+import Contact from "./pages/ContactUS/Contact.jsx";
 
 export default function Path() {
   return (
@@ -37,6 +38,7 @@ export default function Path() {
           </Route>
           <Route path="roadmap" element={<Roadmap/>} />
           <Route path="projects" element={<Projects/>} />
+          <Route path="Contact" element={<Contact/>} />
         </Route>
       </Routes>
    
