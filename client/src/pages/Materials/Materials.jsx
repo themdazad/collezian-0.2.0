@@ -34,20 +34,20 @@ export default function Materials(){
             <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-16 px-[5%] content-stretch">
                 {data.map((data, index) => {
                     return (
-                        <div key={index} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white border border-gray-300 rounded-3xl  overflow-clip">
-                            <div>
-                                <img className="object-cover aspect-[16/9] lg:aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full hover:-translate-y-4 " src={data.image} alt="" />
-                            </div>
-
-
-                            <div className="grid justify-center p-[5%]">
-                                <h1 className="uppercase text-lg font-semibold py-2">{data.tittle}</h1>
-                                <p className="text-sm">
-                                    {data.description}
-                                </p>
-                                <Link className="mt-4" color="primary" variant="flat">  {data.link} <MdOutlineArrowRight /> </Link>
-                            </div>
+                        <div key={3} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-gray-300 rounded-2xl   overflow-clip">
+                        <div>
+                            <img className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full hover:animate-bounce " src={data.image} alt="" />
                         </div>
+
+
+                        <div className="grid justify-center p-[5%]">
+                            <h1 className="uppercase text-lg font-semibold py-2">{data.tittle}</h1>
+                            <p className="text-sm">
+                                {data.description}
+                            </p>
+                            <Link  href={data.link} target="_blank" className="mt-4 cursor-pointer" color="primary" variant="flat">Check Results<MdOutlineArrowRight /> </Link>
+                        </div>
+                    </div>
                     )
                 })}
             </div>

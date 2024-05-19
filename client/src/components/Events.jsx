@@ -1,9 +1,6 @@
 import { Link } from "@nextui-org/react";   
 import { Carousel } from "flowbite-react";
 
-const image1 = "/events/techkshitiz_banner.jpg";
-const image2 = "https://img.freepik.com/free-photo/person-with-books-digital-art-style-education-day_23-2151164365.jpg?t=st=1715367255~exp=1715370855~hmac=6616b045dc59ed9880ec92f36067d364b27266aef0dbddfd46f5fba17ac27f44&w=740";
-const image3 = "https://img.freepik.com/premium-photo/floral-selfcare-human-brain-tree-generative-ai_94628-12606.jpg?w=740";
 
 const event_data = [
     {image:"/events/techkshitiz_banner.jpg",
@@ -11,6 +8,23 @@ const event_data = [
         description:"Registration Started",
         registration_link:"https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
     },
+    {image:"/events/techkshitiz_banner.jpg",
+        tittle:"TechKshitiz '24",
+        description:"Registration Started",
+        registration_link:"https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
+    },
+    
+    {image:"/events/techkshitiz_banner.jpg",
+        tittle:"TechKshitiz '24",
+        description:"Registration Started",
+        registration_link:"https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
+    },
+    {image:"/events/techkshitiz_banner.jpg",
+        tittle:"TechKshitiz '24",
+        description:"Registration Started",
+        registration_link:"https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
+    },
+    
     {image:"https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg",
         tittle:"",
         description:"",
@@ -40,10 +54,11 @@ const Events = () => {
                 <h2 className="CardTittle text-2xl font-bold uppercase text-center text-sky-600 ">Upcoming Events</h2>
                 {/* <p className="CardTittle my-4 lg:text-center text-sm text-justify px-4">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p> */}
 
-                <div className="pt-12 px-[2%] md:px-[5%] card grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 py-6 content-stretch">
+{/* grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 content-stretch*/}
+                <div className="pt-12 px-[2%] md:px-[5%] flex scrollbar-hide overflow-scroll gap-4 md:gap-8 py-6 ">
                     {
                         event_data.map((event,i) => (
-                            <div key={i} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-zinc-400 rounded-2xl  overflow-clip"> 
+                            <div key={i} className="min-w-[300px] max-w-[350px] content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-zinc-400 rounded-2xl  overflow-clip"> 
                                 <div>
                                     <img className=" object-cover aspect-[4/3] ease-in duration-200 delay-0  z-0 w-full h-full " src={event.image} alt="" />
                                 </div>
