@@ -8,28 +8,28 @@ const event_data = [
         description:"Registration Started",
         registration_link:"https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
     },
-    {image:"/events/techkshitiz_banner.jpg",
-        tittle:"TechKshitiz '24",
-        description:"Registration Started",
-        registration_link:"https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
-    },
-    
-    {image:"/events/techkshitiz_banner.jpg",
-        tittle:"TechKshitiz '24",
-        description:"Registration Started",
-        registration_link:"https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
-    },
-    {image:"/events/techkshitiz_banner.jpg",
-        tittle:"TechKshitiz '24",
-        description:"Registration Started",
-        registration_link:"https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
-    },
-    
+       
     {image:"https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg",
         tittle:"",
         description:"",
         registration_link:"",
     },
+    {image:"https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg",
+        tittle:"",
+        description:"",
+        registration_link:"",
+    },
+    {image:"https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg",
+        tittle:"",
+        description:"",
+        registration_link:"",
+    },
+    {image:"https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg",
+        tittle:"",
+        description:"",
+        registration_link:"",
+    },
+    
 ];
 
 const Events = () => {
@@ -42,7 +42,7 @@ const Events = () => {
                 
                 <img className="object-cover  in h-full w-full" src="/events/techkshitiz_banner.jpg" />
                 <img className="object-cover  in h-full w-full" src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                {/* <img className="object-cover  in h-full w-full" src="https://images.unsplash.com/photo-1510384742052-1abcb6282645?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" /> */}
+                <img className="object-cover  in h-full w-full" src="https://images.unsplash.com/photo-1510384742052-1abcb6282645?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
                 {/* <img className="object-cover h-full w-full" src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" /> */}
 
             </Carousel>
