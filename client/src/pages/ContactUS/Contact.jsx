@@ -1,11 +1,26 @@
-import {Button} from "@nextui-org/react";
+import {Button } from "@nextui-org/react";
 
 export default function Contact() {
   return (
     <>
-     <Button className="items-center p-6 text-sm max-w-min rounded-2xl" color="primary" variant="flat" startContent={<GoPeople />}>
-                        <Link href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5" target="_blank">Join Community</Link>
-                    </Button>
+     <section className="min-h-80 place-content-center m-auto">
+      <h2 className="text-center text-2xl text-sky-600 font-bold ">Contact</h2>
+
+      <form className="grid gap-4 place-content-center" action="" method="post">
+        <div className="input_box">
+        <label>Email</label><br/>
+        <input type="text" name="Email" id="Name" placeholder="example@email.com" />
+        </div>
+        <div className="input_box">
+        <label>Massage</label><br/>
+        <input type="text" name="Email" id="Name" placeholder="Type your massage here..." />
+        </div>
+        <Button className="p-4 text-xl rounded-xl" color="primary" to="#" variant="flat">
+            Send
+          </Button>
+      </form>
+
+     </section>
     </>
   );
 }

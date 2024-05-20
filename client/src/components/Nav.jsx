@@ -29,20 +29,20 @@ export default function Nav() {
       {/*Desktop*/}
       <NavbarContent className="hidden gap-4 sm:flex" justify="center">
         <NavbarItem>
-          <NavLink activeClassName="text-blue-600" className="hover:text-blue-600" color="foreground" to="Events">Events</NavLink>
+          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="Events">Events</NavLink>
         </NavbarItem>
         <NavbarItem>
-          <NavLink activeClassName="text-blue-600" className="hover:text-blue-600" color="foreground" to="Materials">
+          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="Materials">
             Materials
           </NavLink>
         </NavbarItem>
         <NavbarItem >
-          <NavLink activeClassName="text-blue-600" className="hover:text-blue-600" color="foreground" to="roadmap" aria-current="page">
+          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="roadmap" aria-current="page">
             Roadmap
           </NavLink>
         </NavbarItem>
         <NavbarItem>
-          <NavLink activeClassName="text-blue-600" className="hover:text-blue-600" color="foreground" to="projects">
+          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="projects">
             Projects
           </NavLink>
         </NavbarItem>
@@ -64,33 +64,33 @@ export default function Nav() {
       {/*NavbarMenu will show only when menu is pressed*/}
       <NavbarMenu className="items-center justify-center gap-4 -mt-10 bg-transparent md:hidden sm:flex ">
         <NavbarItem>
-          <NavLink className="text-2xl "  to="/">
+          <NavLink className="text-2xl text-gray-300/50 "  color="foreground" to="/">
             Home
           </NavLink>
         </NavbarItem>
         <NavbarItem>
-          <NavLink className="text-2xl "  to="Events">
+          <NavLink className="text-2xl text-gray-300/50 "  color="foreground" to="Events">
             Events
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-2xl t" to="Materials">
+          <NavLink className="text-2xl text-gray-300/50 t"  color="foreground" to="Materials">
             Materials
           </NavLink >
         </NavbarItem>
-        <NavbarItem >
-          <NavLink className="text-2xl " to="roadmap" aria-current="page">
+        {/* <NavbarItem >
+          <NavLink className="text-2xl text-gray-300/50 " color="foreground" to="roadmap" aria-current="page">
             Roadmap
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-2xl " to="projects">
+          <NavLink className="text-2xl text-gray-300/50 " color="foreground" to="projects">
             Projects
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-2xl " to="career">Career</NavLink>
-        </NavbarItem>
+          <NavLink className="text-2xl text-gray-300/50 " color="foreground" to="career">Career</NavLink>
+        </NavbarItem> */}
 
         <NavbarItem className="flex">
           <Link as={NavLink} to="#"><LuUploadCloud className="mr-2 text-3xl" /></Link>

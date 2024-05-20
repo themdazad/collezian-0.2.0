@@ -11,11 +11,11 @@ const Features = () => {
         <>
 
             <div>
-                <h2 className="text-2xl font-bold text-center text-blue-600 uppercase CardTittle ">Explore More</h2>
+                <h2 className="text-2xl font-bold text-center text-sky-600 uppercase CardTittle ">Explore More</h2>
                 <p className="px-4 my-4 text-sm text-justify CardTittle lg:text-center">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p>
 
                 <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-16 px-[5%] content-stretch">
-                    <div key={1} className="content-start h-full gap-12 m-auto border shadow-sm border-zinc-300/40 border--600 hover:shadow-xl bg-white/5 rounded-xl overflow-clip"> 
+                    <div key={1} className="gap-12 m-auto border shadow-sm border-zinc-300/40 border--600 hover:shadow-xl bg-white/5 rounded-xl overflow-clip"> 
                         <div>
                             <img className=" object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full " src={image1} alt="" />
                         </div>

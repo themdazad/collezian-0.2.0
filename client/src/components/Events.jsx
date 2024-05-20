@@ -50,11 +50,11 @@ const Events = () => {
 
 
             <div className="py-12">
-                <h2 className="text-2xl font-bold text-center text-blue-600 uppercase CardTittle ">Upcoming Events</h2>
+                <h2 className="text-2xl font-bold text-center text-sky-600 uppercase CardTittle ">Upcoming Events</h2>
                 {/* <p className="px-4 my-4 text-sm text-justify CardTittle lg:text-center">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p> */}
 
 
-                <div className="snap-mandatory snap-x first-line:pt-12 px-[5%] md:px-[5%] flex scrollbar-hide overflow-scroll gap-8 md:gap-8 py-6 ">
+                <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll first-line:pt-12 px-[5%] md:px-[5%]  gap-8 md:gap-8 py-6 ">
                     {
                         event_data.map((event,i) => (
                             <div key={i} className="snap-center min-w-[250px] max-w-[300px] content-start h-full  gap-12 m-auto shadow-sm hover:shadow-xl bg-white/5 border border-zinc-300/40 rounded-xl  overflow-clip"> 

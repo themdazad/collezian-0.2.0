@@ -1,5 +1,6 @@
-import { Link } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import { MdOutlineArrowRight } from "react-icons/md";
+import { GoPeople } from "react-icons/go";
 
 const data = [
 
@@ -27,19 +28,63 @@ export default function Materials(){
     return (
         <>
             {/* Materials  */}
-            <div className="py-12">            
-            <h2 className="CardTittle text-3xl font-bold uppercase text-center">Bihar Engineering Materials</h2>
-            <p className="CardTittle my-4 text-center text-sm px-4">We aim to be your one-stop destination for all things related to Engineering.</p>
-
-            <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 py-16 px-[5%] content-stretch">
-                {data.map((data, index) => {
+            <div className="py-12 px-[5%]">            
+            <h2 className="CardTittle text-3xl font-bold uppercase text-center text-sky-600">Free Engineering Materials</h2>
+           
+            <h2 className="py-6 font-semibold text-xl text-sky-600">Bihar Engineering</h2>
+            <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 content-stretch">
+                {data.map((data, i) => {
                     return (
-                        <div key={3} className="content-start h-full  gap-12 m-auto shadow-sm hover:shadow-lg bg-white/5 border border-gray-300 rounded-2xl   overflow-clip">
+                        <div key={i} className="gap-12 m-auto border shadow-sm border-zinc-300/10 hover:shadow-xl bg-white/5 rounded-xl overflow-clip">
                         <div>
-                            <img className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full hover:animate-bounce " src={data.image} alt="" />
+                            <img className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full " src={data.image} alt="" />
                         </div>
 
 
+                        <div className="grid justify-center p-[5%]">
+                            <h1 className="uppercase text-lg font-semibold py-2">{data.tittle}</h1>
+                            <p className="text-sm">
+                                {data.description}
+                            </p>
+                            <div className="flex  lint_buttons gap-2 mt-4">
+                            <Button className="items-center text-sm max-w-min rounded-xl" color="primary" variant="flat" >Syllabus</Button>
+                            <Button className="items-center text-sm max-w-min rounded-xl" color="primary" variant="flat" >Lectures</Button>
+                            <Button className="items-center text-sm max-w-min rounded-xl" color="primary" variant="flat" >PYQs</Button>
+                            </div>
+                            </div>
+                    </div>
+                    )
+                })}
+            </div>
+
+           
+
+            {/* State  */}
+            <h2 className="py-4 text-xl font-semibold text-sky-600">UP Engineering</h2>
+            <div className="card snap-mandatory snap-x flex scrollbar-hide overflow-scroll gap-6 mb-6 content-stretch">
+                {data.map((data, i) => {
+                    return (
+                        <div key={i} className="snap-center gap-12 m-auto border shadow-sm border-zinc-300/10 border--600 hover:shadow-xl bg-white/5 rounded-xl overflow-clip">
+                        
+                        <div className="grid justify-center p-[5%]">
+                            <h1 className="uppercase text-lg font-semibold py-2">{data.tittle}</h1>
+                            <p className="text-sm">
+                                {data.description}
+                            </p>
+                            <Link  href={data.link} target="_blank" className="mt-4 cursor-pointer" color="primary" variant="flat">Check Results<MdOutlineArrowRight /> </Link>
+                        </div>
+                    </div>
+                    )
+                })}
+            </div>
+
+            {/* Other State  */}
+            <h2 className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll py-4 text-xl font-semibold text-sky-600">New Delhi Engineering</h2>
+            <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 content-stretch">
+                {data.map((data, i) => {
+                    return (
+                        <div key={i} className="snap-center gap-12 m-auto border shadow-sm border-zinc-300/10 border--600 hover:shadow-xl bg-white/5 rounded-xl overflow-clip">
+                        
                         <div className="grid justify-center p-[5%]">
                             <h1 className="uppercase text-lg font-semibold py-2">{data.tittle}</h1>
                             <p className="text-sm">
