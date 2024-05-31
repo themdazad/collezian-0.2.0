@@ -74,7 +74,7 @@ export default function Nav() {
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-2xl text-gray-300/50 t"  color="foreground" to="Materials">
+          <NavLink className="text-2xl text-gray-300/50"  color="foreground" to="Materials">
             Materials
           </NavLink >
         </NavbarItem>

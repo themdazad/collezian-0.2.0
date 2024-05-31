@@ -1,5 +1,6 @@
 import { Button, Link } from "@nextui-org/react";
 import { MdOutlineArrowRight } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 const data = [
 
@@ -85,7 +86,12 @@ export default function Materials(){
                             Stay updated with the latest exam results and academic achievements.
                             </p>
                             <div className="flex gap-2 mt-4 lint_buttons">
-                            <Button className="items-center text-sm max-w-min rounded-xl" color="primary" variant="flat" >Syllabus</Button>
+                            <Button className="items-center text-sm max-w-min rounded-xl" color="primary" variant="flat" >
+                                <NavLink as={Link} to="BTECH/syllabus">
+                                    Syllabus
+                                </NavLink>
+
+                                </Button>
                             <Button className="items-center text-sm max-w-min rounded-xl" color="primary" variant="flat" >Resources</Button>
                             <Button className="items-center text-sm max-w-min rounded-xl" color="primary" variant="flat" >PYQs</Button>
                             </div>

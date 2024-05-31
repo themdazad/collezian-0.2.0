@@ -14,6 +14,7 @@ import ElectricalElectronicsEngineering from "./pages/Engineering/EEE.jsx";
 import  Materials  from "./pages/Materials/Materials.jsx";
 import Events from "./components/Events";
 import Contact from "./pages/ContactUS/Contact.jsx";
+import Syllabus from "./pages/Materials/BTECH/Syllabus.jsx";
 
 export default function Path() {
   return (
@@ -25,7 +26,10 @@ export default function Path() {
           {/* Adding pages in outlet portion of Layout */}
           <Route path="result" element={<Result/>} />
           <Route path="Events" element={<Events/>} />
-          <Route path="Materials" element={<Materials/>} />
+          <Route path="Materials" element={<Materials/>}/>
+          <Route path="BTECH/syllabus"  element={Syllabus}/>
+          
+
           <Route path="engineering" element={<Engineering/>}>
             {/* outlet under engineering page  */}
             <Route path="" element={<ElectricalEngineering />}/>
