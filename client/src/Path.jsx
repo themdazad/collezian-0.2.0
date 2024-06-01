@@ -27,7 +27,9 @@ export default function Path() {
           <Route path="result" element={<Result/>} />
           <Route path="Events" element={<Events/>} />
           <Route path="Materials" element={<Materials/>}/>
-          <Route path="BTECH/syllabus"  element={Syllabus}/>
+          <Route path="Syllabus"  element={<Syllabus/>}/>
+
+
           
 
           <Route path="engineering" element={<Engineering/>}>
@@ -44,6 +46,7 @@ export default function Path() {
           <Route path="projects" element={<Projects/>} />
           <Route path="Contact" element={<Contact/>} />
         </Route>
+
       </Routes>
    
   );

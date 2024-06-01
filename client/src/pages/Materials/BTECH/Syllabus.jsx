@@ -1,12 +1,11 @@
 
-const Syllabus=()=>{
-
-    return(
-        <>
-        {/*  code for syllabus UI */}
-        <h1> This is syllabus page for BTECH.</h1>
-        </>
-    )
+function Syllabus() {
+    console.log("Syllabus page loaded");
+  return (
+    <>
+    <h1>this is syllabus page</h1>
+    </>
+  )
 }
 
-export default Syllabus;
+export default Syllabus
