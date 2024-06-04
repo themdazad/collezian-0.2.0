@@ -54,12 +54,12 @@ const Syllabus = () => {
                 {/* <p className="px-4 my-4 text-sm text-justify CardTittle lg:text-center">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p> */}
 
 
-                <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll first-line:pt-12 px-[5%] md:px-[5%]  gap-8 md:gap-8 py-6 ">
+                <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll first-line:pt-12 px-[5%] md:px-[5%]  gap-4 py-6 ">
                     {
                         event_data.map((event,i) => (
                             <div key={i} className="snap-center min-w-[250px] max-w-[300px] content-start h-full  gap-12 m-auto shadow-sm hover:shadow-xl bg-white/5 border border-zinc-300/40 rounded-xl  overflow-clip"> 
                                 <div>
-                                    <img className="z-0 object-cover w-full h-full duration-200 ease-in aspect-[1/1] delay-0" src={event.image} alt="" />
+                                    <img className="z-0 object-cover w-full h-full duration-200 ease-in aspect-[16/9] delay-0" src={event.image} alt="" />
                                 </div>
 
                                 <div className="flex flex-col  w-full m-auto text-center py-1 p-[2%]">

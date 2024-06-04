@@ -14,7 +14,13 @@ import ElectricalElectronicsEngineering from "./pages/Engineering/EEE.jsx";
 import  Materials  from "./pages/Materials/Materials.jsx";
 import Events from "./components/Events";
 import Contact from "./pages/ContactUS/Contact.jsx";
-import Syllabus from "./pages/Materials/BTECH/Syllabus.jsx";
+// Bihar 
+import { BEU_Syllabus } from "./pages/Materials/Bihar/BEU_Patna/Syllabus.jsx";
+import { BEU_Notes } from "./pages/Materials/Bihar/BEU_Patna/Notes.jsx";
+import { BEU_PYQS } from "./pages/Materials/Bihar/BEU_Patna/PYQS.jsx";
+import { SBTE_Syllabus } from "./pages/Materials/Bihar/SBTE/Syllabus.jsx";
+import { SBTE_Notes } from "./pages/Materials/Bihar/SBTE/Notes.jsx";
+import { SBTE_PYQS } from "./pages/Materials/Bihar/SBTE/PYQS.jsx";
 
 export default function Path() {
   return (
@@ -27,7 +33,13 @@ export default function Path() {
           <Route path="result" element={<Result/>} />
           <Route path="Events" element={<Events/>} />
           <Route path="Materials" element={<Materials/>}/>
-          <Route path="Syllabus"  element={<Syllabus/>}/>
+          {/* Bihar  */}
+          <Route path="/Materials/Bihar/BEU_Patna/Syllabus" element={<BEU_Syllabus/>}/>
+          <Route path="/Materials/Bihar/BEU_Patna/Notes" element={<BEU_Notes/>}/>
+          <Route path="/Materials/Bihar/BEU_Patna/PYQs" element={<BEU_PYQS/>}/>
+          <Route path="/Materials/Bihar/SBTE/Syllabus" element={<SBTE_Syllabus/>}/>
+          <Route path="/Materials/Bihar/SBTE/Notes" element={<SBTE_Notes/>}/>
+          <Route path="/Materials/Bihar/SBTE/PYQs" element={<SBTE_PYQS/>}/>
 
 
           

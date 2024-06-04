@@ -10,9 +10,9 @@ export default function Nav() {
 
   return (
 
-    <Navbar className="py-2" shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent>
-        <NavbarBrand>
+    <Navbar  shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
+      <NavbarContent >
+        <NavbarBrand >
           <NavLink to="/">
           <Image src={Collezian} className=" w-12 -rotate-[20deg] hover:-rotate-[360deg] transition-transform duration-[2000]" />
             </NavLink>
