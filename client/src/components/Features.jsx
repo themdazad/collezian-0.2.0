@@ -10,56 +10,59 @@ const image3 = "https://img.freepik.com/premium-photo/floral-selfcare-human-brai
 const Features = () => {
     return (
         <>
-
             <div>
-                <h2 className="text-2xl font-bold text-center uppercase text-sky-600 CardTittle ">Explore More</h2>
-                <p className="px-4 my-2 text-sm text-justify CardTittle lg:text-center">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p>
+                <section className=" py-12 hidden">
+                <h2 className="text-2xl font-bold text-center uppercase  CardTittle ">Explore More</h2>
+                <p className="text-sm text-justify CardTittle lg:text-center">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p>
+                </section>
 
-                <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll card  gap-4 py-4 px-[5%] content-stretch">
-                    <div key={1} className="snap-center min-w-[300px] gap-12 m-auto border shadow-sm border-zinc-300/40 border--600 hover:shadow-xl bg-white/5 rounded-xl overflow-clip"> 
+
+                <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll card  gap-8 py-4 px-[5%] content-stretch ">
+                    <div key={1} className="snap-center min-w-[350px] gap-12 m-auto shadow-md hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip"> 
                         <div>
-                            <img className=" object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full " src={image1} alt="" />
+                            <img className=" object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image1} alt="" />
                         </div>
 
 
-                        <div className="grid justify-center p-[5%]">
-                            <h1 className="text-lg font-semibold uppercase ">Engineering Materials</h1>
-                            <p className="text-sm">
-                                Access engineering study materials, including textbooks, lecture notes, and tutorials.
+                        <div className="grid justify-center p-[5%] bg-gray-100">
+                            <h1 className=" font-semibold uppercase ">Engineering Materials</h1>
+                            <p className="text-gray-700 text-sm">
+                                Access all state engineering study materials, including PYQs, Syllabus and notes.
                             </p>
-                            <Link as={NavLink} to="Materials" className="mt-4 cursor-pointer" color="primary" variant="flat">Explore Materials<MdOutlineArrowRight /> </Link>
+                            <Link as={NavLink} to="Materials" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat">Explore Materials<MdOutlineArrowRight /> </Link>
                         </div>
                     </div>
 
-                    <div key={2} className="snap-center min-w-[300px] content-start h-full gap-12 m-auto border shadow-sm border-zinc-300/40 hover:shadow-xl bg-white/5 rounded-xl overflow-clip">
+                    <div key={2} className="snap-center min-w-[350px] content-start h-full gap-12 m-auto shadow-md hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip">
                         <div>
-                            <img className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full " src={image2} alt="" />
+                            <img className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image2} alt="" />
                         </div>
 
 
-                        <div className="grid justify-center p-[5%]">
-                            <h1 className="text-lg font-semibold uppercase">Career Roadmaps</h1>
-                            <p className="text-sm">
+                        <div className="grid justify-center p-[5%] bg-gray-100">
+                            <h1 className=" font-semibold uppercase">Career Roadmaps</h1>
+                            <p className="text-gray-700 text-sm">
                                 Plan your academic and professional journey with curated roadmaps.
                             </p>
-                            <Link className="mt-4 cursor-pointer" color="primary" variant="flat"> View Roadmaps<MdOutlineArrowRight /> </Link>
+                            <Link className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat"> View Roadmaps<MdOutlineArrowRight /> </Link>
                         </div>
                     </div>
 
-                    <div key={3} className="snap-center min-w-[300px] content-start h-full gap-12 m-auto border shadow-sm border-zinc-300/40 hover:shadow-xl bg-white/5 rounded-xl overflow-clip">
+                    <div key={3} className="snap-center min-w-[350px] content-start h-full gap-12 m-auto shadow-md hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip">
                         <div>
-                            <img className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full" src={image3} alt="" />
+                            <img className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full" src={image3} alt="" />
                         </div>
 
 
-                        <div className="grid justify-center p-[5%]">
-                            <h1 className="text-lg font-semibold uppercase ">Exam Results</h1>
-                            <p className="text-sm">
+                        <div className="grid justify-center p-[5%] bg-gray-100">
+                            <h1 className=" font-semibold uppercase ">Exam Results</h1>
+                            <p className="text-gray-700 text-sm">
                                 Stay updated with the latest exam results and academic achievements.
                             </p>
-                            <Link className="mt-4 cursor-pointer" color="primary" variant="flat">Check Results<MdOutlineArrowRight /> </Link>
+                            <Link className="mt-2 text-sm cursor-pointer font-semibold" color="primary" variant="flat">Check Results<MdOutlineArrowRight /> </Link>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </>

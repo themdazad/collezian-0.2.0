@@ -30,11 +30,11 @@ export default function Materials() {
     return (
         <>
             {/* Materials  */}
-            <div className="py-12 px-[5%]">
-                <p className="text-3xl font-bold text-center CardTittle text-sky-600">Study Materials</p>
-                <h2 className="text-center font-semibold text-sky-600">Find your state and explore engineering resources for free</h2>
+            <div className="py-6 px-[5%]">
+                <p className="text-4xl font-semibold text-center CardTittle">Study Materials</p>
+                <h2 className="text-center text-sm text-gray-500 ">Choose your state and explore engineering resources for free</h2>
 
-                <h2 className="py-6 text-2xl font-semibold text-sky-600">Bihar Engineering</h2>
+                <h2 className="py-6 text-2xl font-semibold ">Bihar Engineering</h2>
                 <div className="grid grid-cols-1 gap-6 mb-12 card md:grid-cols-2 lg:grid-cols-3 content-stretch">
 
                     {/*BTech   */}
@@ -130,7 +130,7 @@ export default function Materials() {
 
 
                 {/* State: UttarPradesh Board */}
-                <h2 className="py-4 text-xl font-semibold text-sky-600">UP Engineering</h2>
+                <h2 className="py-4 text-xl font-semibold ">UP Engineering</h2>
                 <div className="grid grid-cols-1 gap-6 mb-6 card md:grid-cols-2 lg:grid-cols-3">
                     {data.map((data, i) => {
                         return (
@@ -149,7 +149,7 @@ export default function Materials() {
                 </div>
 
                 {/* Other State : New Delhi Board   */}
-                <h2 className="flex py-4 overflow-scroll text-xl font-semibold snap-mandatory snap-x scrollbar-hide text-sky-600">New Delhi Engineering</h2>
+                <h2 className="flex py-4 overflow-scroll text-xl font-semibold snap-mandatory snap-x scrollbar-hide ">New Delhi Engineering</h2>
                 <div className="grid grid-cols-1 gap-6 mb-6 card md:grid-cols-2 lg:grid-cols-3">
                     {data.map((data, i) => {
                         return (
