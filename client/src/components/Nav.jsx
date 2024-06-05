@@ -64,32 +64,32 @@ export default function Nav() {
       {/*NavbarMenu will show only when menu is pressed*/}
       <NavbarMenu className="items-center justify-center gap-4 -mt-10 bg-transparent md:hidden sm:flex ">
         <NavbarItem>
-          <NavLink className="text-2xl text-gray-300/50 "  color="foreground" to="/">
+          <NavLink className="text-2xl "  color="foreground" to="/">
             Home
           </NavLink>
         </NavbarItem>
         <NavbarItem>
-          <NavLink className="text-2xl text-gray-300/50 "  color="foreground" to="Events">
+          <NavLink className="text-2xl  "  color="foreground" to="Events">
             Events
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-2xl text-gray-300/50"  color="foreground" to="Materials">
+          <NavLink className="text-2xl "  color="foreground" to="Materials">
             Materials
           </NavLink >
         </NavbarItem>
         {/* <NavbarItem >
-          <NavLink className="text-2xl text-gray-300/50 " color="foreground" to="roadmap" aria-current="page">
+          <NavLink className="text-2xl  " color="foreground" to="roadmap" aria-current="page">
             Roadmap
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-2xl text-gray-300/50 " color="foreground" to="projects">
+          <NavLink className="text-2xl  " color="foreground" to="projects">
             Projects
           </NavLink>
         </NavbarItem>
         <NavbarItem  >
-          <NavLink className="text-2xl text-gray-300/50 " color="foreground" to="career">Career</NavLink>
+          <NavLink className="text-2xl  " color="foreground" to="career">Career</NavLink>
         </NavbarItem> */}
 
         <NavbarItem className="flex">
