@@ -10,9 +10,8 @@ import { GoPeople } from "react-icons/go";
                 <div className="text-center">
                     <h2 className="text-3xl  uppercase">your <br /><b className="text-sky-600">one-stop destination</b> <br />for all things related to Engineering</h2>
                     {/* <h2 className="text-4xl font-['syne'] font-bold uppercase">Join <br/>Engineer&apos;s Community</h2> */}
-                    <p className="CardTittle py-8 px-[5%] text-center text-sm">We aim to be your <b className="text-sky-600">one-stop destination</b> for all things related to Engineering</p>
-                    
-                    <Button className="items-center p-6 text-sm max-w-min rounded-2xl" color="primary" variant="flat" startContent={<GoPeople />}>
+                   
+                    <Button className="items-center my-6 p-6 text-sm max-w-min rounded-2xl" color="primary" variant="flat" startContent={<GoPeople />}>
                         <Link href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5" target="_blank">Join Community</Link>
                     </Button>
                 </div>

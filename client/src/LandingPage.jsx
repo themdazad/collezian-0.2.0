@@ -9,7 +9,7 @@ export default function LandingPage() {
         This website is currently under development.
       </marquee> */}
       <Home />
-      <Events/>
+      {/* <Events/> */}
       <Features />
     </div>
   );
