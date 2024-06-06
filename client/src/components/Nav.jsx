@@ -62,7 +62,7 @@ export default function Nav() {
 
       {/*Mobile*/}
       {/*NavbarMenu will show only when menu is pressed*/}
-      <NavbarMenu className="items-center justify-center gap-4 bg-transparent md:hidden sm:flex ">
+      <NavbarMenu aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="items-center justify-center gap-4 bg-transparent md:hidden sm:flex ">
         <NavbarItem>
           <NavLink className="text-2xl "  color="foreground" to="/">
             Home
