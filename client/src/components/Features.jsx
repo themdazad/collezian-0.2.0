@@ -1,4 +1,4 @@
-import { Link } from "@nextui-org/react";
+import { Image, Link } from "@nextui-org/react";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
@@ -10,61 +10,63 @@ const image3 = "https://img.freepik.com/premium-photo/floral-selfcare-human-brai
 const Features = () => {
     return (
         <>
-            <div>
-                <section className=" py-12 hidden">
+
+            <section className=" py-12 hidden">
                 <h2 className="text-2xl font-bold text-center uppercase  CardTittle ">Explore More</h2>
                 <p className="text-sm text-justify CardTittle lg:text-center">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p>
-                </section>
+            </section>
 
 
-                <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll card  gap-8 py-4 px-[5%] content-stretch ">
-                    <div key={1} className="snap-center min-w-[350px] gap-12 m-auto shadow-md hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip"> 
-                        <div>
-                            <img className=" object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image1} alt="" />
-                        </div>
-
-
-                        <div className="grid justify-center p-[5%] bg-gray-100">
-                            <h1 className=" font-semibold uppercase ">Engineering Materials</h1>
-                            <p className="text-gray-700 text-sm">
-                                Access all state engineering study materials, including PYQs, Syllabus and notes.
-                            </p>
-                            <Link as={NavLink} to="Materials" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat">Explore Materials<MdOutlineArrowRight /> </Link>
-                        </div>
+            <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll card  gap-8 px-[5%] content-stretch ">
+                <div key={1} className="snap-center min-w-[350px] gap-12 m-auto shadow-md hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip">
+                    <div>
+                        <img className=" object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image1} alt="" />
                     </div>
 
-                    <div key={2} className="snap-center min-w-[350px] content-start h-full gap-12 m-auto shadow-md hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip">
-                        <div>
-                            <img className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image2} alt="" />
-                        </div>
 
-
-                        <div className="grid justify-center p-[5%] bg-gray-100">
-                            <h1 className=" font-semibold uppercase">Career Roadmaps</h1>
-                            <p className="text-gray-700 text-sm">
-                                Plan your academic and professional journey with curated roadmaps.
-                            </p>
-                            <Link className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat"> View Roadmaps<MdOutlineArrowRight /> </Link>
-                        </div>
+                    <div className="grid justify-center p-[5%] bg-gray-100">
+                        <h1 className=" font-semibold uppercase ">Engineering Materials</h1>
+                        <p className="text-gray-700 text-sm">
+                            Access all state engineering study materials, including PYQs, Syllabus and notes.
+                        </p>
+                        <Link as={NavLink} to="Materials" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat">Explore Materials<MdOutlineArrowRight /> </Link>
                     </div>
-
-                    <div key={3} className="snap-center min-w-[350px] content-start h-full gap-12 m-auto shadow-md hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip">
-                        <div>
-                            <img className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full" src={image3} alt="" />
-                        </div>
-
-
-                        <div className="grid justify-center p-[5%] bg-gray-100">
-                            <h1 className=" font-semibold uppercase ">Exam Results</h1>
-                            <p className="text-gray-700 text-sm">
-                                Stay updated with the latest exam results and academic achievements.
-                            </p>
-                            <Link className="mt-2 text-sm cursor-pointer font-semibold" color="primary" variant="flat">Check Results<MdOutlineArrowRight /> </Link>
-                        </div>
-                    </div>
-                    
                 </div>
+
+                <div key={2} className="snap-center min-w-[350px] content-start h-full gap-12 m-auto shadow-md hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip">
+                    <div>
+                        <img className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image2} alt="" />
+                    </div>
+
+
+                    <div className="grid justify-center p-[5%] bg-gray-100">
+                        <h1 className=" font-semibold uppercase">Career Roadmaps</h1>
+                        <p className="text-gray-700 text-sm">
+                            Plan your academic and professional journey with curated roadmaps.
+                        </p>
+                        <Link className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat"> View Roadmaps<MdOutlineArrowRight /> </Link>
+                    </div>
+                </div>
+
+                <div key={3} className="snap-center min-w-[350px] content-start h-full gap-12 m-auto shadow-md hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip">
+                    <div>
+                        <img className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full" src={image3} alt="" />
+                    </div>
+
+
+                    <div className="grid justify-center p-[5%] bg-gray-100">
+                        <h1 className=" font-semibold uppercase ">Exam Results</h1>
+                        <p className="text-gray-700 text-sm">
+                            Stay updated with the latest exam results and academic achievements.
+                        </p>
+                        <Link className="mt-2 text-sm cursor-pointer font-semibold" color="primary" variant="flat">Check Results<MdOutlineArrowRight /> </Link>
+                    </div>
+                </div>
+
             </div>
+            <center>
+                <Image className=" " src="/gif/dotted-line.png" width={40} />
+            </center>
         </>
     );
 }
