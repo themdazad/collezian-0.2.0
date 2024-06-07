@@ -2,7 +2,7 @@
 import { Button, Link } from "@nextui-org/react"
 import { GoPeople } from "react-icons/go";
 
- export default function Home(){
+ export default function Header(){
 
     return (
         <>

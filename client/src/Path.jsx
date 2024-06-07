@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import Engineering from "./pages/Engineering";
-import LandingPage from "./LandingPage.jsx";
 import Layout from "./layout.jsx";
 import Result from "./pages/Result.jsx";
 import Roadmap from "./pages/Roadmap/Roadmap.jsx";
@@ -26,9 +25,8 @@ export default function Path() {
   return (
     
       <Routes>
-        <Route path="/" element={<Layout />}>       
-            {/* default page     */}
-          <Route path="" element={<LandingPage />}/>
+        <Route path="/" element={<Layout />}/>       
+          
           {/* Adding pages in outlet portion of Layout */}
           <Route path="result" element={<Result/>} />
           <Route path="Events" element={<Events/>} />
@@ -57,8 +55,7 @@ export default function Path() {
           <Route path="roadmap" element={<Roadmap/>} />
           <Route path="projects" element={<Projects/>} />
           <Route path="Contact" element={<Contact/>} />
-        </Route>
-
+       
       </Routes>
    
   );
