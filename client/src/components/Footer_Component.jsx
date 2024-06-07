@@ -16,8 +16,7 @@ export function Footer_Component() {
           />
           <FooterLinkGroup>
             <FooterLink className="hover:text-decoration-none text-[12px] hover:text-sky-600" href="#">About</FooterLink>
-            <FooterLink className="hover:text-decoration-none text-[12px] hover:text-sky-600" href="#">Privacy Policy</FooterLink>
-            <FooterLink className="hover:text-decoration-none text-[12px] hover:text-sky-600" href="#">Licensing</FooterLink>
+            <FooterLink className="hover:text-decoration-none text-[12px] hover:text-sky-600" href="#">Copyright Policy</FooterLink>
             <NavLink to="Contact" className="hover:text-decoration-none text-[12px] hover:text-sky-600" href="#">Contact</NavLink>
           </FooterLinkGroup>
         </div>

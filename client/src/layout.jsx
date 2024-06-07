@@ -3,9 +3,9 @@ import { GoPeople } from "react-icons/go";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
-const image1 = "https://img.freepik.com/free-photo/books-with-graduation-cap-digital-art-style-education-day_23-2151164378.jpg?t=st=1715367635~exp=1715371235~hmac=e902115f9106b161051057a3beeeac44e2cc42efcb27a186e21b1e2a47664b30&w=740";
-const image2 = "https://img.freepik.com/free-photo/person-with-books-digital-art-style-education-day_23-2151164365.jpg?t=st=1715367255~exp=1715370855~hmac=6616b045dc59ed9880ec92f36067d364b27266aef0dbddfd46f5fba17ac27f44&w=740";
-const image3 = "https://img.freepik.com/premium-photo/floral-selfcare-human-brain-tree-generative-ai_94628-12606.jpg?w=740";
+const image1 = "https://img.freepik.com/free-photo/front-view-stacked-books-earth-globe-open-book-pencils-education-day_23-2149241018.jpg?w=740&t=st=1717795530~exp=1717796130~hmac=bd7486b8ade9fcbdf05d3f9ed1335b1c496fd200f752021ff295a9936dcb2479";
+const image2 = "https://img.freepik.com/premium-photo/unrecognizable-man-takes-photo-with-his-phone-music-concert_78636-1005.jpg?w=740";
+const image3 = "https://img.freepik.com/premium-photo/3d-flat-icons-corporate-award-ceremony-organization-hosts-ceremony-recognize-celebrat_980716-137898.jpg?w=740";
 
 const Layout = () => {
   return (
@@ -47,14 +47,14 @@ export function Header() {
 export function Features_Card() {
   return (
     <>
-      <p className="py-2 text-center text-xl font-bold ">Here you can find!</p>
+      <p className="py-3 text-center text-lg md:text-3xl font-bold ">Here you can find!</p>
 
         <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll card  gap-8 px-[5%] content-stretch ">
           <div key={1} className="snap-center min-w-[350px] gap-12 m-auto shadow-md hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
 
             <Image className=" object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full "  src={image1} radius="none" alt="" />
 
-            <div className="grid justify-center justif p-[5%] bg-gray-100">
+            <div className="grid justify-center justif p-[5%] ">
               <h1 className=" font-semibold uppercase ">Study Materials</h1>
               <p className="text-gray-700 text-sm">
                 Access all state engineering study materials, including PYQs, Syllabus and notes.
@@ -67,7 +67,7 @@ export function Features_Card() {
 
             <Image className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image2}  radius="none" alt="" />
 
-            <div className="grid justify-center p-[5%] bg-gray-100">
+            <div className="grid justify-center p-[5%] ">
               <h1 className=" font-semibold uppercase">Contests & Events</h1>
               <p className="text-gray-700 text-sm">
               Provides a comprehensive list of upcoming coding contests and tech events. 
@@ -81,7 +81,7 @@ export function Features_Card() {
             <Image className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full" src={image3} radius="none" alt="" />
 
 
-            <div className="grid justify-center p-[5%] bg-gray-100">
+            <div className="grid justify-center p-[5%] ">
               <h1 className=" font-semibold uppercase ">Exam Results</h1>
               <p className="text-gray-700 text-sm">
                 Stay updated with the latest exam results and academic achievements.

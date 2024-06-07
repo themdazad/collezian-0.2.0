@@ -1,5 +1,6 @@
 import { Link } from "@nextui-org/react";   
 import { Carousel } from "flowbite-react";
+import { MdOutlineArrowRight } from "react-icons/md";
 
 
 const event_data = [
@@ -14,21 +15,7 @@ const event_data = [
         description:"",
         registration_link:"",
     },
-    {image:"https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg",
-        tittle:"",
-        description:"",
-        registration_link:"",
-    },
-    {image:"https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg",
-        tittle:"",
-        description:"",
-        registration_link:"",
-    },
-    {image:"https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg",
-        tittle:"",
-        description:"",
-        registration_link:"",
-    },
+    
     
 ];
 
@@ -37,7 +24,7 @@ const Syllabus = () => {
         <>
             {/* Events  */}
            
-            <div className="m-auto pt-12  aspect-[4/3] overflow-hidden lg:w-[90%] w-[95%] shadow-xl rounded-2xl relative lg:aspect-[2.73/1]">
+            <div className="m-auto mt-8 mx-[5%]  aspect-[4/3] overflow-hidden  shadow-xl rounded-3xl relative lg:aspect-[2.73/1]">
             <Carousel leftControl=" " rightControl=" ">
                 
                 <img className="object-cover w-full h-full in" src="/events/TechKshitizBanner.jpg" />
@@ -50,23 +37,23 @@ const Syllabus = () => {
             
 
             <div className="py-12">
-                <h2 className="text-2xl font-bold text-center uppercase text-sky-600 CardTittle ">Upcoming Events</h2>
+                <h2 className="text-lg md:text-3xl font-bold text-center  CardTittle ">Upcoming Events</h2>
                 {/* <p className="px-4 my-4 text-sm text-justify CardTittle lg:text-center">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p> */}
 
 
                 <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll first-line:pt-12 px-[5%] md:px-[5%]  gap-4 py-6 ">
                     {
                         event_data.map((event,i) => (
-                            <div key={i} className="snap-center min-w-[250px] max-w-[300px] content-start h-full  gap-12 m-auto shadow-sm hover:shadow-xl bg-white/5 border border-zinc-300/40 rounded-xl  overflow-clip"> 
+                            <div key={i} className="shadow-md hover:shadow-lg transition-shadow duration-350 snap-center min-w-[250px] max-w-[300px] content-start h-full  gap-8 m-auto  bg-white/5 border border-zinc-300/40 rounded-3xl  overflow-clip"> 
                                 <div>
                                     <img className="z-0 object-cover w-full h-full duration-200 ease-in aspect-[16/9] delay-0" src={event.image} alt="" />
                                 </div>
 
-                                <div className="flex flex-col  w-full m-auto text-center py-1 p-[2%]">
+                                <div className="flex flex-col  w-full m-auto py-1 p-[5%]">
                                     <h1 className="font-bold uppercase">{event.tittle.length === 0 ? "Exited !" :event.tittle} </h1>
                                     <p className="text-sm ">{event.description.length === 0 ? "For the events in Bihar" :event.description}</p>
-                                    <Link href={event.registration_link} target="_blank" className="self-center py-2 text-sm cursor-pointer" color="primary" variant="flat">
-                                        {event.registration_link.length === 0 ? "Coming Soon" : "Register Now"}
+                                    <Link href={event.registration_link} target="_blank" className="py-2 text-sm cursor-pointer" color="primary" variant="flat">
+                                        {event.registration_link.length === 0 ? "Coming Soon" : "Register Now"} <MdOutlineArrowRight />
                                     </Link>
                                 </div>
                             </div>
