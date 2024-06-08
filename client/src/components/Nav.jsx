@@ -8,6 +8,7 @@ import { FiChevronDown } from "react-icons/fi";
 import { LuUploadCloud } from "react-icons/lu";
 import { NavLink } from "react-router-dom";
 import Collezian from "..//assets/Collezian.svg"
+import {PiNotebookDuotone, PiLightbulbFilamentDuotone, PiNewspaperDuotone, PiLaptopDuotone, PiBagDuotone, PiCalendarXDuotone  } from "react-icons/pi";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,42 +32,67 @@ export default function Nav() {
 
 
       {/*Desktop*/}
-      <NavbarContent className="hidden gap-4 sm:flex" justify="center">
+      <NavbarContent className="hidden gap-0 sm:flex" justify="center">
+        
         <NavbarItem>
-          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="Events">Events</NavLink>
-        </NavbarItem>
-        <NavbarItem>
-          <NavLink activeClassName="text-sky-600" className="hover:text-sky-600" color="foreground" to="Materials">
-            Materials
-          </NavLink>
-        </NavbarItem>
-        <NavbarItem >
-          <Dropdown backdrop="blur">
+          <Dropdown>
             <DropdownTrigger>
               <Button
-                variant="light" className="gap-0"
+                variant="light" 
+                endContent={<FiChevronDown />}
               >
-                Careers <FiChevronDown />
+                College
               </Button>
             </DropdownTrigger>
             <DropdownMenu variant="faded" aria-label="Static Actions">
-              <DropdownItem key="new">Jobs</DropdownItem>
-              <DropdownItem key="new">Intenships</DropdownItem>
-              <DropdownItem key="delete" className="text-danger" color="danger">
+              <DropdownItem key="Events" startContent={<PiCalendarXDuotone />}>Events</DropdownItem>
+              <DropdownItem key="Projects" startContent={<PiLightbulbFilamentDuotone />}>Projects</DropdownItem>
+              <DropdownItem key="Syllabus" startContent={<PiNewspaperDuotone />}>Syllabus</DropdownItem>
+              <DropdownItem key="Materials" startContent={<PiNotebookDuotone/>}>Study Materials</DropdownItem>
+              <DropdownItem key="CheckResult" className="text-danger" color="danger">
+                Check Result
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+        </NavbarItem>
+        <NavbarItem >
+          <Dropdown>
+            <DropdownTrigger>
+              <Button
+                variant="light" endContent={<FiChevronDown />}
+              >
+                Careers
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu variant="faded" aria-label="Static Actions">
+              <DropdownItem key="new" startContent={<PiBagDuotone/>}>Jobs</DropdownItem>
+              <DropdownItem key="new" startContent={<PiLaptopDuotone/>}>Intenships</DropdownItem>
+              <DropdownItem key="CheckResult" className="text-danger" color="danger">
                 Check Certificate
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
+          
+        </NavbarItem>
+        <NavbarItem>
+        <Button as={NavLink}  to="#" variant="light">
+            Showcase
+          </Button>
+        </NavbarItem>
+        <NavbarItem>
+        <Button as={NavLink}  to="#" variant="light">
+            AI Tools
+          </Button>
         </NavbarItem>
 
 
 
         <NavbarItem className="flex">
-          <Link as={NavLink} to="#"><LuUploadCloud className="mr-2 text-xl" /></Link>
+          <Link as={NavLink} to="#" startContent={<LuUploadCloud/>}/>
         </NavbarItem>
 
         <NavbarItem>
-          <Button as={NavLink} color="primary" to="#" variant="flat">
+          <Button as={NavLink} color="primary" radius="full" to="#" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>
@@ -76,23 +102,47 @@ export default function Nav() {
 
 
       {/*Mobile*/}
-      {/*NavbarMenu will show only when menu is pressed*/}
       <NavbarMenu aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="items-center justify-center gap-4 bg-transparent md:hidden sm:flex ">
 
-        <NavbarItem>
-          <NavLink className="text-2xl " color="foreground" to="/">
-            Home
-          </NavLink>
+      <NavbarItem>
+          <Dropdown>
+            <DropdownTrigger>
+              <Button
+                variant="light" 
+                endContent={<FiChevronDown />}
+              >
+                College
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu variant="faded" aria-label="Static Actions">
+              <Link as={NavLink} to="/Events"  startContent={<PiCalendarXDuotone />}>Events</Link>
+              <Link as={NavLink} key="Projects" startContent={<PiLightbulbFilamentDuotone />}>Projects</Link>
+              <Link as={NavLink} key="Syllabus" startContent={<PiNewspaperDuotone />}>Syllabus</Link>
+              <Link as={NavLink} key="Materials" startContent={<PiNotebookDuotone/>}>Study Materials</Link>
+              <Link as={NavLink} to="/Result" key="CheckResult" className="text-danger" color="danger">
+                Check Result
+              </Link>
+            </DropdownMenu>
+          </Dropdown>
         </NavbarItem>
-        <NavbarItem>
-          <NavLink className="text-2xl  " color="foreground" to="Events">
-            Events
-          </NavLink>
-        </NavbarItem>
-        <NavbarItem  >
-          <NavLink className="text-2xl " color="foreground" to="Materials">
-            Materials
-          </NavLink >
+        <NavbarItem >
+          <Dropdown>
+            <DropdownTrigger>
+              <Button
+                variant="light" endContent={<FiChevronDown />}
+              >
+                Careers
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu variant="faded" aria-label="Static Actions">
+              <DropdownItem key="new" startContent={<PiBagDuotone/>}>Jobs</DropdownItem>
+              <DropdownItem key="new" startContent={<PiLaptopDuotone/>}>Intenships</DropdownItem>
+              <DropdownItem key="CheckResult" className="text-danger" color="danger">
+                Check Certificate
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+          
         </NavbarItem>
         <NavbarItem >
           <Dropdown backdrop="blur">
@@ -103,23 +153,23 @@ export default function Nav() {
                 Careers <FiChevronDown />
               </Button>
             </DropdownTrigger>
-            <DropdownMenu variant="faded" aria-label="Static Actions">
-              <DropdownItem key="new">Jobs</DropdownItem>
-              <DropdownItem key="new">Intenships</DropdownItem>
-              <DropdownItem key="delete" className="text-danger" color="danger">
+            <DropdownMenu variant="faded" aria-label="Static Actions" >
+              <DropdownItem key="Jobs">Jobs</DropdownItem>
+              <DropdownItem key="Internship">Intenships</DropdownItem>
+              <DropdownItem key="Certificate" className="text-danger" color="danger">
                 Check Certificate
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </NavbarItem>
-        
+
 
         <NavbarItem className="flex">
           <Link as={NavLink} to="#"><LuUploadCloud className="mr-2 text-3xl" /></Link>
         </NavbarItem>
 
         <NavbarItem>
-          <Button className="p-6 text-2xl rounded-3xl" as={NavLink} color="primary" to="#" variant="flat">
+        <Button as={NavLink} color="primary" radius="full" to="#" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>

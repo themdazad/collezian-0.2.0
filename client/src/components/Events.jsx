@@ -37,14 +37,14 @@ const Syllabus = () => {
             
 
             <div className="py-12">
-                <h2 className="text-lg md:text-3xl font-bold text-center  CardTittle ">Upcoming Events</h2>
+                <h2 className="text-lg md:text-3xl font-bold text-center  CardTittle ">Latest Events</h2>
                 {/* <p className="px-4 my-4 text-sm text-justify CardTittle lg:text-center">We aim to be your one-stop destination for all things related to Engineering. Here&apos;s what you can expect to find on our platform.</p> */}
 
 
-                <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll first-line:pt-12 px-[5%] md:px-[5%]  gap-4 py-6 ">
+                <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll  px-[5%]  gap-4 py-6 ">
                     {
                         event_data.map((event,i) => (
-                            <div key={i} className="shadow-md hover:shadow-lg transition-shadow duration-350 snap-center min-w-[250px] max-w-[300px] content-start h-full  gap-8 m-auto  bg-white/5 border border-zinc-300/40 rounded-3xl  overflow-clip"> 
+                            <div key={i} className="shadow-md hover:shadow-lg transition-shadow duration-350 snap-center min-w-[250px] max-w-[300px] h-full  gap-8 m-auto  bg-white/5 border border-zinc-300/40 rounded-3xl  overflow-clip"> 
                                 <div>
                                     <img className="z-0 object-cover w-full h-full duration-200 ease-in aspect-[16/9] delay-0" src={event.image} alt="" />
                                 </div>

@@ -28,9 +28,9 @@ export default function Path() {
         <Route path="/" element={<Layout />}/>       
           
           {/* Adding pages in outlet portion of Layout */}
-          <Route path="result" element={<Result/>} />
-          <Route path="Events" element={<Events/>} />
-          <Route path="Materials" element={<Materials/>}/>
+          <Route path="/Result" element={<Result/>} />
+          <Route path="/Events" element={<Events/>} />
+          <Route path="/Materials" element={<Materials/>}/>
           {/* Bihar  */}
           <Route path="/Materials/Bihar/BEU_Patna/Syllabus" element={<BEU_Syllabus/>}/>
           <Route path="/Materials/Bihar/BEU_Patna/Notes" element={<BEU_Notes/>}/>

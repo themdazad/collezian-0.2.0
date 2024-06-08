@@ -2,6 +2,7 @@ import { Image, Button, Link } from "@nextui-org/react"
 import { GoPeople } from "react-icons/go";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
+import Events from "./components/Events"
 
 const image1 = "https://img.freepik.com/free-photo/front-view-stacked-books-earth-globe-open-book-pencils-education-day_23-2149241018.jpg?w=740&t=st=1717795530~exp=1717796130~hmac=bd7486b8ade9fcbdf05d3f9ed1335b1c496fd200f752021ff295a9936dcb2479";
 const image2 = "https://img.freepik.com/premium-photo/unrecognizable-man-takes-photo-with-his-phone-music-concert_78636-1005.jpg?w=740";
@@ -12,7 +13,7 @@ const Layout = () => {
     <>
       <Header />
       <Features_Card />
-
+      <Events/>
     </>
   )
 }; export default Layout;
@@ -21,15 +22,15 @@ const Layout = () => {
 export function Header() {
   return (
     <>
-      <div className=" w-full h-[450px] bg-[url('/images/smoke.png')] bg-contain  bg-no-repeat grid justify-center content-center " 
+      <div className=" w-full h-[450px] md:bg-[url('/images/smoke.png')] bg-contain  bg-no-repeat grid justify-center content-center " 
       style={{
            backdropFilter: 'blur(8px)' // Adjust blur radius as needed
       }}
       >
         <div className="text-center">
-          <h2 className="mt-4 text-xl font-bold">COLLEZIAN</h2>
+          <h2 className="mt-4 text-xl ">COLLEZIAN</h2>
           <h2 className="mt-4 text-5xl md:text-6xl uppercase font-black text-gray-900">one-stop destination</h2>
-          <h2 className="mt-4 text-xl font-bold ">for all things related to engineering</h2>
+          <h2 className="mt-4 text-xl  ">for all things related to engineering for free...</h2>
 
           <Button className="items-center my-6 p-6 text-sm font-semibold text-gray-800 max-w-min shadow-md rounded-3xl" color="none" variant="flat" startContent={<GoPeople />} 
           style={{
@@ -82,7 +83,7 @@ export function Features_Card() {
 
 
             <div className="grid justify-center p-[5%] ">
-              <h1 className=" font-semibold uppercase ">Exam Results</h1>
+              <h1 className=" font-semibold uppercase ">Career Roadmaps</h1>
               <p className="text-gray-700 text-sm">
                 Stay updated with the latest exam results and academic achievements.
               </p>
