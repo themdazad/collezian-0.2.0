@@ -1,4 +1,4 @@
-import { Link } from "@nextui-org/react";   
+import { Link, Image } from "@nextui-org/react";   
 import { Carousel } from "flowbite-react";
 import { MdOutlineArrowRight } from "react-icons/md";
 
@@ -6,11 +6,21 @@ import { MdOutlineArrowRight } from "react-icons/md";
 const event_data = [
     {image:"/events/techkshitizThumbnail.jpg",
         tittle:"TechKshitiz '24",
-        description:"Registration Started",
+        description:"Last Date - 30 June 2024",
         registration_link:"https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
     },
        
-    {image:"https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg",
+    {image:"/logo/Collezian.svg",
+        tittle:"",
+        description:"",
+        registration_link:"",
+    },
+    {image:"/logo/Collezian.svg",
+        tittle:"",
+        description:"",
+        registration_link:"",
+    },
+    {image:"/logo/Collezian.svg",
         tittle:"",
         description:"",
         registration_link:"",
@@ -25,13 +35,11 @@ const Syllabus = () => {
             {/* Events  */}
            
             <div className="m-auto mt-8 mx-[5%]  aspect-[4/3] overflow-hidden  shadow-xl rounded-3xl relative lg:aspect-[2.73/1]">
-            <Carousel leftControl=" " rightControl=" ">
+            <Carousel leftControl="" rightControl="">
                 
-                <img className="object-cover w-full h-full in" src="/events/TechKshitizBanner.jpg" />
-                <img className="object-cover w-full h-full in" src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                <img className="object-cover w-full h-full in" src="https://images.unsplash.com/photo-1510384742052-1abcb6282645?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                {/* <img className="object-cover w-full h-full" src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" /> */}
-
+                <img alt="banner_image" className="object-cover w-full h-full in" src="/events/TechKshitizBanner.jpg" />
+                <img alt="banner_image" className="object-cover w-full h-full in" src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+               
             </Carousel>
             </div>
             
@@ -44,15 +52,13 @@ const Syllabus = () => {
                 <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll  px-[5%]  gap-4 py-6 ">
                     {
                         event_data.map((event,i) => (
-                            <div key={i} className="shadow-md hover:shadow-lg transition-shadow duration-350 snap-center min-w-[250px] max-w-[300px] h-full  gap-8 m-auto  bg-white/5 border border-zinc-300/40 rounded-3xl  overflow-clip"> 
-                                <div>
-                                    <img className="z-0 object-cover w-full h-full duration-200 ease-in aspect-[16/9] delay-0" src={event.image} alt="" />
-                                </div>
-
-                                <div className="flex flex-col  w-full m-auto py-1 p-[5%]">
+                            <div key={i} className="shadow-md hover:shadow-lg transition-shadow duration-350  snap-center min-w-[200px] max-w-[240px] h-full  gap-8 m-auto  bg-white/5 border border-zinc-300/40 rounded-3xl  overflow-clip"> 
+                              <Image className="z-0 object-cover aspect-[4/3] w-full" src={event.image}  radius="none" alt="" />
+                                <div className="flex flex-col w-full m-auto p-[5%]">
                                     <h1 className="font-bold uppercase">{event.tittle.length === 0 ? "Exited !" :event.tittle} </h1>
                                     <p className="text-sm ">{event.description.length === 0 ? "For the events in Bihar" :event.description}</p>
-                                    <Link href={event.registration_link} target="_blank" className="py-2 text-sm cursor-pointer" color="primary" variant="flat">
+                                    <Link href={event.registration_link} target="_blank" className=" text-sm cursor-pointer" color="primary" variant="flat"
+                                    >
                                         {event.registration_link.length === 0 ? "Coming Soon" : "Register Now"} <MdOutlineArrowRight />
                                     </Link>
                                 </div>
