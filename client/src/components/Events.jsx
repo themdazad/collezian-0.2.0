@@ -52,7 +52,7 @@ const Syllabus = () => {
                 <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll  px-[5%]  gap-4 py-6 ">
                     {
                         event_data.map((event,i) => (
-                            <div key={i} className="shadow-md hover:shadow-lg transition-shadow duration-350  snap-center min-w-[200px] max-w-[240px] h-full  gap-8 m-auto  bg-white/5 border border-zinc-300/40 rounded-3xl  overflow-clip"> 
+                            <div key={i} className="shadow-md hover:shadow-lg transition-shadow duration-350  snap-center min-w-[300px] max-w-[240px] h-full  gap-8 m-auto  bg-white/5 border border-zinc-300/40 rounded-3xl  overflow-clip"> 
                               <Image className="z-0 object-cover aspect-[4/3] w-full" src={event.image}  radius="none" alt="" />
                                 <div className="flex flex-col w-full m-auto p-[5%]">
                                     <h1 className="font-bold uppercase">{event.tittle.length === 0 ? "Exited !" :event.tittle} </h1>
