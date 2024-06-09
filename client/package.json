@@ -20,7 +20,8 @@
     "react-blaze-slider": "^1.7.2",
     "react-dom": "^18.2.0",
     "react-icons": "^5.1.0",
-    "react-router-dom": "^6.23.0"
+    "react-router-dom": "^6.23.0",
+    "react-storage-complete": "^1.1.10"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

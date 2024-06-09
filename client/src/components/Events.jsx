@@ -1,4 +1,4 @@
-import { Link, Image } from "@nextui-org/react";   
+import { Link} from "@nextui-org/react";   
 import { Carousel } from "flowbite-react";
 import { MdOutlineArrowRight } from "react-icons/md";
 

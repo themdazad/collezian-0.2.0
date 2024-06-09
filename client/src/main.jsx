@@ -8,10 +8,15 @@ import { Footer_Component } from './components/Footer_Component.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <NextUIProvider  >
+    <NextUIProvider>
+      <main className="dark:dark dark:text-foreground dark:bg-background">
       <Nav />
       <Path />
       <Footer_Component/>
+      </main>
+
+   
+
     </NextUIProvider>
   </BrowserRouter>,
 )

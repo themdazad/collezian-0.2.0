@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import ThemeSwitch from "./ThemeSwitch";
 import {
   Dropdown, Link, DropdownTrigger, DropdownMenu, DropdownItem, Button,
   Navbar, NavbarBrand, NavbarMenu, NavbarContent, NavbarItem, NavbarMenuToggle, Image
@@ -21,9 +22,10 @@ export default function Nav() {
           <NavLink as={NavLink} to="/">
             <Image src={Collezian} className=" w-12 -rotate-[20deg] hover:-rotate-[360deg] transition-transform duration-[2000]" />
           </NavLink>
-          <NavLink as={NavLink} to="/" className="font-bold max-sm:hidden text-inherit">
+          <NavLink as={NavLink} to="/" className="font-bold text-inherit">
             COLLEZIAN</NavLink>
         </NavbarBrand>
+       
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
@@ -80,12 +82,10 @@ export default function Nav() {
           </Button>
         </NavbarItem>
 
-
-
-
         <NavbarItem className="flex">
           <Link as={NavLink} to="#" startContent={<LuUploadCloud />} />
         </NavbarItem>
+
 
         <NavbarItem>
           <Button as={NavLink} color="primary" radius="full" to="#" variant="flat">
@@ -147,9 +147,6 @@ export default function Nav() {
           </Button>
         </NavbarItem>
 
-
-
-
         <NavbarItem className="flex">
           <Link as={NavLink} to="#" startContent={<LuUploadCloud />} />
         </NavbarItem>
@@ -159,10 +156,8 @@ export default function Nav() {
             Sign Up
           </Button>
         </NavbarItem>
-
       </NavbarMenu>
-
-
+      <ThemeSwitch/>
     </Navbar>
   );
 }
