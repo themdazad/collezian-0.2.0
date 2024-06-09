@@ -6,7 +6,6 @@ import {
   Navbar, NavbarBrand, NavbarMenu, NavbarContent, NavbarItem, NavbarMenuToggle, Image
 } from "@nextui-org/react";
 import { FiChevronDown } from "react-icons/fi";
-import { LuUploadCloud } from "react-icons/lu";
 import { NavLink } from "react-router-dom";
 import Collezian from "..//assets/Collezian.svg"
 import { PiNotebookDuotone, PiLightbulbFilamentDuotone, PiNewspaperDuotone, PiLaptopDuotone, PiBagDuotone, PiCalendarXDuotone } from "react-icons/pi";

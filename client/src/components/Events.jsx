@@ -31,7 +31,7 @@ const Syllabus = () => {
                     <p className="text-sm text-gray-500 mb-4 px-[10%] ">Best way to expand network and enhanced skills</p>
                 </center>
 
-                <div className="m-auto aspect-[4/3] overflow-hidden  shadow-xl rounded-3xl relative lg:aspect-[2.73/1]">
+                <div className="m-auto overflow-hidden  shadow-xl rounded-3xl relative aspect-[16/9] md:aspect-[2.73/1]">
                     <Carousel leftControl="" rightControl="">
 
                         <img alt="banner_image" className="object-cover w-full h-full in" src="/events/TechKshitizBanner.jpg" />
@@ -44,13 +44,13 @@ const Syllabus = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {
                         event_data.map((event, i) => (
-                            <div key={i} className="shadow-md hover:shadow-lg transition-shadow duration-350  min-w-[250px] h-full  gap-8 m-auto  bg-white/5  rounded-3xl  overflow-clip">
-                                <Image className="z-0 object-cover aspect-[4/3] w-full" src={event.image}  radius="none" alt="" />
+                            <div key={i} className="z-0 relative shadow-md hover:shadow-lg transition-shadow duration-350  min-w-[250px] h-full  gap-8 m-auto  bg-white/5  rounded-3xl">
+                            
                                 <div className="flex flex-col w-full m-auto p-[5%]">
                                     <h1>{event.tittle.length === 0 ? "Coming Soon" : event.tittle} </h1>
                                     <p className="text-gray-500 text-sm">{event.description.length === 0 ? "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ducimus." : event.description}</p>
-                                    <h3 className=" text-sm my-2 text-danger">{event.tittle.length === 0 ? "---" : event.last_date} </h3>
-                                    <Link href={event.registration_link} target="_blank" className=" text-sm font-bold cursor-pointer" color="primary" variant="flat"
+                                    <h3 className=" text-sm my-1 text-danger">{event.tittle.length === 0 ? "---" : event.last_date} </h3>
+                                    <Link href={event.registration_link} target="_blank" className=" text-sm font-semibold cursor-pointer" color="primary" variant="flat"
                                     >
                                         {event.tittle.length === 0 ? "Add Your College Event" : "Register Now"} <MdOutlineArrowRight />
                                     </Link>

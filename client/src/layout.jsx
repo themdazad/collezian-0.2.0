@@ -57,7 +57,7 @@ export function Features_Card() {
       <div className="snap-x flex scrollbar-hide overflow-scroll card  gap-8 px-[5%] content-stretch ">
         <div key={1} className="snap-center min-w-[320px] gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
 
-          <Image className=" object-cover aspect-[16/9]  ease-in duration-350 delay-0  z-0 w-full h-full " src={image1} radius="none" alt="" />
+          <Image className=" object-cover aspect-[16/9]  ease-in duration-350 delay-0  z-0 w-full h-full " src={image1} radius="none" alt="collezian-study-materials-image" />
 
           <div className="grid justify-center justif p-[5%] ">
             <h1>Study Materials</h1>
@@ -70,8 +70,8 @@ export function Features_Card() {
 
         <div key={2} className="snap-center min-w-[300px] content-start h-full gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
 
-          <Image className="object-cover  aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image2} radius="none" alt="" />
-
+          <Image className="object-cover  aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image2} radius="none" alt="collezian-golu-ai-image" />
+          
           <div className="grid justify-center p-[5%]">
             <h1>GOLU AI</h1>
             <p className="text-gray-500 text-sm">
