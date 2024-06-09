@@ -12,7 +12,7 @@ export function Footer_Component() {
             href="https://collezian.vercel.app"
             src={Collezian}
             alt="collezian Logo"
-            name="Collezin"
+            name="Collezian"
           />
           <FooterLinkGroup>
             <FooterLink className="hover:text-decoration-none text-[12px] hover:text-sky-600" href="#">About</FooterLink>

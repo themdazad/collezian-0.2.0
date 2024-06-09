@@ -36,7 +36,7 @@ export function Header() {
           </Button>
         </div>
           <div>
-          <Image className="object-fit lg:flex" src="/images/collezian_cloud.png"/>
+          <Image className="object-fit light:hidden lg:flex" src="/images/collezian_cloud.png"/>
           </div>
 
          
