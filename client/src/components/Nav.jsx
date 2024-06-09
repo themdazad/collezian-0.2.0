@@ -159,6 +159,6 @@ export default function Nav() {
       </NavbarMenu>
       <ThemeSwitch/>
 
-    </NavBar>
+    </Navbar>
   );
 }
