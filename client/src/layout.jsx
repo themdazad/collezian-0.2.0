@@ -24,7 +24,7 @@ export function Header() {
     <>
       <div className="px-[5%] py-[80px] w-full grid grid-cols-1 lg:grid-cols-2 justify-center content-center "  >
         <div className=" max-sm:text-center ">
-          <h3 className="my-4 text-6xl md:text-8xl font-bold">one <br />destination</h3>
+          <h3 className="my-4 text-6xl md:text-8xl font-semibold">one <br />destination</h3>
           <p className="text-gray-600">for all things related to engineering for free</p>
 
           <Image className="object-fit py-6 flex md:hidden" src="/images/collezian_ai.png" />
@@ -49,13 +49,13 @@ export function Header() {
 export function Features_Card() {
   return (
     <>
-    <center>
-      <h1 className=" text-2xl font-bold ">Collections</h1>
-      <p className="text-sm text-gray-500 mb-4 px-[10%] ">useful collections for your engineering journey</p>
-    </center>
+      <center>
+        <h1 className=" text-2xl font-bold ">Collections</h1>
+        <p className="text-sm text-gray-500 mb-4 px-[10%] ">useful collections for your engineering journey</p>
+      </center>
 
-      <div className="snap-x flex scrollbar-hide overflow-scroll card  gap-8 px-[5%] content-stretch ">
-        <div key={1} className="snap-center min-w-[320px] gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
+      <div className=" flex scrollbar-hide overflow-scroll card  gap-8 px-[5%] content-stretch ">
+        <div key={1} className=" min-w-[320px] gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
 
           <Image className=" object-cover aspect-[16/9]  ease-in duration-350 delay-0  z-0 w-full h-full " src={image1} radius="none" alt="collezian-study-materials-image" />
 
@@ -68,10 +68,10 @@ export function Features_Card() {
           </div>
         </div>
 
-        <div key={2} className="snap-center min-w-[300px] content-start h-full gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
+        <div key={2} className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
 
           <Image className="object-cover  aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image2} radius="none" alt="collezian-golu-ai-image" />
-          
+
           <div className="grid justify-center p-[5%]">
             <h1>GOLU AI</h1>
             <p className="text-gray-500 text-sm">
@@ -80,7 +80,7 @@ export function Features_Card() {
             <Link as={NavLink} to="/Events" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat">Say Hello!<MdOutlineArrowRight /> </Link>
           </div>
         </div>
-        <div key={3} className="snap-center min-w-[300px] content-start h-full gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
+        <div key={3} className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
 
           <Image className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image3} radius="none" alt="" />
 

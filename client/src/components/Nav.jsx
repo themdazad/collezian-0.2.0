@@ -34,7 +34,11 @@ export default function Nav() {
 
       {/*Desktop*/}
       <NavbarContent className="hidden gap-0 sm:flex" justify="center">
-
+      <NavbarItem>
+          <Button as={NavLink} to="#" variant="light">
+            Blogs
+          </Button>
+        </NavbarItem>
         <NavbarItem>
           <Dropdown>
             <DropdownTrigger>
@@ -80,11 +84,7 @@ export default function Nav() {
             Showcase
           </Button>
         </NavbarItem>
-        <NavbarItem>
-          <Button as={NavLink} to="#" variant="light">
-            Blogs
-          </Button>
-        </NavbarItem>
+        
 
         
 
@@ -99,7 +99,11 @@ export default function Nav() {
 
       {/*Mobile*/}
       <NavbarMenu aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="items-center justify-center bg-transparent md:hidden sm:flex " onClick={()=>{setIsMenuOpen(false);}}>
-
+      <NavbarItem>
+          <Button className="text-2xl font-bold" as={NavLink} to="#" variant="light">
+            Blogs
+          </Button>
+        </NavbarItem>
         <NavbarItem>
           <Dropdown>
             <DropdownTrigger>
