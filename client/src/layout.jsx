@@ -27,12 +27,12 @@ export function Header() {
           <h3 className="mt-4 text-6xl md:text-8xl  font-bold">one <br/>destination</h3>
           <p>for all things related to engineering for free</p>
 
-          <Button className="items-center my-6 p-6 text-sm font-semibold  max-w-min shadow-md rounded-3xl" color="none" variant="flat" startContent={<GoPeople />} 
+          <Button className="items-center my-6 p-6 text-sm font-semibold  max-w-min shadow-md rounded-3xl" color="none" variant="outlined" startContent={<GoPeople />} 
           style={{
             background: 'rgba(255, 255, 255, 0.6)', // Adjust color and opacity as needed
             backdropFilter: 'blur(5px)' // Adjust blur radius as needed
           }}>
-            <Link className="text-gray-500" href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5" target="_blank">Join Community</Link>
+            <Link href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5" target="_blank">Join Community</Link>
           </Button>
         </div>
           <div>
