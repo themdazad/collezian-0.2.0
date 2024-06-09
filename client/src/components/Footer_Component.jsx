@@ -8,12 +8,12 @@ export function Footer_Component() {
     <Footer container>
       <div className="w-full text-center ">
         <div className="flex items-center justify-between w-full max-md:flex-col">
-          <FooterBrand
+          {/* <FooterBrand
             href="https://collezian.vercel.app"
             src={Collezian}
             alt="collezian Logo"
             name="Collezian"
-          />
+          /> */}
           <FooterLinkGroup>
             <FooterLink className="hover:text-decoration-none text-[12px] hover:text-sky-600" href="#">About</FooterLink>
             <FooterLink className="hover:text-decoration-none text-[12px] hover:text-sky-600" href="#">Copyright Policy</FooterLink>

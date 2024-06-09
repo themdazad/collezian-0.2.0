@@ -103,14 +103,14 @@ export default function Nav() {
         <NavbarItem>
           <Dropdown>
             <DropdownTrigger>
-              <Button className="text-md font-bold"
+              <Button className="text-2xl font-bold"
                 variant="light"
                 endContent={<FiChevronDown />}
               >
                 College
               </Button>
             </DropdownTrigger>
-            <DropdownMenu className="text-lg" variant="faded" aria-label="Static Actions">
+            <DropdownMenu className="text-3xl" variant="faded" aria-label="Static Actions">
               <DropdownItem as={NavLink} to="/Events" key="Events" startContent={<PiCalendarXDuotone />}>Events</DropdownItem>
               <DropdownItem as={NavLink} to="/Projects" key="Projects" startContent={<PiLightbulbFilamentDuotone />}>Projects</DropdownItem>
               <DropdownItem as={NavLink} to="/Materials" key="Syllabus" startContent={<PiNewspaperDuotone />}>Syllabus</DropdownItem>
@@ -124,16 +124,16 @@ export default function Nav() {
 
         <NavbarItem >
           <Dropdown >
-            <DropdownTrigger className="text-md font-bold">
+            <DropdownTrigger className="text-2xl font-bold">
               <Button
                 variant="light" endContent={<FiChevronDown />}
               >
                 Careers
               </Button>
             </DropdownTrigger>
-            <DropdownMenu className="text-lg" variant="faded" aria-label="Static Actions">
-              <DropdownItem key="new" startContent={<PiBagDuotone />}>Jobs</DropdownItem>
-              <DropdownItem key="new" startContent={<PiLaptopDuotone />}>Intenships</DropdownItem>
+            <DropdownMenu className="text-3xl" variant="faded" aria-label="Static Actions">
+              <DropdownItem key="Jobs" startContent={<PiBagDuotone />}>Jobs</DropdownItem>
+              <DropdownItem key="Internships" startContent={<PiLaptopDuotone />}>Intenships</DropdownItem>
               <DropdownItem key="CheckResult" className="text-danger" color="danger">
                 Check Certificate
               </DropdownItem>
@@ -142,7 +142,7 @@ export default function Nav() {
 
         </NavbarItem>
         <NavbarItem>
-          <Button className="text-md font-bold" as={NavLink} to="#" variant="light">
+          <Button className="text-2xl font-bold" as={NavLink} to="#" variant="light">
             Showcase
           </Button>
         </NavbarItem>
@@ -152,7 +152,7 @@ export default function Nav() {
         </NavbarItem>
 
         <NavbarItem>
-          <Button className="text-md font-bold" as={NavLink} color="primary" radius="full" to="#" variant="flat">
+          <Button className="text-2xl font-bold" as={NavLink} color="primary" radius="full" to="#" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>
