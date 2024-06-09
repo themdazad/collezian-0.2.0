@@ -27,19 +27,18 @@ export function Header() {
           <h3 className="mt-4 text-6xl md:text-8xl  font-bold">one <br/>destination</h3>
           <p>for all things related to engineering for free</p>
 
-          <Button className="items-center my-6 p-6 text-sm font-semibold  max-w-min shadow-md rounded-3xl" color="none" variant="outlined" startContent={<GoPeople />} 
+          <Button className="items-center my-6 p-6 text-sm font-semibold text-black  border-1 dark:text-white max-w-min shadow-md rounded-3xl" color="none" variant="none" startContent={<GoPeople />} 
           style={{
-            background: 'rgba(255, 255, 255, 0.6)', // Adjust color and opacity as needed
-            backdropFilter: 'blur(5px)' // Adjust blur radius as needed
+             // Adjust color and opacity as needed
+            backdropFilter: 'blur(5px)' ,// Adjust blur radius as needed
+           
           }}>
-            <Link href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5" target="_blank">Join Community</Link>
+            <Link className="text-black dark:text-white" href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5" target="_blank">Join Community</Link>
           </Button>
         </div>
-          <div>
-          <Image className="object-fit hidden lg:flex" src="/images/collezian_cloud.png"/>
-          </div>
-
          
+          <Image className="object-fit flex" src="/images/collezian_ai.png"/>
+                  
           </div>
     </>
   )

@@ -13,7 +13,7 @@ import { PiNotebookDuotone, PiLightbulbFilamentDuotone, PiNewspaperDuotone, PiLa
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  
   return (
 
     <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
@@ -98,7 +98,7 @@ export default function Nav() {
 
 
       {/*Mobile*/}
-      <NavbarMenu aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="items-center justify-center bg-transparent md:hidden sm:flex ">
+      <NavbarMenu aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="items-center justify-center bg-transparent md:hidden sm:flex " onClick={()=>{setIsMenuOpen(false);}}>
 
         <NavbarItem>
           <Dropdown>
@@ -110,7 +110,7 @@ export default function Nav() {
                 College
               </Button>
             </DropdownTrigger>
-            <DropdownMenu className="text-3xl" variant="faded" aria-label="Static Actions">
+            <DropdownMenu className="text-3xl" variant="faded" aria-label="Static Actions" >
               <DropdownItem as={NavLink} to="/Events" key="Events" startContent={<PiCalendarXDuotone />}>Events</DropdownItem>
               <DropdownItem as={NavLink} to="/Projects" key="Projects" startContent={<PiLightbulbFilamentDuotone />}>Projects</DropdownItem>
               <DropdownItem as={NavLink} to="/Materials" key="Syllabus" startContent={<PiNewspaperDuotone />}>Syllabus</DropdownItem>
@@ -158,6 +158,7 @@ export default function Nav() {
         </NavbarItem>
       </NavbarMenu>
       <ThemeSwitch/>
-    </Navbar>
+
+    </NavBar>
   );
 }
