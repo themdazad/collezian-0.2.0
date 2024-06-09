@@ -100,21 +100,21 @@ export default function Nav() {
       {/*Mobile*/}
       <NavbarMenu aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="items-center justify-center bg-transparent md:hidden sm:flex " onClick={()=>{setIsMenuOpen(false);}}>
       <NavbarItem>
-          <Button className="text-2xl font-bold" as={NavLink} to="#" variant="light">
+          <Button className="text-3xl font-bold" as={NavLink} to="#" variant="light">
             Blogs
           </Button>
         </NavbarItem>
         <NavbarItem>
           <Dropdown>
             <DropdownTrigger>
-              <Button className="text-2xl font-bold"
+              <Button className="text-3xl font-bold"
                 variant="light"
                 endContent={<FiChevronDown />}
               >
                 College
               </Button>
             </DropdownTrigger>
-            <DropdownMenu className="text-3xl" variant="faded" aria-label="Static Actions" >
+            <DropdownMenu className="text-2xl" variant="faded" aria-label="Static Actions" >
               <DropdownItem as={NavLink} to="/Events" key="Events" startContent={<PiCalendarXDuotone />}>Events</DropdownItem>
               <DropdownItem as={NavLink} to="/Projects" key="Projects" startContent={<PiLightbulbFilamentDuotone />}>Projects</DropdownItem>
               <DropdownItem as={NavLink} to="/Materials" key="Syllabus" startContent={<PiNewspaperDuotone />}>Syllabus</DropdownItem>
@@ -128,14 +128,14 @@ export default function Nav() {
 
         <NavbarItem >
           <Dropdown >
-            <DropdownTrigger className="text-2xl font-bold">
+            <DropdownTrigger className="text-3xl font-bold">
               <Button
                 variant="light" endContent={<FiChevronDown />}
               >
                 Careers
               </Button>
             </DropdownTrigger>
-            <DropdownMenu className="text-3xl" variant="faded" aria-label="Static Actions">
+            <DropdownMenu className="text-2xl" variant="faded" aria-label="Static Actions">
               <DropdownItem key="Jobs" startContent={<PiBagDuotone />}>Jobs</DropdownItem>
               <DropdownItem key="Internships" startContent={<PiLaptopDuotone />}>Intenships</DropdownItem>
               <DropdownItem key="CheckResult" className="text-danger" color="danger">
@@ -146,17 +146,13 @@ export default function Nav() {
 
         </NavbarItem>
         <NavbarItem>
-          <Button className="text-2xl font-bold" as={NavLink} to="#" variant="light">
+          <Button className="text-3xl font-bold" as={NavLink} to="#" variant="light">
             Showcase
           </Button>
         </NavbarItem>
 
-        <NavbarItem className="flex">
-          <Link as={NavLink} to="#">Blogs</Link>
-        </NavbarItem>
-
         <NavbarItem>
-          <Button className="text-2xl font-bold" as={NavLink} color="primary" radius="full" to="#" variant="flat">
+          <Button className="text-xl font-bold" as={NavLink} color="primary" radius="full" to="#" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>
