@@ -13,7 +13,7 @@ const Layout = () => {
     <>
       <Header />
       <Features_Card />
-      <Events/>
+      <Events />
     </>
   )
 }; export default Layout;
@@ -22,24 +22,25 @@ const Layout = () => {
 export function Header() {
   return (
     <>
-      <div className="px-[5%] py-[100px] w-full grid grid-cols-1 lg:grid-cols-2 justify-center content-center "  >
+      <div className="px-[5%] py-[80px] w-full grid grid-cols-1 lg:grid-cols-2 justify-center content-center "  >
         <div className=" max-sm:text-center ">
-          <h3 className="mt-4 text-6xl md:text-8xl  font-bold">one <br/>destination</h3>
-          <p>for all things related to engineering for free</p>
+          <h3 className="my-4 text-6xl md:text-8xl font-bold">one <br />destination</h3>
+          <p className="text-gray-600">for all things related to engineering for free</p>
 
-          <Button className="items-center my-6 p-6 text-sm font-semibold text-black  border-1 dark:text-white max-w-min shadow-md rounded-3xl" color="none" variant="none" startContent={<GoPeople />} 
-          style={{
-             // Adjust color and opacity as needed
-            backdropFilter: 'blur(5px)' ,// Adjust blur radius as needed
-           
-          }}>
+          <Image className="object-fit py-6 flex md:hidden" src="/images/collezian_ai.png" />
+          <Button className="items-center my-6 p-6 text-sm font-semibold text-black  border-1 dark:text-white max-w-min shadow-md rounded-3xl" color="none" variant="none" startContent={<GoPeople />}
+            style={{
+              // Adjust color and opacity as needed
+              backdropFilter: 'blur(5px)',// Adjust blur radius as needed
+
+            }}>
             <Link className="text-black dark:text-white" href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5" target="_blank">Join Community</Link>
           </Button>
         </div>
-         
-          <Image className="object-fit flex" src="/images/collezian_ai.png"/>
-                  
-          </div>
+
+        <Image className="object-fit hidden lg:flex" src="/images/collezian_ai.png" />
+
+      </div>
     </>
   )
 }
@@ -48,54 +49,55 @@ export function Header() {
 export function Features_Card() {
   return (
     <>
-      {/* <p className="text-center text-lg md:text-3xl font-bold ">Here you can find!</p> */}
+    <center>
+      <h1 className=" text-2xl font-bold ">Collections</h1>
+      <p className="text-sm text-gray-500 mb-4 px-[10%] ">useful collections for your engineering journey</p>
+    </center>
 
-        <div className="snap-mandatory snap-x flex scrollbar-hide overflow-scroll card  gap-8 py-2 px-[5%] content-stretch ">
-          <div key={1} className="snap-center min-w-[300px] gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
+      <div className="snap-x flex scrollbar-hide overflow-scroll card  gap-8 px-[5%] content-stretch ">
+        <div key={1} className="snap-center min-w-[320px] gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
 
-            <Image className=" object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full "  src={image1} radius="none" alt="" />
+          <Image className=" object-cover aspect-[16/9]  ease-in duration-350 delay-0  z-0 w-full h-full " src={image1} radius="none" alt="" />
 
-            <div className="grid justify-center justif p-[5%] ">
-              <h1 className=" font-semibold  ">Study Materials</h1>
-              <p className="text-gray-500 text-sm">
-                Free engineering study materials, including PYQs, Syllabus and notes.
-              </p>
-              <Link as={NavLink} to="Materials" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat">Explore Materials<MdOutlineArrowRight /> </Link>
-            </div>
+          <div className="grid justify-center justif p-[5%] ">
+            <h1>Study Materials</h1>
+            <p className="text-gray-500 text-sm">
+              Free engineering study materials, including PYQs, Syllabus and notes.
+            </p>
+            <Link as={NavLink} to="Materials" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat">Explore Materials<MdOutlineArrowRight /> </Link>
           </div>
-
-          <div  key={2} className="snap-center min-w-[300px] content-start h-full gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
-
-            <Image className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image2}  radius="none" alt="" />
-
-            <div className="grid justify-center p-[5%]">
-              <h1 className=" font-semibold ">GOLU AI</h1>
-              <p className="text-gray-500 text-sm">
-              Effortless learning, endless possibilities. Meet GOLU ai: Your personal study buddy. 
-              </p>
-              <Link as={NavLink} to="/Events" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat">Say Hello!<MdOutlineArrowRight /> </Link>
-            </div>
-          </div>
-          <div  key={3} className="snap-center min-w-[300px] content-start h-full gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
-
-            <Image className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image3}  radius="none" alt="" />
-
-            <div className="grid justify-center p-[5%]">
-              <h1 className=" font-semibold ">Contests & Events</h1>
-              <p className="text-gray-500 text-sm">
-              Provides a comprehensive list of upcoming coding contests and tech events. 
-              </p>
-              <Link as={NavLink} to="/Events" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat"> View Events<MdOutlineArrowRight /> </Link>
-            </div>
-          </div>  
-          
-
         </div>
 
-        <center>
-          <Image className=" " src="/gif/dotted-line.png" width={60} />
-        </center>
-      
+        <div key={2} className="snap-center min-w-[300px] content-start h-full gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
+
+          <Image className="object-cover  aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image2} radius="none" alt="" />
+
+          <div className="grid justify-center p-[5%]">
+            <h1>GOLU AI</h1>
+            <p className="text-gray-500 text-sm">
+              Effortless learning, endless possibilities. Meet GOLU ai: Your personal study buddy.
+            </p>
+            <Link as={NavLink} to="/Events" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat">Say Hello!<MdOutlineArrowRight /> </Link>
+          </div>
+        </div>
+        <div key={3} className="snap-center min-w-[300px] content-start h-full gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
+
+          <Image className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image3} radius="none" alt="" />
+
+          <div className="grid justify-center p-[5%]">
+            <h1>Contests & Events</h1>
+            <p className="text-gray-500 text-sm">
+              Provides a comprehensive list of upcoming coding contests and tech events.
+            </p>
+            <Link as={NavLink} to="/Events" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat"> View Events<MdOutlineArrowRight /> </Link>
+          </div>
+        </div>
+      </div>
+
+      <center>
+        <span className="text-4xl">. . .</span>
+      </center>
+
     </>
-  );
+  )
 }

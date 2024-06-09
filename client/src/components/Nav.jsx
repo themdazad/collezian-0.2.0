@@ -81,18 +81,19 @@ export default function Nav() {
             Showcase
           </Button>
         </NavbarItem>
-
-        <NavbarItem className="flex">
-          <Link as={NavLink} to="#" startContent={<LuUploadCloud />} />
+        <NavbarItem>
+          <Button as={NavLink} to="#" variant="light">
+            Blogs
+          </Button>
         </NavbarItem>
 
+        
 
         <NavbarItem>
           <Button as={NavLink} color="primary" radius="full" to="#" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>
-
       </NavbarContent>
 
 
@@ -148,7 +149,7 @@ export default function Nav() {
         </NavbarItem>
 
         <NavbarItem className="flex">
-          <Link as={NavLink} to="#" startContent={<LuUploadCloud />} />
+          <Link as={NavLink} to="#">Blogs</Link>
         </NavbarItem>
 
         <NavbarItem>
