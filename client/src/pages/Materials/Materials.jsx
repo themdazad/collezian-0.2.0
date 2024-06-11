@@ -50,19 +50,19 @@ export default function Materials() {
                                 Stay updated with the latest exam results and academic achievements.
                             </p>
                             <div className="flex gap-2 mt-4 lint_buttons">
-                                    <NavLink to="/Materials/Bihar/BEU_Patna/Syllabus">
+                                    <NavLink to="/Materials/BEU_Syllabus">
                                 <Button className="items-center text-sm max-w-min rounded-xl" color="primary" variant="flat" >
                                         Syllabus
                                 </Button>
                                     </NavLink>
 
-                                    <NavLink to="/Materials/Bihar/BEU_Patna/Notes">
+                                    <NavLink to="/Materials/BEU_Notes">
                                 <Button className="items-center text-sm max-w-min rounded-xl" color="primary" variant="flat" >
                                         Notes
                                 </Button>
                                     </NavLink>
 
-                                    <NavLink to="/Materials/Bihar/BEU_Patna/PYQs">
+                                    <NavLink to="/Materials/BEU_PYQs">
                                 <Button className="items-center text-sm max-w-min rounded-xl" color="primary" variant="flat" >
                                         PYQs
                                 </Button>
