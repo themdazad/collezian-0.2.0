@@ -13,32 +13,8 @@ import { GoSidebarExpand } from "react-icons/go";
 
 function Projects() {
   return (
-    <div className="grid md:grid-cols-12 gap-6 max-md:px-[5%] ">
-      
-      <Sidebar className="relative col-span-3 max-md:hidden  " aria-label="">
-      <div className="absolute right-4 "><GoSidebarExpand /></div>
-        <h1 className="text-center text-2xl font-bold "> Projects</h1>
-        <hr className="my-2" />
-      <Sidebar.Items >
-        <Sidebar.ItemGroup>
-      {/* also will be on loop */}
-        <Sidebar.Collapse icon={MdElectricBolt} label="Electrical Engineering ">
-            <Sidebar.Item href="#">Project title</Sidebar.Item>
-            
-        </Sidebar.Collapse>
-        
-
-          
-        </Sidebar.ItemGroup>
-        {/* After horizontal seperator line */}
-        <Sidebar.ItemGroup>
-          <Sidebar.Item href="#" icon={LuUploadCloud}>
-            Upload Projects
-          </Sidebar.Item>
-          
-        </Sidebar.ItemGroup>
-      </Sidebar.Items>
-    </Sidebar>
+    <div className="grid md:grid-cols-12 gap-6 lg:px-[15%] pt-12">
+   
      
       <div className="content lg:col-span-8">
         {/* Project Title Name  */}

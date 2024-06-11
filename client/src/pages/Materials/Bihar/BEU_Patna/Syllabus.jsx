@@ -112,7 +112,20 @@ export const BEU_Syllabus = () => {
               <Button isDisabled variant="flat" color="primary" >7th </Button>
               <Button isDisabled variant="flat" color="primary" >8th </Button>
             </div>
+            </span><span>
+            <p className="text-sm">Cyber Security</p>
+            <div className="pdf_download_btn flex gap-4 my-2">
+              <Button isDisabled variant="flat" color="primary" >1st </Button>
+              <Button isDisabled variant="flat" color="primary" >2nd </Button>
+              <Button isDisabled variant="flat" color="primary" >3rd </Button>
+              <Button isDisabled variant="flat" color="primary" >4th </Button>
+              <Button isDisabled variant="flat" color="primary" >5th </Button>
+              <Button isDisabled variant="flat" color="primary" >6th </Button>
+              <Button isDisabled variant="flat" color="primary" >7th </Button>
+              <Button isDisabled variant="flat" color="primary" >8th </Button>
+            </div>
             </span>
+
           </AccordionItem>
 
 

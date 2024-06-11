@@ -18,7 +18,7 @@ export default function Path() {
   return (
 
     <Routes>
-      <Route path="/" element={<Layout />} />
+      <Route path="" element={<Layout />} />
 
       {/* Adding pages in outlet portion of Layout */}
       <Route path="/Events" element={<Events />} />
@@ -29,7 +29,7 @@ export default function Path() {
         <Route path="/Contact" element={<Contact />} />
 
         {/* Bihar  */}
-        <Route path="/BEU_Syllabus" element={<BEU_Syllabus />} />
+        <Route path="/Materials/BEU_Syllabus" element={<BEU_Syllabus />} />
         <Route path="/Materials/BEU_Notes" element={<BEU_Notes />} />
         <Route path="/Materials/BEU_PYQs" element={<BEU_PYQS />} />
         <Route path="/Materials/Bihar/SBTE/Syllabus" element={<SBTE_Syllabus />} />

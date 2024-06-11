@@ -52,7 +52,7 @@ export default function Nav() {
             <DropdownMenu variant="faded" aria-label="Static Actions">
               <DropdownItem as={NavLink} to="/Events" key="Events" startContent={<PiCalendarXDuotone />}>Events</DropdownItem>
               <DropdownItem as={NavLink} to="/Projects" key="Projects" startContent={<PiLightbulbFilamentDuotone />}>Projects</DropdownItem>
-              <DropdownItem as={NavLink} to="/BEU_Syllabus" key="Syllabus" startContent={<PiNewspaperDuotone />}>BEU Syllabus</DropdownItem>
+              <DropdownItem as={NavLink} to="/Materials/BEU_Syllabus" key="Syllabus" startContent={<PiNewspaperDuotone />}>BEU Syllabus</DropdownItem>
               <DropdownItem as={NavLink} to="/Materials" key="Materials" startContent={<PiNotebookDuotone />}>Study Materials</DropdownItem>
               <DropdownItem as={NavLink} to="/Result" key="CheckResult" className="text-danger" color="danger">
                 Check Result
