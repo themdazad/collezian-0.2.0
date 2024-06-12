@@ -32,7 +32,7 @@ export default function Path() {
         <Route path="/Materials/BEU_Syllabus" element={<BEU_Syllabus />} />
         <Route path="/Materials/BEU_Notes" element={<BEU_Notes />} />
         <Route path="/Materials/BEU_PYQs" element={<BEU_PYQS />} />
-        <Route path="/Materials/Bihar/SBTE/Syllabus" element={<SBTE_Syllabus />} />
+        <Route path="/Materials/SBTE_Syllabus" element={<SBTE_Syllabus />} />
         <Route path="/Materials/Bihar/SBTE/Notes" element={<SBTE_Notes />} />
         <Route path="/Materials/Bihar/SBTE/PYQs" element={<SBTE_PYQS />} />
 
