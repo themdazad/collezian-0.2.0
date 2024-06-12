@@ -1,14 +1,10 @@
 "use client";
 
 import { Carousel } from "flowbite-react";
-import { Sidebar } from "flowbite-react";
-import { LuUploadCloud } from "react-icons/lu";
-import { MdElectricBolt } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { FiDownloadCloud } from "react-icons/fi";
 import { SlBasket } from "react-icons/sl";
 import {Button} from "@nextui-org/react";
-import { GoSidebarExpand } from "react-icons/go";
 
 
 function Projects() {
@@ -26,7 +22,7 @@ function Projects() {
 
         <h1 className="text-3xl">Student’s Project Tittle</h1>
 
-        <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 my-6">
+        <div className="h-56 my-6 sm:h-64 xl:h-80 2xl:h-96">
       {/* <Carousel leftControl="left" rightControl="right"> */}
       <Carousel leftControl=" " rightControl=" " >
         <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
@@ -37,23 +33,23 @@ function Projects() {
       </Carousel>
         </div>
 
-        <div className="Introduction  my-12 ">
-          <h2 className="text-2xl font-bold my-4">Introduction</h2>
+        <div className="my-12 Introduction ">
+          <h2 className="my-4 text-2xl font-bold">Introduction</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut consequatur, ipsa fuga officia molestias suscipit minus, cupiditate dolorem tenetur dicta itaque tempore et quos aliquam voluptatibus dolor est quidem vero sed sit. Ad et quae non quis aperiam reiciendis, consequatur minus facere a enim dicta.</p>
         </div>
 
-        <div className="Background my-12">
-          <h2 className="text-lg font-semibold my-4">Background</h2>
+        <div className="my-12 Background">
+          <h2 className="my-4 text-lg font-semibold">Background</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut consequatu dolorem tenetur dicta itaque tempore et quos aliquam voluptatibus dolor est quidem vero sed sit. Ad et quae non quis aperiam reiciendis, consequatur minus facere a enim dicta.</p>
         </div>
 
-        <div className="Needs my-12">
-          <h2 className="text-lg font-semibold my-4">Needs</h2>
+        <div className="my-12 Needs">
+          <h2 className="my-4 text-lg font-semibold">Needs</h2>
           <p>Lorem ipsum, dolor suscipit minus, cupiditate dolorem tenetur dicta itaque tempore et quos aliquam voluptatibus dolor est quidem vero sed sit. Ad et quae non quis aperiam reiciendis, consequatur minus facere a enim dicta.</p>
         </div>
 
-        <div className="Future my-12">
-          <h2 className="text-lg font-semibold my-4">Future Goals</h2>
+        <div className="my-12 Future">
+          <h2 className="my-4 text-lg font-semibold">Future Goals</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut consequatur, ipsa fuga officia molestias suscipit minus, cupiditate dolorem tenetur dicta itaque tempore et quos aliquam voluptatibus dolor est quidem vero sed sit. Ad et quae non quis aperiam reiciendis, consequatur minus facere a enim dicta.</p>
         </div>
 
@@ -67,7 +63,7 @@ function Projects() {
             </div>
 
         
-          <div className="buttons flex gap-4">
+          <div className="flex gap-4 buttons">
             <Button color="primary" variant="light"><FiDownloadCloud/>Download</Button>
             <Button color="primary" variant="solid"><SlBasket/>Order Now</Button>
           </div>

@@ -26,7 +26,7 @@ export default function Nav() {
         </NavbarBrand>
        
         <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          ajabel={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
       </NavbarContent>
@@ -118,6 +118,7 @@ export default function Nav() {
               <DropdownItem as={NavLink} to="/Events" key="Events" startContent={<PiCalendarXDuotone />}>Events</DropdownItem>
               <DropdownItem as={NavLink} to="/Projects" key="Projects" startContent={<PiLightbulbFilamentDuotone />}>Projects</DropdownItem>
               <DropdownItem as={NavLink} to="/Materials/BEU_Syllabus" key="Syllabus" startContent={<PiNewspaperDuotone />}>BEU Syllabus</DropdownItem>
+              <DropdownItem as={NavLink} to="/Materials/SBTE_Syllabus" key="Syllabus" startContent={<PiNewspaperDuotone />}>SBTE Syllabus</DropdownItem>
               <DropdownItem as={NavLink} to="/Materials" key="Materials" startContent={<PiNotebookDuotone />}>Study Materials</DropdownItem>
               <DropdownItem as={NavLink} to="/Result" key="CheckResult" className="text-danger" color="danger">
                 Check Result

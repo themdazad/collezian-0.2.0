@@ -23,12 +23,12 @@ export function Header() {
   return (
     <>
       <div className="px-[5%] py-[80px] w-full grid grid-cols-1 lg:grid-cols-2 justify-center content-center "  >
-        <div className=" max-sm:text-center ">
-          <h3 className="my-4 text-6xl md:text-8xl font-semibold">one <br />destination</h3>
+        <div className=" max-sm:text-center">
+          <h3 className="my-4 text-6xl font-semibold md:text-8xl">one <br />destination</h3>
           <p className="text-gray-600">for all things related to engineering for free</p>
 
-          <Image className="object-fit py-6 flex md:hidden" src="/images/collezian_ai.png" />
-          <Button className="items-center my-6 p-6 text-sm font-semibold text-black  border-1 dark:text-white max-w-min shadow-md rounded-3xl" color="none" variant="none" startContent={<GoPeople />}
+          <Image className="flex py-6 object-fit md:hidden" src="/images/collezian_ai.png" />
+          <Button className="items-center p-6 my-6 text-sm font-semibold text-black shadow-md border-1 dark:text-white max-w-min rounded-3xl" color="none" variant="none" startContent={<GoPeople />}
             style={{
               // Adjust color and opacity as needed
               backdropFilter: 'blur(5px)',// Adjust blur radius as needed
@@ -38,7 +38,7 @@ export function Header() {
           </Button>
         </div>
 
-        <Image className="object-fit hidden lg:flex" src="/images/collezian_ai.png" />
+        <Image className="hidden object-fit lg:flex" src="/images/collezian_ai.png" />
 
       </div>
     </>
@@ -50,8 +50,8 @@ export function Features_Card() {
   return (
     <>
       <center>
-        <h1 className=" text-2xl font-bold ">Collections</h1>
-        <p className="text-sm text-gray-500 mb-4 px-[10%] ">useful collections for your engineering journey</p>
+        <h1 className="text-2xl font-bold ">Categories</h1>
+        <p className="text-sm text-gray-500 mb-4 px-[10%] ">useful categories for your engineering journey</p>
       </center>
 
       <div className=" flex scrollbar-hide overflow-scroll card  gap-8 px-[5%] content-stretch ">
@@ -61,7 +61,7 @@ export function Features_Card() {
 
           <div className="grid justify-center justif p-[5%] ">
             <h1>Study Materials</h1>
-            <p className="text-gray-500 text-sm">
+            <p className="text-sm text-gray-500">
               Free engineering study materials, including PYQs, Syllabus and notes.
             </p>
             <Link as={NavLink} to="Materials" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat">Explore Materials<MdOutlineArrowRight /> </Link>
@@ -74,7 +74,7 @@ export function Features_Card() {
 
           <div className="grid justify-center p-[5%]">
             <h1>GOLU AI</h1>
-            <p className="text-gray-500 text-sm">
+            <p className="text-sm text-gray-500">
               Effortless learning, endless possibilities. Meet GOLU ai: Your personal study buddy.
             </p>
             <Link as={NavLink} to="/Events" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat">Say Hello!<MdOutlineArrowRight /> </Link>
@@ -86,7 +86,7 @@ export function Features_Card() {
 
           <div className="grid justify-center p-[5%]">
             <h1>Contests & Events</h1>
-            <p className="text-gray-500 text-sm">
+            <p className="text-sm text-gray-500">
               Provides a comprehensive list of upcoming coding contests and tech events.
             </p>
             <Link as={NavLink} to="/Events" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat"> View Events<MdOutlineArrowRight /> </Link>

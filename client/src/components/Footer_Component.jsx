@@ -18,22 +18,21 @@ export function Footer_Component() {
             alt="collezian Logo"
             name="Collezian"
           /> */}
-          <span className="flex max-sm:justify-center text-3xl gap-4 my-4">
+          <span className="flex gap-4 my-4 text-3xl max-sm:justify-center">
           <a className="font-semibold" target="_blank" href="https://www.instagram.com/the_mdazad/"><PiInstagramLogo /></a>
           <a className="font-semibold" target="_blank" href="https://x.com/collezian?t=tCwyjsr_4LANcNR5oAkHCg&s=08"><FaXTwitter /></a>
           <a className="font-semibold" target="_blank" href="https://www.youtube.com/@collezian_community"><TfiYoutube  /></a>
           <a className="font-semibold" target="_blank" href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5"><FaWhatsapp  /></a>
         </span>
           <FooterLinkGroup>
-            <FooterLink className="hover:text-decoration-none text-[12px" href="#">About</FooterLink>
+            <FooterLink className="hover:text-decoration-none text-[12px]" href="#">About</FooterLink>
             <FooterLink className="hover:text-decoration-none text-[12px]" href="#">Copyright Policy</FooterLink>
             <NavLink to="Contact" className="text-[12px] hover:text-sky-600" href="#">Contact</NavLink>
           </FooterLinkGroup>
         </div>        
-
-        <FooterDivider />
+              <hr/>
         <FooterCopyright href="#" by="Collezian™" year={currentYear} />
-        <p className="text-[12px]">Designed and Developed with <span >❤</span> | By <a className=" text-sky-600 font-semibold" target="_blank" href="https://www.instagram.com/the_mdazad/">Azad</a></p>
+        <p className="text-[12px]">Designed and Developed with <span >❤</span> | By <a className="font-semibold text-sky-600" target="_blank" href="https://www.instagram.com/the_mdazad/">Azad</a></p>
       </div>
     </Footer>
   );
