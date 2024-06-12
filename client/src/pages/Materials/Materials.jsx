@@ -32,7 +32,7 @@ export default function Materials() {
             {/* Materials  */}
             <div className="py-6 px-[5%]">
                 <p className="text-4xl font-semibold text-center CardTittle">Study Materials</p>
-                <h2 className="text-center text-sm text-gray-500 ">Choose your state and explore engineering resources for free</h2>
+                <h2 className="text-sm text-center text-gray-500 ">Choose your state and explore engineering resources for free</h2>
 
                 <h2 className="py-6 text-2xl font-semibold ">Bihar Engineering</h2>
                 <div className="grid grid-cols-1 gap-6 mb-12 card md:grid-cols-2 lg:grid-cols-3 content-stretch">
