@@ -1,38 +1,109 @@
-import { CgPen } from "react-icons/cg"
 import { MdBook } from "react-icons/md";
 import { MdDownload } from "react-icons/md";
-import { Button} from "@nextui-org/react";
+import { Button, Input } from "@nextui-org/react";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
+
+const notes_data = [
+  {
+    tittle: "Subject",
+    description:
+      "  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, commodi!",
+    uploaded: "01 JAN 2025",
+    owner: "collezian",
+  },
+  {
+    tittle: "Subject",
+    description:
+      "  Data is coming from local API. consectetur adipisicing elit. Delectus, commodi!",
+    uploaded: "01 JAN 2025",
+    owner: "collezian",
+  },
+  {
+    tittle: "Subject",
+    description:
+      "  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, commodi!",
+    uploaded: "01 JAN 2025",
+    owner: "collezian",
+  },
+  {
+    tittle: "Subject",
+    description:
+      "  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, commodi!",
+    uploaded: "01 JAN 2025",
+    owner: "collezian",
+  },
+  {
+    tittle: "Subject",
+    description:
+      "  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, commodi!",
+    uploaded: "01 JAN 2025",
+    owner: "collezian",
+  },
+];
+
 export const BEU_Notes = () => {
+  const [data, setData] = useState(notes_data);
   return (
     <>
-      <div className="py-6 px-[5%]">
-        <p className="text-3xl font-bold text-center CardTittle text-sky-600 flex justify-center"><CgPen />Notes</p>
-        <h2 className="text-center font-semibold text-sky-600">Bihar Engineering University, Patna</h2>
-      </div>
- 
- {/* Need to add searchBar to filter Notes  */}
-
-      <section className="px-[5%] grid grid-cols-2 ">
-        <div className="card bg-gray-200 p-4 rounded-xl">
-          <div className="tittle text-xl font-bold">Name of Subject</div>
-          <div className="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus iusto error temporibus?</div>
-          <div className="buttons flex gap-4 mt-2">
-            <NavLink to="/Materials/Bihar/SBTE/Syllabus">
-              <Button className="items-center text-sm max-w-min rounded-xl" color="primary" variant="flat" >
-                <MdBook/>
-                Read
-              </Button>
-            </NavLink>
-            <NavLink to="/Materials/Bihar/SBTE/Syllabus">
-              <Button className="items-center text-sm max-w-min rounded-xl " color="primary" variant="flat" >
-              <MdDownload/>
-                Download
-              </Button>
-            </NavLink>
-          </div>
-        </div>
+      <center>
+        <h1 className="text-2xl font-bold ">BEU Notes</h1>
+        <p className="text-sm text-gray-500 mb-4 px-[10%] ">
+          Bihar Engineering University, Patna
+        </p>
+      </center>
+      {/* Need to add searchBar to filter Notes  latter */}
+     
+      
+      <section className="px-[5%] py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6">
+        {data.map((notes, i) => {
+          return (
+            <div
+              key={i}
+              className="p-4 border shadow-sm border-zinc-300/50 hover:shadow-xl bg-white/5 card rounded-xl"
+            >
+              <div className="font-semibold uppercase notesTittle">
+                {notes.tittle}-{i + 1}
+              </div>
+              <div className="text-sm text-gray-500 description">
+                {notes.description}
+              </div>
+              <div className="flex gap-4 mt-4 buttons">
+                <NavLink>
+                  <Button
+                    isDisabled
+                    className="items-center text-sm max-w-min rounded-xl"
+                    size="sm"
+                    color="primary"
+                    variant="flat"
+                  >
+                    <MdBook />
+                    Read
+                  </Button>
+                </NavLink>
+                <NavLink>
+                  <Button
+                    isDisabled
+                    className="items-center text-sm max-w-min rounded-xl "
+                    size="sm"
+                    color="primary"
+                    variant="flat"
+                  >
+                    <MdDownload />
+                    Download
+                  </Button>
+                </NavLink>
+              </div>
+              <div className="cardFooter text-[12px] flex text-gray-500 mt-2 gap-4">
+                <p>Uploaded: {notes.uploaded}</p>
+                <p>
+                  By: <a>@{notes.owner}</a>
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </section>
     </>
-  )
-}
+  );
+};

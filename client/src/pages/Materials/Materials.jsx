@@ -107,7 +107,7 @@ export default function Materials() {
                     </div>
 
                     {/* BCECE LE   */}
-                    <div className="gap-12 m-auto border shadow-sm border-zinc-300/10 hover:shadow-xl bg-white/5 rounded-3xl overflow-clip">
+                    <div className="gap-12 m-auto border shadow-sm border-zinc-300/50 hover:shadow-xl bg-white/5 rounded-3xl overflow-clip">
                         <div>
                             <img className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full " src="https://img.freepik.com/free-photo/caucasian-male-studying-literature-indoors-library-generated-by-ai_188544-38939.jpg?t=st=1715711129~exp=1715714729~hmac=c76e59c46801b768505df735e6f4beac756f4ebccc1e5496d82f5b810ad7d6b5&w=826" alt="" />
                         </div>

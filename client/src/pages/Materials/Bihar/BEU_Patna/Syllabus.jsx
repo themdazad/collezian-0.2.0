@@ -8,7 +8,7 @@ export const BEU_Syllabus = () => {
         <p className="text-sm text-gray-500 mb-4 px-[10%] ">Bihar Engineering University, Patna</p>
       </center>
 
-      <section className="px-[5%] md:px-[15%]">
+      <section className="px-[5%]  md:px-[15%]">
         <Accordion>
           <AccordionItem a className="gap-4" key="1" aria-label="Accordion 1" subtitle="Click here to expand" title="Electrical Engineering">
             <div className="flex gap-4 my-2 pdf_download_btn">

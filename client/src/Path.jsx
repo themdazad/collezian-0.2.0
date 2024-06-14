@@ -36,8 +36,6 @@ export default function Path() {
         <Route path="/Materials/Bihar/SBTE/Notes" element={<SBTE_Notes />} />
         <Route path="/Materials/Bihar/SBTE/PYQs" element={<SBTE_PYQS />} />
 
-         
-       
       </Routes>
 
   );
