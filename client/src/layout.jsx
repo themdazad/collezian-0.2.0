@@ -39,7 +39,7 @@ export function Header() {
           </Button>
         </div>
 
-        <Image className="object-cover lg:flex" src="/images/collezian_ai.png" />
+        <Image className="hidden object-cover lg:flex" src="/images/collezian_ai.png" />
       </div>
     </>
   )
