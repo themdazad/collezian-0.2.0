@@ -1,6 +1,7 @@
 import { Link,Image } from "@nextui-org/react";
 import { Carousel } from "flowbite-react";
 import { MdOutlineArrowRight } from "react-icons/md";
+import { motion } from "framer-motion"
 
 
 const event_data = [
@@ -27,7 +28,7 @@ const Syllabus = () => {
         <>
             <div className="py-12 px-[5%]">
                 <center>
-                    <h1 className=" text-2xl font-bold ">College Events</h1>
+                    <h1 className="text-2xl font-bold ">College Events</h1>
                     <p className="text-sm text-gray-500 mb-4 px-[10%] ">Best way to expand network and enhanced skills</p>
                 </center>
 
@@ -40,22 +41,25 @@ const Syllabus = () => {
                     </Carousel>
                 </div>
 
-                <h1 className="text-lg font-semibold m-4 mt-6 ">Events Schedule</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <h1 className="m-4 mt-6 text-lg font-semibold ">Events Schedule</h1>
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                     {
                         event_data.map((event, i) => (
-                            <div key={i} className="z-0 relative shadow-md hover:shadow-lg transition-shadow duration-350  min-w-[250px] h-full  gap-8 m-auto  bg-white/5  rounded-3xl">
+                            <motion.div
+                            whileHover={{ scale: 0.9 }}
+                            onHoverStart={e => {}}
+                            onHoverEnd={e => {}} key={i} className="z-0 relative shadow-md hover:shadow-lg transition-shadow duration-350  min-w-[250px] h-full  gap-8 m-auto  bg-white/5  rounded-3xl">
                             
                                 <div className="flex flex-col w-full m-auto p-[5%]">
                                     <h1>{event.tittle.length === 0 ? "Coming Soon" : event.tittle} </h1>
-                                    <p className="text-gray-500 text-sm">{event.description.length === 0 ? "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ducimus." : event.description}</p>
-                                    <h3 className=" text-sm my-1 text-danger">{event.tittle.length === 0 ? "---" : event.last_date} </h3>
-                                    <Link href={event.registration_link} target="_blank" className=" text-sm font-semibold cursor-pointer" color="primary" variant="flat"
+                                    <p className="text-sm text-gray-500">{event.description.length === 0 ? "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ducimus." : event.description}</p>
+                                    <h3 className="my-1 text-sm text-danger">{event.tittle.length === 0 ? "---" : event.last_date} </h3>
+                                    <Link href={event.registration_link} target="_blank" className="text-sm font-semibold cursor-pointer " color="primary" variant="flat"
                                     >
                                         {event.tittle.length === 0 ? "Add Your College Event" : "Register Now"} <MdOutlineArrowRight />
                                     </Link>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))
                     }
 

@@ -3,6 +3,7 @@ import { GoPeople } from "react-icons/go";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import Events from "./components/Events"
+import { motion } from "framer-motion"
 
 const image1 = "https://img.freepik.com/free-photo/front-view-stacked-books-earth-globe-open-book-pencils-education-day_23-2149241018.jpg?w=740&t=st=1717795530~exp=1717796130~hmac=bd7486b8ade9fcbdf05d3f9ed1335b1c496fd200f752021ff295a9936dcb2479";
 const image2 = "https://img.freepik.com/free-photo/ordinary-human-job-performed-by-anthropomorphic-robot_23-2151008358.jpg?t=st=1717847879~exp=1717851479~hmac=b76d32c9ea1517dad635132090b857df3b1b9af79069f2d3f158bc7f10ca23e3&w=740";
@@ -22,13 +23,13 @@ const Layout = () => {
 export function Header() {
   return (
     <>
-      <div className="px-[5%] py-[80px] w-full grid grid-cols-1 lg:grid-cols-2 justify-center content-center "  >
+      <div className="px-[5%]  w-full h-[90vh] grid grid-cols-1 lg:grid-cols-2 justify-center content-center "  >
         <div className=" max-sm:text-center">
-          <h3 className="my-4 text-6xl font-semibold md:text-8xl">one <br />destination</h3>
+          <h3 className="font-bold tex2t-6xl my- md:text-8xl">one <br />destination</h3>
           <p className="text-gray-600">for all things related to engineering for free</p>
 
           <Image className="flex py-6 object-fit md:hidden" src="/images/collezian_ai.png" />
-          <Button className="items-center p-6 my-6 text-sm font-semibold text-black shadow-md border-1 dark:text-white max-w-min rounded-3xl" color="none" variant="none" startContent={<GoPeople />}
+          <Button className="items-center p-6 my-6 text-sm font-semibold text-black shadow-md hover:shadow-xl border-1 dark:text-white max-w-min rounded-3xl" color="none" variant="none" startContent={<GoPeople />}
             style={{
               // Adjust color and opacity as needed
               backdropFilter: 'blur(5px)',// Adjust blur radius as needed
@@ -38,8 +39,7 @@ export function Header() {
           </Button>
         </div>
 
-        <Image className="hidden object-fit lg:flex" src="/images/collezian_ai.png" />
-
+        <Image className="object-cover lg:flex" src="/images/collezian_ai.png" />
       </div>
     </>
   )
@@ -55,7 +55,11 @@ export function Features_Card() {
       </center>
 
       <div className=" flex scrollbar-hide overflow-scroll card  gap-8 px-[5%] content-stretch ">
-        <div key={1} className=" min-w-[320px] gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
+        <motion.div
+        whileHover={{scale: 0.9}}
+        onHoverStart={e => {}}
+        onHoverEnd={e => {}}
+         key={1} className=" min-w-[320px] gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
 
           <Image className=" object-cover aspect-[16/9]  ease-in duration-350 delay-0  z-0 w-full h-full " src={image1} radius="none" alt="collezian-study-materials-image" />
 
@@ -66,9 +70,13 @@ export function Features_Card() {
             </p>
             <Link as={NavLink} to="Materials" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat">Explore Materials<MdOutlineArrowRight /> </Link>
           </div>
-        </div>
+        </motion.div>
 
-        <div key={2} className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
+        <motion.div
+        whileHover={{ scale: 0.9 }}
+        onHoverStart={e => {}}
+        onHoverEnd={e => {}}
+        key={2} className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
 
           <Image className="object-cover  aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image2} radius="none" alt="collezian-golu-ai-image" />
 
@@ -79,8 +87,12 @@ export function Features_Card() {
             </p>
             <Link as={NavLink} to="/Events" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat">Say Hello!<MdOutlineArrowRight /> </Link>
           </div>
-        </div>
-        <div key={3} className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md lg:hover:shadow-lg transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
+        </motion.div>
+        <motion.div
+        whileHover={{ scale: 0.9 }}
+        onHoverStart={e => {}}
+        onHoverEnd={e => {}}
+         key={3} className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2">
 
           <Image className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full " src={image3} radius="none" alt="" />
 
@@ -91,7 +103,7 @@ export function Features_Card() {
             </p>
             <Link as={NavLink} to="/Events" className="mt-2 text-sm font-semibold cursor-pointer" color="primary" variant="flat"> View Events<MdOutlineArrowRight /> </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <center>

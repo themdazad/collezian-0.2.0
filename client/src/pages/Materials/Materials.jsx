@@ -1,30 +1,5 @@
-import { Button, Link } from "@nextui-org/react";
-import { MdOutlineArrowRight } from "react-icons/md";
+import { Button} from "@nextui-org/react";
 import { NavLink } from "react-router-dom";
-
-const data = [
-
-    {
-        tittle: "Polytechnic",
-        description: "Access engineering study materials, latest syllabus PDF, notes, and more.",
-        image: "https://img.freepik.com/free-photo/anime-school-building-illustration_23-2151150991.jpg?t=st=1715710899~exp=1715714499~hmac=5f1206ff522872642f018993dee4dcb1103dfd5c022cf25a41224505299ce0ab&w=360",
-        link: "Explore Materials",
-        btn_link1: "",
-        btn_link2: "",
-        btn_link3: "",
-
-    },
-
-    {
-        tittle: "B.Tech",
-        description: "Stay updated with the latest exam results and academic achievements.",
-        image: "https://img.freepik.com/free-photo/school-students-digital-art-style-education-day_23-2151164373.jpg?t=st=1715710796~exp=1715714396~hmac=d85184a6f81517718684552d176e6cd04275a66e2c3afda39c22aced3155ad11&w=740",
-        link: "Check Results",
-        btn_link1: "",
-        btn_link2: "",
-        btn_link3: "",
-    },
-];
 
 export default function Materials() {
     return (

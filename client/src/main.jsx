@@ -6,6 +6,7 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { Footer_Component } from './components/Footer_Component.jsx'
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <NextUIProvider>
