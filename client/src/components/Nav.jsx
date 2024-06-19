@@ -90,7 +90,7 @@ export default function Nav() {
         
 
         <NavbarItem>
-          <Button as={NavLink} color="primary" radius="full" to="#" variant="flat">
+          <Button as={NavLink} to="/Signup" color="primary" radius="full" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>
@@ -154,7 +154,7 @@ export default function Nav() {
         </NavbarItem>
 
         <NavbarItem>
-          <Button className="text-xl font-bold" as={NavLink} color="primary" radius="full" to="#" variant="flat">
+          <Button className="text-xl font-bold" as={NavLink} to="/Signup" color="primary" radius="full" to="#" variant="flat">
             Sign Up
           </Button>
         </NavbarItem>

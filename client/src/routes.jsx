@@ -3,8 +3,9 @@ import Result from "./pages/Result.jsx";
 import Roadmap from "./pages/Roadmap/Roadmap.jsx";
 import Projects from "./pages/Projects/Projects.jsx";
 import Materials from "./pages/Materials/Materials.jsx";
-import Events from "./components/Events";
+import Events from "./components/Events.jsx";
 import Contact from "./pages/ContactUS/Contact.jsx";
+import { Signup } from "./pages/Signup/Signup.jsx";
 // Bihar 
 import { BEU_Syllabus } from "./pages/Materials/Bihar/BEU_Patna/Syllabus.jsx";
 import { BEU_Notes } from "./pages/Materials/Bihar/BEU_Patna/Notes.jsx";
@@ -14,11 +15,14 @@ import { SBTE_Notes } from "./pages/Materials/Bihar/SBTE/Notes.jsx";
 import { SBTE_PYQS } from "./pages/Materials/Bihar/SBTE/PYQS.jsx";
 import Layout from "./layout.jsx";
 
+
 export default function Path() {
   return (
 
     <Routes>
       <Route path="" element={<Layout />} />
+      <Route path="/Signup" element={<Signup/>} />
+
 
       {/* Adding pages in outlet portion of Layout */}
       <Route path="/Events" element={<Events />} />
