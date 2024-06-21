@@ -1,5 +1,5 @@
 import { Button} from "@nextui-org/react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Materials() {
     return (
@@ -95,7 +95,7 @@ export default function Materials() {
                             </p>
                             <div className="flex gap-2 mt-4 ">
                                 <Button className="items-center text-sm max-w-min rounded-xl" size="sm" color="primary" variant="flat" >Syllabus</Button>
-                                <Button className="items-center text-sm max-w-min rounded-xl" size="sm" color="primary" variant="flat" >Join Telegram</Button>
+                                <Button as={Link} href="https://t.me/collezian_bcece_le" className="items-center text-sm max-w-min rounded-xl" size="sm" color="primary" variant="flat" >Join Telegram</Button>
                             </div>
                         </div>
                     </div>

@@ -91,7 +91,7 @@ export default function Nav() {
 
         <NavbarItem>
           <Button as={NavLink} to="/Signup" color="primary" radius="full" variant="flat">
-            Sign Up
+           Login
           </Button>
         </NavbarItem>
       </NavbarContent>
@@ -155,7 +155,7 @@ export default function Nav() {
 
         <NavbarItem>
           <Button className="text-xl font-bold" as={NavLink} to="/Signup" color="primary" radius="full" to="#" variant="flat">
-            Sign Up
+            Login
           </Button>
         </NavbarItem>
       </NavbarMenu>

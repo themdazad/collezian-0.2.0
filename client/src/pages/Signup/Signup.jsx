@@ -1,24 +1,97 @@
-
-import {Button,Input, Image, Link } from "@nextui-org/react";
+import { Button, Input, Image, Link } from "@nextui-org/react";
 import { PiPasswordFill } from "react-icons/pi";
+import { FaGithub,FaGoogle } from "react-icons/fa";
 
 export const Signup = () => {
   return (
     <>
-      <div className="grid justify-center h-screen grid-cols-1 g:grid-cols-2 pitems-center form-container">
-        <div className="w-full h-full gap-4 bg-[url('/images/collezian_cloud.png')] bg-slate-950 rounded-3xl  bg-contain bg-no-repeat bg-center image-container form-contents">
-         
-        </div>
+      <div className=" px-[5%] py-8 grid justify-center grid-cols-1 lg:grid-cols-2 items-center form-container">
+        <div className="w-full  h-full gap-4 bg-[url('https://img.freepik.com/premium-vector/student-college-boy-sleeping-books-vector-illustration-doodle-line-art_969863-21316.jpg?w=500')] rounded-3xl overflow-hidden bg-contain bg-white bg-no-repeat bg-center image-container form-contents"></div>
         <div className="grid h-full gap-4 form-container form-contents">
-          <div className="text-right register-now">Not a member?<Link>Register now</Link></div>
+          <div className="text-right register-now">
+            Not a member?<Link>Register now</Link>
+          </div>
           <div className="form">
-            <div className="text-center tittle">
+            <div className="text-center tittle my-8">
               <h1 className="text-3xl font-semibold">Hello Dear,</h1>
-              <p>Welcome to collezian community !
-              </p>
+              <p>Welcome to collezian community !</p>
             </div>
-            <div className="input-fields">
-             
+
+            {/* login-Form  */}
+            <div className="input-fields lg:mx-[20%]">
+              <form action="#" className="flex flex-col space-y-5">
+                <div className="flex flex-col space-y-1">
+                  <label
+                    htmlFor="email"
+                    className="text-sm font-semibold text-gray-500"
+                  >
+                    Email address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="px-4 bg-transparent py-2 transition duration-300 border rounded-xl  "
+                  />
+                </div>
+                <div className="flex flex-col space-y-1">
+                  <div className="flex items-center justify-between">
+                    <label
+                      htmlFor="password"
+                      className="text-sm font-semibold text-gray-500"
+                    >
+                      Password
+                    </label>
+                  </div>
+                  <input
+                    type="password"
+                    id="password"
+                    className="px-4 bg-transparent py-2 transition duration-300 border rounded-xl  "
+                  />
+                  <a
+                    href="#"
+                    className="text-sm text-blue-600 hover:underline focus:text-blue-800"
+                  >
+                    Forgot Password?
+                  </a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <input
+                    type="checkbox"
+                    id="remember"
+                    className="w-4 h-4 transition duration-300 rounded-md focus:ring-0"
+                  />
+                  <label
+                    htmlFor="remember"
+                    className="text-sm font-semibold text-gray-500"
+                  >
+                    Remember me
+                  </label>
+                </div>
+                <div>
+                  <Button
+                    type="submit"
+                    variant="solid"
+                    color="primary"
+                    className="w-full px-4 py-2 font-semibold"
+                  >
+                    Log in
+                  </Button>
+                </div>
+                <div className="flex flex-col space-y-5">
+                  <span className="flex items-center justify-center space-x-2">
+                    <span className="h-px bg-gray-400 w-14" />
+                    <span className="font-normal text-gray-500">
+                      or
+                    </span>
+                    <span className="h-px bg-gray-400 w-14" />
+                  </span>
+
+                  <div className="login-with-icons flex text-3xl space-x-4 justify-center">
+                    <a href="#"><FaGoogle /></a>
+                    <a href="#"><FaGithub /></a>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
