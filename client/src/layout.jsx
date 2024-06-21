@@ -203,7 +203,7 @@ export const Groups = () => {
           </p>
         </center>
 
-        <div className="snap-mandatory snap-x scrollbar-hide overflow-scroll groups flex justify-center my-6 gap-8 ">
+        <div className="snap-mandatory snap-x scrollbar-hide px-[5%] overflow-scroll groups flex justify-center my-6 gap-8 ">
           <Link
             className="snap-center min-w-[50px]"
             href="https://t.me/collezian_bcece_le"
