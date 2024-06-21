@@ -25,10 +25,10 @@ export function Header() {
     <>
       <div className="px-[5%]  w-full h-[90vh] grid grid-cols-1 lg:grid-cols-2 justify-center content-center "  >
         <div className=" max-sm:text-center">
-          <h3 className="font-bold text-6xl my-2 md:text-8xl">one <br />destination</h3>
-          <p className="text-gray-600">for all things related to engineering for free</p>
+          <h3 className="font-bold text-[12vw] lg:text-8xl tracking-tighter leading-[12vw] lg:leading-[6vw]">one <br />destination</h3>
+          <p className="text-gray-500 ">for all things related to engineering for free</p>
 
-          <Image className="flex py-6 object-fit md:hidden" src="/images/collezian_ai.png" />
+          <Image className="flex py-6 object-contain md:hidden" src="/images/collezian_ai.png" />
           <Button className="items-center p-6 my-6 text-sm font-semibold text-black shadow-md hover:shadow-xl border-1 dark:text-white max-w-min rounded-3xl" color="none" variant="none" startContent={<GoPeople />}
             style={{
               // Adjust color and opacity as needed
