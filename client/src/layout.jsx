@@ -25,7 +25,7 @@ export function Header() {
     <>
       <div className="px-[5%]  w-full h-[90vh] grid grid-cols-1 lg:grid-cols-2 justify-center content-center "  >
         <div className=" max-sm:text-center">
-          <h3 className="font-bold tex2t-6xl my- md:text-8xl">one <br />destination</h3>
+          <h3 className="font-bold text-6xl my-2 md:text-8xl">one <br />destination</h3>
           <p className="text-gray-600">for all things related to engineering for free</p>
 
           <Image className="flex py-6 object-fit md:hidden" src="/images/collezian_ai.png" />

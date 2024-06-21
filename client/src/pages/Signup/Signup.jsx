@@ -5,7 +5,7 @@ import { PiPasswordFill } from "react-icons/pi";
 export const Signup = () => {
   return (
     <>
-      <div className="grid justify-center h-screen grid-cols-1 lg:grid-cols-2 pitems-center form-container">
+      <div className="grid justify-center h-screen grid-cols-1 g:grid-cols-2 pitems-center form-container">
         <div className="w-full h-full gap-4 bg-[url('/images/collezian_cloud.png')] bg-slate-950 rounded-3xl  bg-contain bg-no-repeat bg-center image-container form-contents">
          
         </div>
