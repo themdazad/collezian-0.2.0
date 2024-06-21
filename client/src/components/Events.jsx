@@ -26,9 +26,9 @@ const event_data = [
 const Syllabus = () => {
     return (
         <>
-            <div className="py-12 px-[5%]">
-                <center>
-                    <h1 className="text-2xl font-bold ">College Events</h1>
+            <div className="my-16 px-[5%]">
+            <center className="my-8">
+                    <h1 className="text-2xl ">College Events</h1>
                     <p className="text-sm text-gray-500 mb-4 px-[10%] ">Best way to expand network and enhanced skills</p>
                 </center>
 
