@@ -43,7 +43,7 @@ export function Header() {
             src="/images/collezian_ai.png"
           />
           <Button
-            className="items-center p-6 my-6 text-xl  text-black shadow-md hover:shadow-xl border-1 dark:text-white max-w-min"
+            className="items-center p-6 my-6 text-xl  text-black shadow-md border-1 dark:text-white max-w-min"
             color="primary"
             variant="flat"
             startContent={<FaWhatsapp />}
