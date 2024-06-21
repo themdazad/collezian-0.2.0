@@ -4,6 +4,7 @@ import { MdOutlineArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import Events from "./components/Events";
 import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa";
 
 const image1 =
   "https://img.freepik.com/free-photo/front-view-stacked-books-earth-globe-open-book-pencils-education-day_23-2149241018.jpg?w=740&t=st=1717795530~exp=1717796130~hmac=bd7486b8ade9fcbdf05d3f9ed1335b1c496fd200f752021ff295a9936dcb2479";
@@ -42,15 +43,15 @@ export function Header() {
             src="/images/collezian_ai.png"
           />
           <Button
-            className="items-center p-6 my-6 text-sm  text-black shadow-md hover:shadow-xl border-1 dark:text-white max-w-min"
+            className="items-center p-6 my-6 text-xl  text-black shadow-md hover:shadow-xl border-1 dark:text-white max-w-min"
             color="primary"
             variant="flat"
-            startContent={<GoPeople />}
+            startContent={<FaWhatsapp />}
             size='sm'
             radius="full"
           >
             <Link
-              className="text-black dark:text-white"
+              className="text-black text-sm dark:text-white"
               href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5"
               target="_blank"
             >
