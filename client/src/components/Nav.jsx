@@ -16,7 +16,7 @@ export default function Nav() {
   return (
 
     <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent >
+      <NavbarContent className="p-0" >
         <NavbarBrand >
           <NavLink as={NavLink} to="/">
             <Image src={Collezian} className=" w-12 -rotate-[20deg] hover:-rotate-[360deg] transition-transform duration-[2000]" />
@@ -26,7 +26,7 @@ export default function Nav() {
         </NavbarBrand>
        
         <NavbarMenuToggle
-          ajabel={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
       </NavbarContent>

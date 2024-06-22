@@ -20,6 +20,7 @@ export const Signup = () => {
             {/* login-Form  */}
             <div className="input-fields lg:mx-[20%]">
               <form action="#" className="flex flex-col space-y-5">
+                
                 <div className="flex flex-col space-y-1">
                   <label
                     htmlFor="email"
