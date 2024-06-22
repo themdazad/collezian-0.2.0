@@ -28,7 +28,7 @@ export default Layout;
 export function Header() {
   return (
     <>
-      <div className="px-[5%]  w-full h-[90vh] grid grid-cols-1 lg:grid-cols-2 justify-center content-center ">
+      <div className="px-[5%]  w-full my-20 grid grid-cols-1 lg:grid-cols-2 justify-center content-center ">
         <div className=" max-sm:text-center">
           <h3 className="font-bold text-[12vw] lg:text-8xl tracking-tighter leading-[12vw] lg:leading-[6vw]">
             one <br />
@@ -69,9 +69,10 @@ export function Header() {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function Features_Card() {
   return (
-    <section className="my-16">
+    <section className="my-20">
       <center className="my-8">
         <h1 className="text-2xl ">Categories</h1>
         <p className="text-sm text-gray-500 mb-4 px-[10%] ">
@@ -190,7 +191,7 @@ export function Features_Card() {
 export const Groups = () => {
   return (
     <>
-      <section className="mb-16">
+      <section className="my-20">
         {/* <header className="flex flex-col items-center text-lg">
           <Image src="/gif/people.gif" height={50} width={50} />
           Recommended Groups

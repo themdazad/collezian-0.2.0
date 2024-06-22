@@ -30,7 +30,7 @@ export const Signup = () => {
                   <input
                     type="email"
                     id="email"
-                    className="px-4 bg-transparent py-2 transition duration-300 border rounded-xl  "
+                    className=" bg-transparent transition duration-300 border rounded-xl  "
                   />
                 </div>
                 <div className="flex flex-col space-y-1">
@@ -45,7 +45,7 @@ export const Signup = () => {
                   <input
                     type="password"
                     id="password"
-                    className="px-4 bg-transparent py-2 transition duration-300 border rounded-xl  "
+                    className="bg-transparent  transition duration-300 border rounded-xl  "
                   />
                   <a
                     href="#"
@@ -72,7 +72,7 @@ export const Signup = () => {
                     type="submit"
                     variant="solid"
                     color="primary"
-                    className="w-full px-4 py-2 font-semibold"
+                    className="w-full font-semibold"
                   >
                     Log in
                   </Button>
