@@ -1,8 +1,8 @@
 
 import { useState } from "react";
-import ThemeSwitch from "./ThemeSwitch";
+
 import {
-  Dropdown, Link, DropdownTrigger, DropdownMenu, DropdownItem, Button,
+  Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button,
   Navbar, NavbarBrand, NavbarMenu, NavbarContent, NavbarItem, NavbarMenuToggle, Image
 } from "@nextui-org/react";
 import { FiChevronDown } from "react-icons/fi";
@@ -11,12 +11,13 @@ import Collezian from "..//assets/Collezian.svg"
 import { PiNotebookDuotone, PiLightbulbFilamentDuotone, PiNewspaperDuotone, PiLaptopDuotone, PiBagDuotone, PiCalendarXDuotone } from "react-icons/pi";
 
 export default function Nav() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+  const [isMenuOpen, setIsMenuOpen] = useState("hidden");
+  function handleHamburger(){
+   (isMenuOpen==="hidden")?setIsMenuOpen(""):setIsMenuOpen("hidden");
+  }
   return (
-
     <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent className="p-0" >
+      <NavbarContent>
         <NavbarBrand >
           <NavLink as={NavLink} to="/">
             <Image src={Collezian} className=" w-12 -rotate-[20deg] hover:-rotate-[360deg] transition-transform duration-[2000]" />
@@ -25,12 +26,10 @@ export default function Nav() {
             COLLEZIAN</NavLink>
         </NavbarBrand>
        
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        <NavbarMenuToggle          
           className="sm:hidden"
         />
       </NavbarContent>
-
 
       {/*Desktop*/}
       <NavbarContent className="hidden gap-0 sm:flex" justify="center">
@@ -90,7 +89,7 @@ export default function Nav() {
         
 
         <NavbarItem>
-          <Button as={NavLink} to="/Signup" color="primary" radius="full" variant="flat">
+          <Button as={NavLink} to="/Login" color="primary" radius="full" variant="flat">
            Login
           </Button>
         </NavbarItem>
@@ -99,7 +98,7 @@ export default function Nav() {
 
 
       {/*Mobile*/}
-      <NavbarMenu aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="items-center justify-center bg-transparent md:hidden sm:flex " onClick={()=>{setIsMenuOpen(false);}}>
+      <NavbarMenu  className={`items-center space-y-2 justify-center bg-transparent md:hidden sm:flex `} >
       <NavbarItem>
           <Button className="text-3xl font-bold" as={NavLink} to="#" variant="light">
             Blogs
@@ -154,12 +153,12 @@ export default function Nav() {
         </NavbarItem>
 
         <NavbarItem>
-          <Button className="text-xl font-bold" as={NavLink} to="/Signup" color="primary" radius="full" variant="flat">
+          <Button className="text-xl font-bold" as={NavLink} to="/Login" size="lg" color="primary" radius="full" variant="flat">
             Login
           </Button>
         </NavbarItem>
       </NavbarMenu>
-      <ThemeSwitch/>
+    
 
     </Navbar>
   );

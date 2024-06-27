@@ -67,6 +67,7 @@ const Features = () => {
             <center>
                 <Image className=" " src="/gif/dotted-line.png" width={40} />
             </center>
+      
         </>
     );
 }

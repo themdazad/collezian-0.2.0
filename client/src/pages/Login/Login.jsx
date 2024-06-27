@@ -1,8 +1,9 @@
-import { Button, Input, Image, Link } from "@nextui-org/react";
-import { PiPasswordFill } from "react-icons/pi";
+import { Button,Link } from "@nextui-org/react";
 import { FaGithub,FaGoogle } from "react-icons/fa";
 
-export const Signup = () => {
+
+export const Login = () => {
+
   return (
     <>
       <div className=" px-[5%] py-8 grid justify-center grid-cols-1 lg:grid-cols-2 items-center form-container">
@@ -20,17 +21,18 @@ export const Signup = () => {
             {/* login-Form  */}
             <div className="input-fields lg:mx-[20%]">
               <form action="#" className="flex flex-col space-y-5">
+                
                 <div className="flex flex-col space-y-1">
                   <label
                     htmlFor="email"
                     className="text-sm font-semibold text-gray-500"
                   >
-                    Email address
+                    Email address:{user[0]["username"]}
                   </label>
                   <input
                     type="email"
                     id="email"
-                    className=" bg-transparent transition duration-300 border rounded-xl  "
+                    className="px-4 bg-transparent py-2 transition duration-300 border rounded-xl  "
                   />
                 </div>
                 <div className="flex flex-col space-y-1">
@@ -45,7 +47,7 @@ export const Signup = () => {
                   <input
                     type="password"
                     id="password"
-                    className="bg-transparent  transition duration-300 border rounded-xl  "
+                    className="px-4 bg-transparent py-2 transition duration-300 border rounded-xl  "
                   />
                   <a
                     href="#"
@@ -72,7 +74,7 @@ export const Signup = () => {
                     type="submit"
                     variant="solid"
                     color="primary"
-                    className="w-full font-semibold"
+                    className="w-full px-4 py-2 font-semibold"
                   >
                     Log in
                   </Button>

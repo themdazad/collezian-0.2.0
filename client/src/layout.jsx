@@ -1,10 +1,12 @@
 import { Image, Button, Link } from "@nextui-org/react";
-import { GoPeople } from "react-icons/go";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import Events from "./components/Events";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
+import { useEffect } from "react";
+// API integration
+import axios from 'axios';
 
 const image1 =
   "https://img.freepik.com/free-photo/front-view-stacked-books-earth-globe-open-book-pencils-education-day_23-2149241018.jpg?w=740&t=st=1717795530~exp=1717796130~hmac=bd7486b8ade9fcbdf05d3f9ed1335b1c496fd200f752021ff295a9936dcb2479";
@@ -16,20 +18,39 @@ const image3 =
 const Layout = () => {
   return (
     <>
-      <Header />
-      <Groups />
-      <Features_Card />
-      <Events />
+      <header>
+        <Header />
+      </header>
+      <section>
+        <Groups />
+      </section>
+      <section>
+        <Events />
+      </section>
+      <section>
+        <Features_Card />
+      </section>
     </>
   );
 };
 export default Layout;
 
 export function Header() {
+  const user_data = [{ username: "azad", password: 12345 }];
+  useEffect(() => {
+    
+
+    // API integration
+    axios.post("http://localhost:8000/api", user_data)
+    .then((response) => console.log(response.data))
+    .catch((error) => console.log(error));
+
+  });
+
   return (
     <>
       <div className="px-[5%]  w-full my-20 grid grid-cols-1 lg:grid-cols-2 justify-center content-center ">
-        <div className=" max-sm:text-center">
+        <div className="lg:mt-16 max-sm:text-center">
           <h3 className="font-bold text-[12vw] lg:text-8xl tracking-tighter leading-[12vw] lg:leading-[6vw]">
             one <br />
             destination
@@ -47,7 +68,7 @@ export function Header() {
             color="primary"
             variant="flat"
             startContent={<FaWhatsapp />}
-            size='sm'
+            size="sm"
             radius="full"
           >
             <Link
@@ -66,7 +87,7 @@ export function Header() {
         />
       </div>
     </>
-  );
+  )
 }
 
 // eslint-disable-next-line react-refresh/only-export-components

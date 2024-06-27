@@ -9,9 +9,14 @@ body{
     margin:auto;    
     max-width: 1440px;
     font-family: "poppins", sans-serif;
-    font-optical-sizing: auto;}
+    font-optical-sizing: auto;
+    
+  }
 
 h3,h4,h5{
   font-family: "Montserrat Alternates", sans-serif;
   font-optical-sizing: auto;
+}
+::-webkit-scrollbar{
+  width: 0;
 }

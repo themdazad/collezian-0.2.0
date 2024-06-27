@@ -5,7 +5,9 @@ import Projects from "./pages/Projects/Projects.jsx";
 import Materials from "./pages/Materials/Materials.jsx";
 import Events from "./components/Events.jsx";
 import Contact from "./pages/ContactUS/Contact.jsx";
-import { Signup } from "./pages/Signup/Signup.jsx";
+
+// authentication 
+import { Login } from "./pages/Login/Login.jsx";
 // Bihar 
 import { BEU_Syllabus } from "./pages/Materials/Bihar/BEU_Patna/Syllabus.jsx";
 import { BEU_Notes } from "./pages/Materials/Bihar/BEU_Patna/Notes.jsx";
@@ -21,7 +23,7 @@ export default function Path() {
 
     <Routes>
       <Route path="" element={<Layout />} />
-      <Route path="/Signup" element={<Signup/>} />
+      <Route path="/Login" element={<Login/>} />
 
 
       {/* Adding pages in outlet portion of Layout */}
