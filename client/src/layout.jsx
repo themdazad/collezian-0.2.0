@@ -55,11 +55,11 @@ export function Header() {
       <div className="px-[5%] py-16 grid place-content-center ">
         <div className="text-center  space-y-4">
         
-          <h3 className="font-bold text-8xl ">
+          <h3 className="font-bold text-[14vw] leading-[18vw] md:text-8xl ">
             one <br />
             destination
           </h3>
-          <p className="text-gray-500 ">
+          <p className="text-gray-500 text-sm">
             for all things related to engineering for free
           </p>
           <Button
