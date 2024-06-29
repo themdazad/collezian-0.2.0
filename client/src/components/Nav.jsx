@@ -12,9 +12,7 @@ import { PiNotebookDuotone, PiLightbulbFilamentDuotone, PiNewspaperDuotone, PiLa
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState("hidden");
-  function handleHamburger(){
-   (isMenuOpen==="hidden")?setIsMenuOpen(""):setIsMenuOpen("hidden");
-  }
+ 
   return (
     <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>

@@ -1,101 +1,38 @@
-import {
-  Footer,
-  FooterCopyright,
-  FooterLink,
-  FooterLinkGroup,
-} from "flowbite-react";
-import { NavLink } from "react-router-dom";
-import { PiInstagramLogo } from "react-icons/pi";
-import { FaXTwitter } from "react-icons/fa6";
-import { TfiYoutube } from "react-icons/tfi";
-import { FaWhatsapp } from "react-icons/fa";
 import ThemeSwitch from "./ThemeSwitch";
+import { Divider } from "@nextui-org/react";
+import { FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 export function Footer_Component() {
-  const currentYear = new Date().getFullYear();
   return (
     <>
-      {/* fixed theme switcher  */}
-      <div className="fixed flex  z-20  bottom-4 right-4">
-       
-        <ThemeSwitch />
-      </div>
-
-      <Footer container>
-        <div className="w-full text-center ">
-          <div className="flex items-center justify-between w-full max-md:flex-col">
-            {/* <FooterBrand
-            href="https://collezian.vercel.app"
-            src={Collezian}
-            alt="collezian Logo"
-            name="Collezian"
-          /> */}
-            <span className="flex gap-4 my-4 text-3xl max-sm:justify-center">
-              <a
-                className="font-semibold"
-                target="_blank"
-                href="https://www.instagram.com/the_mdazad/"
-              >
-                <PiInstagramLogo />
-              </a>
-              <a
-                className="font-semibold"
-                target="_blank"
-                href="https://x.com/collezian?t=tCwyjsr_4LANcNR5oAkHCg&s=08"
-              >
-                <FaXTwitter />
-              </a>
-              <a
-                className="font-semibold"
-                target="_blank"
-                href="https://www.youtube.com/@collezian_community"
-              >
-                <TfiYoutube />
-              </a>
-              <a
-                className="font-semibold"
-                target="_blank"
-                href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5"
-              >
-                <FaWhatsapp />
-              </a>
-            </span>
-            <FooterLinkGroup>
-              <FooterLink
-                className="hover:text-decoration-none text-[12px]"
-                href="#"
-              >
-                About
-              </FooterLink>
-              <FooterLink
-                className="hover:text-decoration-none text-[12px]"
-                href="#"
-              >
-                Copyright Policy
-              </FooterLink>
-              <NavLink
-                to="Contact"
-                className="text-[12px] hover:text-sky-600"
-                href="#"
-              >
-                Contact
-              </NavLink>
-            </FooterLinkGroup>
-          </div>
-          <hr />
-          <FooterCopyright href="#" by="Collezian™" year={currentYear} />
-          <p className="text-[12px]">
-            Designed and Developed with <span>❤</span> | By{" "}
-            <a
-              className="font-semibold text-sky-600"
-              target="_blank"
-              href="https://www.instagram.com/the_mdazad/"
-            >
-              Azad
-            </a>
-          </p>
+      <Divider />
+      <footer className="flex flex-wrap justify-center max-sm:text-center md:justify-between items-centerm py-4  px-[5%] max-sm:space-y-6">
+        <p className="text-[12px]">
+          © 2024 Collezian. All Rights Reserved.
+          <br />
+          Designed and Developed with <span>❤</span> By {" "}
+          <a
+            className="font-semibold text-sky-600"
+            target="_blank"
+            href="https://www.instagram.com/the_mdazad/"
+          >
+            Md Azad
+          </a>
+        </p>
+        <div className="icons flex items-center space-x-4 text-2xl">
+          <a href="http://" target="_blank">
+            <FaInstagram />
+          </a>
+          <a href="http://" target="_blank">
+            <FaLinkedinIn />
+          </a>
+          <a href="http://" target="_blank">
+            <FaTwitter />
+          </a>
+          <span>|</span>
+          <ThemeSwitch />
         </div>
-      </Footer>
+      </footer>
     </>
   );
 }

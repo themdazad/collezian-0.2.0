@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import { useEffect } from "react";
 // API integration
-import axios from 'axios';
+import axios from "axios";
 
 const image1 =
   "https://img.freepik.com/free-photo/front-view-stacked-books-earth-globe-open-book-pencils-education-day_23-2149241018.jpg?w=740&t=st=1717795530~exp=1717796130~hmac=bd7486b8ade9fcbdf05d3f9ed1335b1c496fd200f752021ff295a9936dcb2479";
@@ -18,9 +18,14 @@ const image3 =
 const Layout = () => {
   return (
     <>
-      <header>
+      <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1}}
+        transition={{ duration: 1, delay: 0.8}}
+        viewport={{ once: true, amount: 0 }}
+      >
         <Header />
-      </header>
+      </motion.div>
       <section>
         <Groups />
       </section>
@@ -38,56 +43,42 @@ export default Layout;
 export function Header() {
   const user_data = [{ username: "azad", password: 12345 }];
   useEffect(() => {
-    
-
     // API integration
-    axios.post("http://localhost:8000/api", user_data)
-    .then((response) => console.log(response.data))
-    .catch((error) => console.log(error));
-
+    axios
+      .post("http://localhost:8000/api", user_data)
+      .then((response) => console.log(response.data))
+      .catch((error) => console.log(error));
   });
 
   return (
     <>
-      <div className="px-[5%]  w-full my-20 grid grid-cols-1 lg:grid-cols-2 justify-center content-center ">
-        <div className="lg:mt-16 max-sm:text-center">
-          <h3 className="font-bold text-[12vw] lg:text-8xl tracking-tighter leading-[12vw] lg:leading-[6vw]">
+      <div className="px-[5%] py-16 grid place-content-center ">
+        <div className="text-center  space-y-4">
+        
+          <h3 className="font-bold text-8xl ">
             one <br />
             destination
           </h3>
           <p className="text-gray-500 ">
             for all things related to engineering for free
           </p>
-
-          <Image
-            className="flex py-6 object-contain md:hidden"
-            src="/images/collezian_ai.png"
-          />
           <Button
-            className="items-center p-6 my-6 text-xl  text-black shadow-md border-1 dark:text-white max-w-min"
+            as={Link}
+            className="items-center shadow-md border-1max-w-min"
+            href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5"
+            target="_blank"
             color="primary"
             variant="flat"
-            startContent={<FaWhatsapp />}
-            size="sm"
+            size="lg"
             radius="full"
+            startContent={<FaWhatsapp />}
           >
-            <Link
-              className="text-black text-sm dark:text-white"
-              href="https://chat.whatsapp.com/HmEXaa6y1zE1Rdi60n7VA5"
-              target="_blank"
-            >
-              Join Community
-            </Link>
+            Join Community
           </Button>
         </div>
-
-        <Image
-          className="hidden object-cover lg:flex"
-          src="/images/collezian_ai.png"
-        />
       </div>
     </>
-  )
+  );
 }
 
 // eslint-disable-next-line react-refresh/only-export-components
