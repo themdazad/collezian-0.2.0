@@ -38,12 +38,12 @@ export default function Path() {
         
         
         {/* Bihar  */}
-        <Route path="/Materials/BEU_Syllabus" element={<BEU_Syllabus />} />
-        <Route path="/Materials/BEU_Notes" element={<BEU_Notes />} />
-        <Route path="/Materials/BEU_PYQs" element={<BEU_PYQS />} />
-        <Route path="/Materials/SBTE_Syllabus" element={<SBTE_Syllabus />} />
-        <Route path="/Materials/Bihar/SBTE/Notes" element={<SBTE_Notes />} />
-        <Route path="/Materials/Bihar/SBTE/PYQs" element={<SBTE_PYQS />} />
+        <Route path="/BEU_Syllabus" element={<BEU_Syllabus />} />
+        <Route path="/BEU_Notes" element={<BEU_Notes />} />
+        <Route path="/BEU_PYQs" element={<BEU_PYQS />} />
+        <Route path="/SBTE_Syllabus" element={<SBTE_Syllabus />} />
+        <Route path="/Bihar/SBTE/Notes" element={<SBTE_Notes />} />
+        <Route path="/Bihar/SBTE/PYQs" element={<SBTE_PYQS />} />
 
       </Routes>
 

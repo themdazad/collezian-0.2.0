@@ -33,8 +33,8 @@ export default function Materials() {
                 achievements.
               </p>
               <div className="flex gap-2 mt-4 lint_buttons">
-                <NavLink to="/Materials/BEU_Syllabus">
-                  <Button
+              
+                  <Button as={NavLink} to="/BEU_Syllabus"
                     className="items-center text-sm max-w-min rounded-xl"
                     size="sm"
                     color="primary"
@@ -42,10 +42,8 @@ export default function Materials() {
                   >
                     Syllabus
                   </Button>
-                </NavLink>
-
-                <NavLink to="/Materials/BEU_Notes">
-                  <Button
+                
+                  <Button as={NavLink} to="/BEU_Notes"
                     className="items-center text-sm max-w-min rounded-xl"
                     size="sm"
                     color="primary"
@@ -53,10 +51,8 @@ export default function Materials() {
                   >
                     Notes
                   </Button>
-                </NavLink>
-
-                <NavLink to="/Materials/BEU_PYQs">
-                  <Button
+                
+                  <Button as={NavLink} to="/BEU_PYQs"
                     className="items-center text-sm max-w-min rounded-xl"
                     size="sm"
                     color="primary"
@@ -64,7 +60,7 @@ export default function Materials() {
                   >
                     PYQs
                   </Button>
-                </NavLink>
+                
               </div>
             </div>
           </div>
@@ -85,8 +81,8 @@ export default function Materials() {
                 and more.
               </p>
               <div className="flex gap-2 mt-4 lint_buttons">
-                <NavLink to="/Materials/SBTE_Syllabus">
-                  <Button
+               
+                  <Button as={NavLink} to="/SBTE_Syllabus"
                     className="items-center text-sm max-w-min rounded-xl"
                     size="sm"
                     color="primary"
@@ -94,10 +90,8 @@ export default function Materials() {
                   >
                     Syllabus
                   </Button>
-                </NavLink>
-
-                <NavLink to="/Materials/Bihar/SBTE/Notes">
-                  <Button
+                
+                  <Button as={NavLink} to="/Bihar/SBTE/Notes"
                     className="items-center text-sm max-w-min rounded-xl"
                     size="sm"
                     color="primary"
@@ -105,10 +99,8 @@ export default function Materials() {
                   >
                     Notes
                   </Button>
-                </NavLink>
 
-                <NavLink to="/Materials/Bihar/SBTE/PYQs">
-                  <Button
+                  <Button as={NavLink} to="/Bihar/SBTE/PYQs"
                     className="items-center text-sm max-w-min rounded-xl"
                     size="sm"
                     color="primary"
@@ -116,7 +108,7 @@ export default function Materials() {
                   >
                     PYQs
                   </Button>
-                </NavLink>
+            
               </div>
             </div>
           </div>
@@ -138,7 +130,7 @@ export default function Materials() {
                 resources and materials.
               </p>
               <div className="flex gap-2 mt-4 ">
-                <Button
+                <Button as={NavLink}
                   className="items-center text-sm max-w-min rounded-xl"
                   size="sm"
                   color="primary"
@@ -147,8 +139,8 @@ export default function Materials() {
                   Syllabus
                 </Button>
                 <Button
-                  as={Link}
-                  href="https://t.me/collezian_bcece_le"
+                  as={NavLink}
+                  to="https://t.me/collezian_bcece_le"
                   className="items-center text-sm max-w-min rounded-xl"
                   size="sm"
                   color="primary"
