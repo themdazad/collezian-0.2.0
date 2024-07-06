@@ -53,14 +53,13 @@ export function Header() {
 
   return (
     <>
-      <div className="px-[5%] py-12 grid place-content-center ">
-        <div className="text-center  space-y-4">
-          <h3 className="font-bold text-[14vw] leading-[18vw] md:text-8xl ">
-            one <br />
-            destination
+      <div className="px-[5%] place-content-center h-[30rem] grid grid-cols-1 lg:grid-cols-2 ">
+        <div className=" w-min justify-self-center space-y-4">
+          <h3 className=" text-[14vw] leading-[18vw] md:text-8xl ">
+           Collezian
           </h3>
           <p className="text-gray-500 ">
-            for all things related to engineering for free
+          We provide a unique platform for students to showcase their brilliant ideas and access study resources for free. Connect, collaborate, and get inspired by your peers.
           </p>
           <Button
             as={Link}
@@ -76,6 +75,7 @@ export function Header() {
             Join Community
           </Button>
         </div>
+        <Image className="max-sm:hidden object-cover justify-self-center"  src="/images/collezian_ai.png" />
       </div>
     </>
   );

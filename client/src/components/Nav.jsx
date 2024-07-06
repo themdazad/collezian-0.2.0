@@ -54,6 +54,18 @@ export default function Nav() {
         <NavbarItem>
           <Button
             as={NavLink}
+            to="/"
+            variant="light"
+            onClick={() => {
+              setIsMenuOpen(!isMenuOpen);
+            }}
+          >
+            Home
+          </Button>
+        </NavbarItem>
+        <NavbarItem>
+          <Button
+            as={NavLink}
             to="/Events"
             variant="light"
             onClick={() => {
@@ -139,6 +151,19 @@ export default function Nav() {
       <NavbarMenu
         className={`items-center space-y-2 justify-center bg-transparent md:hidden sm:flex `}
       >
+        <NavbarItem>
+          <Button
+            className="text-3xl font-bold"
+            as={NavLink}
+            to="/"
+            variant="light"
+            onClick={() => {
+              setIsMenuOpen(!isMenuOpen);
+            }}
+          >
+            Home
+          </Button>
+        </NavbarItem>
         <NavbarItem>
           <Button
             className="text-3xl font-bold"
