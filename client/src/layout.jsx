@@ -60,7 +60,7 @@ export function Header() {
             destination
           </h3>
           <p className="text-gray-500 text-sm">
-            for all things related to engineering for free
+            for all things related to engineering for free: hello
           </p>
           <Button
             as={Link}
