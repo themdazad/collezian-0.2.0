@@ -2,15 +2,13 @@ import { Accordion, AccordionItem, Button } from "@nextui-org/react";
 export const BEU_PYQS = () => {
   return (
     <>
-      <center>
-        <h1 className="text-2xl font-bold ">Question Bank</h1>
-        <p className=" text-gray-500 mb-4 px-[10%] ">
-          Bihar Engineering University, Patna
-        </p>
-      </center>
+      <header className="my-16 text-center">
+        <h1 className="text-4xl font-bold text-sky-600 " >Question Bank</h1>
+        <p className=" text-gray-500 mb-4 px-[10%] ">Bihar Engineering University, Patna</p>
+      </header>
 
-      <section className="px-[5%]  md:px-[15%]">
-        <Accordion>
+      <section className="px-[5%]">
+        <Accordion variant="splitted">
           <AccordionItem
             a
             className="gap-4"

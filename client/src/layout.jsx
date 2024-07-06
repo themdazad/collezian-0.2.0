@@ -53,7 +53,7 @@ export function Header() {
 
   return (
     <>
-      <div className="px-[5%] py-16 grid place-content-center ">
+      <div className="px-[5%] py-12 grid place-content-center ">
         <div className="text-center  space-y-4">
           <h3 className="font-bold text-[14vw] leading-[18vw] md:text-8xl ">
             one <br />
