@@ -48,7 +48,7 @@ export const BEU_Notes = () => {
     <>
       <header className="my-12 text-center">
         <h1 className="text-4xl font-bold text-sky-600 " >Notes</h1>
-        <p className="text-sm text-gray-500 mb-4 px-[10%] ">Bihar Engineering University, Patna</p>
+        <p className=" text-gray-500 mb-4 px-[10%] ">Bihar Engineering University, Patna</p>
       </header>
       {/* Need to add searchBar to filter Notes  latter */}
      
@@ -63,14 +63,14 @@ export const BEU_Notes = () => {
               <div className="font-semibold uppercase notesTittle">
                 {notes.tittle}-{i + 1}
               </div>
-              <div className="text-sm text-gray-500 description">
+              <div className=" text-gray-500 description">
                 {notes.description}
               </div>
               <div className="flex gap-4 mt-4 buttons">
                 <NavLink>
                   <Button
                     isDisabled
-                    className="items-center text-sm max-w-min rounded-xl"
+                    className="items-center  max-w-min rounded-xl"
                     size="sm"
                     color="primary"
                     variant="flat"
@@ -82,7 +82,7 @@ export const BEU_Notes = () => {
                 <NavLink>
                   <Button
                     isDisabled
-                    className="items-center text-sm max-w-min rounded-xl "
+                    className="items-center  max-w-min rounded-xl "
                     size="sm"
                     color="primary"
                     variant="flat"

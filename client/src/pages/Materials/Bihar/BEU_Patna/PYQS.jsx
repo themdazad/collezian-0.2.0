@@ -4,7 +4,7 @@ export const BEU_PYQS = () => {
     <>
       <center>
         <h1 className="text-2xl font-bold ">Question Bank</h1>
-        <p className="text-sm text-gray-500 mb-4 px-[10%] ">
+        <p className=" text-gray-500 mb-4 px-[10%] ">
           Bihar Engineering University, Patna
         </p>
       </center>

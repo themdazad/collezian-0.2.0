@@ -5,7 +5,7 @@ export const BEU_Syllabus = () => {
     <>
       <header className="my-12 text-center">
         <h1 className="text-4xl font-bold text-sky-600 " >Syllabus</h1>
-        <p className="text-sm text-gray-500 mb-4 px-[10%] ">Bihar Engineering University, Patna</p>
+        <p className=" text-gray-500 mb-4 px-[10%] ">Bihar Engineering University, Patna</p>
       </header>
 
       <section>
@@ -62,7 +62,7 @@ export const BEU_Syllabus = () => {
 
           <AccordionItem key="4" aria-label="Accordion 4" subtitle="Click here to expand " title="Computer Science and Engineering ">
           <span>
-            <p className="text-sm">Core</p>
+            <p className="">Core</p>
             <div className="flex gap-4 my-2 pdf_download_btn">
               <Button isDisabled variant="flat" color="primary" >1st </Button>
               <Button isDisabled variant="flat" color="primary" >2nd </Button>
@@ -75,7 +75,7 @@ export const BEU_Syllabus = () => {
             </div>
             </span>
             <span>
-            <p className="text-sm">IoT</p>
+            <p className="">IoT</p>
             <div className="flex gap-4 my-2 pdf_download_btn">
               <Button isDisabled variant="flat" color="primary" >1st </Button>
               <Button isDisabled variant="flat" color="primary" >2nd </Button>
@@ -88,7 +88,7 @@ export const BEU_Syllabus = () => {
             </div>
             </span>
             <span>
-            <p className="text-sm">AI & ML</p>
+            <p className="">AI & ML</p>
             <div className="flex gap-4 my-2 pdf_download_btn">
               <Button isDisabled variant="flat" color="primary" >1st </Button>
               <Button isDisabled variant="flat" color="primary" >2nd </Button>
@@ -101,7 +101,7 @@ export const BEU_Syllabus = () => {
             </div>
             </span>
             <span>
-            <p className="text-sm">Data Science</p>
+            <p className="">Data Science</p>
             <div className="flex gap-4 my-2 pdf_download_btn">
               <Button isDisabled variant="flat" color="primary" >1st </Button>
               <Button isDisabled variant="flat" color="primary" >2nd </Button>
@@ -113,7 +113,7 @@ export const BEU_Syllabus = () => {
               <Button isDisabled variant="flat" color="primary" >8th </Button>
             </div>
             </span><span>
-            <p className="text-sm">Cyber Security</p>
+            <p className="">Cyber Security</p>
             <div className="flex gap-4 my-2 pdf_download_btn">
               <Button isDisabled variant="flat" color="primary" >1st </Button>
               <Button isDisabled variant="flat" color="primary" >2nd </Button>

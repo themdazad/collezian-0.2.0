@@ -59,7 +59,7 @@ export function Header() {
             one <br />
             destination
           </h3>
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 ">
             for all things related to engineering for free
           </p>
           <Button
@@ -87,7 +87,7 @@ export function Features_Card() {
     <section className="my-20">
       <center className="my-8">
         <h1 className="text-2xl ">Categories</h1>
-        <p className="text-sm text-gray-500 mb-4 px-[10%] ">
+        <p className=" text-gray-500 mb-4 px-[10%] ">
           useful categories for your engineering journey
         </p>
       </center>
@@ -109,14 +109,14 @@ export function Features_Card() {
 
           <div className="grid justify-center justif p-[5%] ">
             <h1>Study Materials</h1>
-            <p className="text-sm text-gray-500">
+            <p className=" text-gray-500">
               Free engineering study materials, including PYQs, Syllabus and
               notes.
             </p>
             <Link
               as={NavLink}
               to="Materials"
-              className="mt-2 text-sm font-semibold cursor-pointer"
+              className="mt-2  font-semibold cursor-pointer"
               color="primary"
               variant="flat"
             >
@@ -142,14 +142,14 @@ export function Features_Card() {
 
           <div className="grid justify-center p-[5%]">
             <h1>GOLU AI</h1>
-            <p className="text-sm text-gray-500">
+            <p className=" text-gray-500">
               Effortless learning, endless possibilities. Meet GOLU ai: Your
               personal study buddy.
             </p>
             <Link
               as={NavLink}
               to="/Events"
-              className="mt-2 text-sm font-semibold cursor-pointer"
+              className="mt-2  font-semibold cursor-pointer"
               color="primary"
               variant="flat"
             >
@@ -174,14 +174,14 @@ export function Features_Card() {
 
           <div className="grid justify-center p-[5%]">
             <h1>Contests & Events</h1>
-            <p className="text-sm text-gray-500">
+            <p className=" text-gray-500">
               Provides a comprehensive list of upcoming coding contests and tech
               events.
             </p>
             <Link
               as={NavLink}
               to="/Events"
-              className="mt-2 text-sm font-semibold cursor-pointer"
+              className="mt-2  font-semibold cursor-pointer"
               color="primary"
               variant="flat"
             >
@@ -211,7 +211,7 @@ export const Groups = () => {
 
         <center className="my-8">
           <h1 className="text-2xl ">Groups</h1>
-          <p className="text-sm text-gray-500 mb-4 px-[10%] ">
+          <p className=" text-gray-500 mb-4 px-[10%] ">
             Join interesting groups to stay updated
           </p>
         </center>
