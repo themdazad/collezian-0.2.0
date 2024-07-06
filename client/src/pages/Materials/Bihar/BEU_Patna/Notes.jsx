@@ -46,16 +46,14 @@ export const BEU_Notes = () => {
   const [data, setData] = useState(notes_data);
   return (
     <>
-      <center>
-        <h1 className="text-2xl font-bold ">BEU Notes</h1>
-        <p className="text-sm text-gray-500 mb-4 px-[10%] ">
-          Bihar Engineering University, Patna
-        </p>
-      </center>
+      <header className="my-12 text-center">
+        <h1 className="text-4xl font-bold text-sky-600 " >Notes</h1>
+        <p className="text-sm text-gray-500 mb-4 px-[10%] ">Bihar Engineering University, Patna</p>
+      </header>
       {/* Need to add searchBar to filter Notes  latter */}
      
       
-      <section className="px-[5%] py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6">
+      <section className=" py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6">
         {data.map((notes, i) => {
           return (
             <div

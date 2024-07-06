@@ -5,6 +5,7 @@ import Events from "./components/Events";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import { useEffect } from "react";
+
 // API integration
 import axios from "axios";
 
@@ -18,22 +19,22 @@ const image3 =
 const Layout = () => {
   return (
     <>
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1}}
-        transition={{ duration: 1, delay: 0.8}}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.8 }}
         viewport={{ once: true, amount: 0 }}
       >
         <Header />
       </motion.div>
       <section>
+      <section>
+        <Features_Card />
+      </section>
         <Groups />
       </section>
       <section>
         <Events />
-      </section>
-      <section>
-        <Features_Card />
       </section>
     </>
   );
@@ -54,7 +55,6 @@ export function Header() {
     <>
       <div className="px-[5%] py-16 grid place-content-center ">
         <div className="text-center  space-y-4">
-        
           <h3 className="font-bold text-[14vw] leading-[18vw] md:text-8xl ">
             one <br />
             destination

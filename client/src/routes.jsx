@@ -16,6 +16,7 @@ import { SBTE_Syllabus } from "./pages/Materials/Bihar/SBTE/Syllabus.jsx";
 import { SBTE_Notes } from "./pages/Materials/Bihar/SBTE/Notes.jsx";
 import { SBTE_PYQS } from "./pages/Materials/Bihar/SBTE/PYQS.jsx";
 import Layout from "./layout.jsx";
+import { About } from "./pages/AboutPage/About.jsx";
 
 
 export default function Path() {
@@ -33,7 +34,9 @@ export default function Path() {
         <Route path="/Roadmap" element={<Roadmap />} />
         <Route path="/Projects" element={<Projects />} />
         <Route path="/Contact" element={<Contact />} />
-
+        <Route path="/about" element={<About />} />
+        
+        
         {/* Bihar  */}
         <Route path="/Materials/BEU_Syllabus" element={<BEU_Syllabus />} />
         <Route path="/Materials/BEU_Notes" element={<BEU_Notes />} />

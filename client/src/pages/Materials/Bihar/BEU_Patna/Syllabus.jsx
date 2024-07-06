@@ -3,12 +3,12 @@ export const BEU_Syllabus = () => {
   
   return (
     <>
-      <center>
-        <h1 className="text-2xl font-bold " >BEU Syllabus</h1>
+      <header className="my-12 text-center">
+        <h1 className="text-4xl font-bold text-sky-600 " >Syllabus</h1>
         <p className="text-sm text-gray-500 mb-4 px-[10%] ">Bihar Engineering University, Patna</p>
-      </center>
+      </header>
 
-      <section className="px-[5%]  md:px-[15%]">
+      <section>
         <Accordion>
           <AccordionItem a className="gap-4" key="1" aria-label="Accordion 1" subtitle="Click here to expand" title="Electrical Engineering">
             <div className="flex gap-4 my-2 pdf_download_btn">

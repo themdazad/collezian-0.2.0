@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <NextUIProvider>
-      <main className="dark:dark dark:text-foreground dark:bg-background  ">
+      <main className="dark:dark dark:text-foreground dark:bg-background">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
