@@ -33,9 +33,7 @@ const Layout = () => {
       </section>
         <Groups />
       </section>
-      <section>
-        <Events />
-      </section>
+     
     </>
   );
 };
