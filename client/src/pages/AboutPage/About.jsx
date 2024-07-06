@@ -6,8 +6,8 @@ export const About = () => {
     <>
       <header className=" px-[5%] max-md:mt-12  grid lg:grid-cols-2">
         <div className="content self-center  space-y-4">
-          <h1 className="text-3xl  text-sky-600 font-bold">About</h1>
-          <p className="text-justify">
+          <h1 className="text-3xl  font-semibold">Welcome to Collezian</h1>
+          <p className="text-justify text-gray-500">
             We&apos;re here to make your engineering journey smoother and more
             exciting. Our platform is packed with study materials like syllabi,
             question papers, and more, all tailored to help you ace your exams
