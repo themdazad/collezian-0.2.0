@@ -5,23 +5,23 @@ export default function Materials() {
   return (
     <>
       {/* Materials  */}
-      <div className="px-[5%]">
+      <div className=" px-[5%]">
         <div className="heading m-12">
-          <h1 className="text-4xl font-semibold text-center CardTittle text-sky-600">
-            Study Materials
+          <h1 className="text-4xl font-semibold text-center CardTittle ">
+            Bihar Engineering
           </h1>
-          <p className="text-sm text-center text-gray-600 ">
-            Choose your state and explore engineering resources for free
+          <p className="text-sm text-center text-gray-500 ">
+            Explore every engineering resources for free
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 mb-12 card md:grid-cols-2 lg:grid-cols-3 content-stretch">
+        <div className="grid grid-cols-1 gap-4 mb-12 card md:grid-cols-2 lg:grid-cols-3 content-stretch">
           {/*BTech   */}
-          <div className="gap-12 m-auto border shadow-sm border-zinc-300/10 hover:shadow-xl bg-white/5 rounded-3xl overflow-clip">
+          <div className="gap-12 m-auto border shadow-sm border-zinc-300/10 hover:shadow-xl bg-white/5 rounded-lg overflow-clip">
             <div>
               <img
                 className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full "
-                src="https://img.freepik.com/free-photo/school-students-digital-art-style-education-day_23-2151164373.jpg?t=st=1715710796~exp=1715714396~hmac=d85184a6f81517718684552d176e6cd04275a66e2c3afda39c22aced3155ad11&w=740"
+                src="/images/plant.jpg"
                 alt=""
               />
             </div>
@@ -65,11 +65,11 @@ export default function Materials() {
             </div>
           </div>
           {/* State: Bihar Board Materials / */}
-          <div className="gap-12 m-auto border shadow-sm border-zinc-300/10 hover:shadow-xl bg-white/5 rounded-3xl overflow-clip">
+          <div className="gap-12 m-auto border shadow-sm border-zinc-300/10 hover:shadow-xl bg-white/5 rounded-lg overflow-clip">
             <div>
               <img
-                className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full "
-                src="https://img.freepik.com/free-photo/anime-school-building-illustration_23-2151150991.jpg?t=st=1715710899~exp=1715714499~hmac=5f1206ff522872642f018993dee4dcb1103dfd5c022cf25a41224505299ce0ab&w=360"
+                className="bg-black p-4 object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full "
+                src="/images/collezian_cloud.png"
                 alt=""
               />
             </div>
@@ -114,11 +114,11 @@ export default function Materials() {
           </div>
 
           {/* BCECE LE   */}
-          <div className="gap-12 m-auto border shadow-sm border-zinc-300/50 hover:shadow-xl bg-white/5 rounded-3xl overflow-clip">
+          <div className="gap-12 m-auto border shadow-sm border-zinc-300/50 hover:shadow-xl bg-white/5 rounded-lg overflow-clip">
             <div>
               <img
                 className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full "
-                src="https://img.freepik.com/free-photo/caucasian-male-studying-literature-indoors-library-generated-by-ai_188544-38939.jpg?t=st=1715711129~exp=1715714729~hmac=c76e59c46801b768505df735e6f4beac756f4ebccc1e5496d82f5b810ad7d6b5&w=826"
+                src="/images/laptop-desktop.jpg"
                 alt=""
               />
             </div>

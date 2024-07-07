@@ -51,13 +51,13 @@ export function Header() {
 
   return (
     <>
-      <div className="px-[5%] place-content-center h-[30rem] grid grid-cols-1 lg:grid-cols-2 ">
+      <div className="px-[5%] place-content-center h-[36rem] grid grid-cols-1 lg:grid-cols-2 ">
         <div className=" w-min justify-self-center space-y-4">
           <h3 className=" text-[14vw] leading-[18vw] md:text-8xl ">
            Collezian
           </h3>
           <p className="text-gray-500 ">
-          We provide a unique platform for students to showcase their brilliant ideas and access study resources for free. Connect, collaborate, and get inspired by your peers.
+          A unique platform for students to showcase their brilliant ideas and access study resources for free. Connect, collaborate, and get inspired by your peers.
           </p>
           <Button
             as={Link}
@@ -90,13 +90,13 @@ export function Features_Card() {
         </p>
       </center>
 
-      <div className=" flex scrollbar-hide overflow-scroll card  gap-8 px-[5%] content-stretch ">
+      <div className=" flex scrollbar-hide overflow-scroll card  gap-4 px-[5%] content-stretch ">
         <motion.div
           whileHover={{ scale: 0.9 }}
           onHoverStart={(e) => {}}
           onHoverEnd={(e) => {}}
           key={1}
-          className=" min-w-[320px] gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2"
+          className=" min-w-[320px] gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-lg overflow-clip my-2"
         >
           <Image
             className=" object-cover aspect-[16/9]  ease-in duration-350 delay-0  z-0 w-full h-full "
@@ -129,7 +129,7 @@ export function Features_Card() {
           onHoverStart={(e) => {}}
           onHoverEnd={(e) => {}}
           key={2}
-          className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2"
+          className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-lg overflow-clip my-2"
         >
           <Image
             className="object-cover  aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full "
@@ -161,7 +161,7 @@ export function Features_Card() {
           onHoverStart={(e) => {}}
           onHoverEnd={(e) => {}}
           key={3}
-          className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2"
+          className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-lg overflow-clip my-2"
         >
           <Image
             className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full "
