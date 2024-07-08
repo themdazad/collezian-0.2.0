@@ -8,7 +8,7 @@ export const BEU_PYQS = () => {
       </header>
 
       <section className="px-[5%]">
-        <Accordion variant="splitted">
+        <Accordion >
           <AccordionItem
             a
             className="gap-4"

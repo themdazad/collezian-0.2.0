@@ -1,10 +1,10 @@
 import ReactDOM from "react-dom/client";
 import { NextUIProvider } from "@nextui-org/react";
 import Path from "./routes.jsx";
-import Nav from "./components/Nav.jsx";
+import { Navigation } from "./components/Header_Footer/Navigation.jsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
-import { Footer_Component } from "./components/Footer_Component.jsx";
+import { Footer } from "./components/Header_Footer/Footer.jsx";
 import { motion } from "framer-motion";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -17,10 +17,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           transition={{ duration: 1, delay: 0.6 }}
           viewport={{ once: true, amount: 0 }}
         >
-          <Nav />
+          <Navigation />
         </motion.div>
         <Path />
-        <Footer_Component />
+        <Footer/>
       </main>
     </NextUIProvider>
   </BrowserRouter>

@@ -1,13 +1,8 @@
 import { Image, Button, Link } from "@nextui-org/react";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
-import Events from "./components/Events";
 import { motion } from "framer-motion";
-import { FaWhatsapp } from "react-icons/fa";
-import { useEffect } from "react";
-
-// API integration
-import axios from "axios";
+import { FaWhatsapp } from "react-icons/fa"
 
 const image1 =
   "https://img.freepik.com/free-photo/front-view-stacked-books-earth-globe-open-book-pencils-education-day_23-2149241018.jpg?w=740&t=st=1717795530~exp=1717796130~hmac=bd7486b8ade9fcbdf05d3f9ed1335b1c496fd200f752021ff295a9936dcb2479";
@@ -33,20 +28,12 @@ const Layout = () => {
 export default Layout;
 
 export function Header() {
-  const user_data = [{ username: "azad", password: 12345 }];
-  useEffect(() => {
-    // API integration
-    axios
-      .post("http://localhost:8000/api", user_data)
-      .then((response) => console.log(response.data))
-      .catch((error) => console.log(error));
-  });
-
+  
   return (
     <>
       <div className="min-h-[90vh] px-[5%] grid place-content-center ">
         <div className="text-center space-y-12">
-          <h3 className="text-8xl ">
+          <h3 className=" text-6xl lg:text-8xl ">
            Collezian
           </h3>
           <p className="text-lg text-gray-500 ">

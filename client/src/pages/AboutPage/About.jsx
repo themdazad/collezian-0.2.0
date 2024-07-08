@@ -6,7 +6,6 @@ export const About = () => {
     <>
       <header className=" px-[5%] max-md:mt-12  grid lg:grid-cols-2">
         <div className="content self-center  space-y-4">
-          <h1 className="text-3xl  font-semibold">Hello,</h1>
           <p className="text-justify text-gray-500">
             We&apos;re here to make your engineering journey smoother and more
             exciting. Our platform is packed with study materials like syllabi,

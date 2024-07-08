@@ -1,8 +1,8 @@
-import ThemeSwitch from "./ThemeSwitch";
+import ThemeSwitch from "../utils/ThemeSwitch";
 import { Divider } from "@nextui-org/react";
 import { FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
-export function Footer_Component() {
+export function Footer() {
   return (
     <>
       <Divider />

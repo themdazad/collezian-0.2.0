@@ -22,9 +22,8 @@ import {
   PiBagDuotone,
 } from "react-icons/pi";
 
-export default function Nav() {
+export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <Navbar shouldHideOnScroll isMenuOpen={isMenuOpen}>
       <NavbarContent>
@@ -35,9 +34,10 @@ export default function Nav() {
               className=" w-12  hover:-rotate-[360deg] transition-transform duration-[2000]"
             />
           </NavLink>
-          {/* <NavLink as={NavLink} to="/" className="font-bold text-inherit">
-            COLLEZIAN
-          </NavLink> */}
+          {
+            (window.location.pathname!=="/") && <NavLink as={NavLink} to="/" className="font-semibold text-lg">COLLEZIAN</NavLink>
+          }
+         
         </NavbarBrand>
 
         <NavbarMenuToggle
@@ -84,14 +84,14 @@ export default function Nav() {
             <DropdownMenu variant="faded" aria-label="Static Actions">
               <DropdownItem
                 as={NavLink}
-                to="/Materials"
-                key="Materials"
+                to="/Engineering"
+                key="Engineering"
                 startContent={<PiNotebookDuotone />}
                 onClick={() => {
                   setIsMenuOpen(!isMenuOpen);
                 }}
               >
-                Study Materials
+                Study Engineering
               </DropdownItem>
               <DropdownItem
                 as={NavLink}
@@ -194,14 +194,14 @@ export default function Nav() {
             >
               <DropdownItem
                 as={NavLink}
-                to="/Materials"
-                key="Materials"
+                to="/Engineering"
+                key="Engineering"
                 startContent={<PiNotebookDuotone />}
                 onClick={() => {
                   setIsMenuOpen(!isMenuOpen);
                 }}
               >
-                Study Materials
+                Study Engineering
               </DropdownItem>
               <DropdownItem
                 as={NavLink}

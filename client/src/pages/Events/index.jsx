@@ -1,4 +1,4 @@
-import { Link, Image } from "@nextui-org/react";
+import { Link} from "@nextui-org/react";
 import { Carousel } from "flowbite-react";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { motion } from "framer-motion";
@@ -13,20 +13,13 @@ const event_data = [
     registration_link:
       "https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
   },
-
-  // {image:"/events/techkshitizThumbnail.jpg",
-  //     tittle:"",
-  //     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ducimus.",
-  //     last_date:"Not Announced",
-  //     registration_link:"",
-  // },
 ];
 
-const Syllabus = () => {
+export function Events(){
   return (
     <>
       <div className="my-16 px-[5%]">
-        <div className="m-auto overflow-hidden  shadow-xl rounded-3xl relative aspect-[16/9] md:aspect-[2.73/1]">
+        <div className="m-auto overflow-hidden  shadow-xl rounded-3xl relative aspect-[16/9] md:aspect-[4/1]">
           <Carousel leftControl="" rightControl="">
             <img
               alt="banner_image"
@@ -83,5 +76,3 @@ const Syllabus = () => {
     </>
   );
 };
-
-export default Syllabus;
