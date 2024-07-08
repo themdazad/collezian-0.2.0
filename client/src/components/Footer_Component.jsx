@@ -16,7 +16,7 @@ export function Footer_Component() {
             target="_blank"
             href="https://www.instagram.com/the_mdazad/"
           >
-            Md Azad
+            Azad
           </a>
         </p>
         <div className="icons flex items-center space-x-4 text-2xl">

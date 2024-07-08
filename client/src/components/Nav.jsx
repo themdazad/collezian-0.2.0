@@ -16,7 +16,6 @@ import {
 } from "@nextui-org/react";
 import { FiChevronDown } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
-import Collezian from "..//assets/Collezian.svg";
 import {
   PiNotebookDuotone,
   PiLaptopDuotone,
@@ -32,13 +31,13 @@ export default function Nav() {
         <NavbarBrand>
           <NavLink as={NavLink} to="/">
             <Image
-              src={Collezian}
-              className=" w-12 -rotate-[20deg] hover:-rotate-[360deg] transition-transform duration-[2000]"
+              src='/images/Collezian_Logo.svg' alt="collezian logo" height={100} width={100}
+              className=" w-12  hover:-rotate-[360deg] transition-transform duration-[2000]"
             />
           </NavLink>
-          <NavLink as={NavLink} to="/" className="font-bold text-inherit">
+          {/* <NavLink as={NavLink} to="/" className="font-bold text-inherit">
             COLLEZIAN
-          </NavLink>
+          </NavLink> */}
         </NavbarBrand>
 
         <NavbarMenuToggle

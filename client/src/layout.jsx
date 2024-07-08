@@ -26,14 +26,7 @@ const Layout = () => {
         viewport={{ once: true, amount: 0 }}
       >
         <Header />
-      </motion.div>
-      <section>
-      <section>
-        <Features_Card />
-      </section>
-        <Groups />
-      </section>
-     
+      </motion.div>     
     </>
   );
 };
@@ -51,13 +44,13 @@ export function Header() {
 
   return (
     <>
-      <div className="px-[5%] place-content-center h-[36rem] grid grid-cols-1 lg:grid-cols-2 ">
-        <div className=" w-min justify-self-center space-y-4">
-          <h3 className=" text-[14vw] leading-[18vw] md:text-8xl ">
+      <div className="min-h-[90vh] px-[5%] grid place-content-center ">
+        <div className="text-center space-y-12">
+          <h3 className="text-8xl ">
            Collezian
           </h3>
-          <p className="text-gray-500 ">
-          A unique platform for students to showcase their brilliant ideas and access study resources for free. Connect, collaborate, and get inspired by your peers.
+          <p className="text-lg text-gray-500 ">
+          A unique platform for students to showcase their brilliant ideas and access study resources for free. <br /> Connect, collaborate, and get inspired by your peers.
           </p>
           <Button
             as={Link}
@@ -70,10 +63,10 @@ export function Header() {
             radius="full"
             startContent={<FaWhatsapp />}
           >
-            Join Community
+            Connect
           </Button>
         </div>
-        <Image className="max-sm:hidden object-cover justify-self-center"  src="/images/collezian_ai.png" />
+        {/* <Image className="max-md:hidden object-cover justify-self-center" width={700} height={700} src="/images/collezian_ai.png" /> */}
       </div>
     </>
   );
