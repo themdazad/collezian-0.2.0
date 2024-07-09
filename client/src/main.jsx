@@ -1,8 +1,8 @@
 import ReactDOM from "react-dom/client";
+import "./index.css";
 import { NextUIProvider } from "@nextui-org/react";
 import Path from "./routes.jsx";
 import { Navigation } from "./components/Header_Footer/Navigation.jsx";
-import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { Footer } from "./components/Header_Footer/Footer.jsx";
 import { motion } from "framer-motion";

@@ -47,7 +47,6 @@ export function Header() {
             color="primary"
             variant="flat"
             size="lg"
-            radius="full"
             startContent={<FaWhatsapp />}
           >
             Connect

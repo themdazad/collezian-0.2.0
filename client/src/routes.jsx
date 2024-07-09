@@ -8,18 +8,22 @@ import { BEU_Notes } from "./pages/Engineering/Bihar/BEU_Patna/Notes.jsx";
 import { BEU_PYQS } from "./pages/Engineering/Bihar/BEU_Patna/QuestionBank.jsx";
 import Layout from "./layout.jsx";
 import { About } from "./pages/AboutPage/index.jsx";
-Engineering;
+import { Login } from "./pages/Auth/Login/index.jsx";
+
 export default function Path() {
+
   return (
     <Routes>
       <Route path="" element={<Layout />} />
       {/* Adding pages in outlet portion of Layout */}
       <Route path="/Events" element={<Events />} />
       <Route path="/about" element={<About />} />
-
+      <Route path="/login" element={<Login />} />
+     
       {/* Bihar  */}
+      
       <Route path="/Engineering" >
-        <Route path="" element={<Engineering />} />
+        <Route path="" element={<Engineering />}/>
         <Route path="BEU_Syllabus" element={<BEU_Syllabus />} />
         <Route path="BEU_Notes" element={<BEU_Notes />} />
         <Route path="BEU_PYQs" element={<BEU_PYQS />} />
