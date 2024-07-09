@@ -3,10 +3,15 @@ export const BEU_Syllabus = () => {
   
   return (
     <>
-      <header className="my-16 text-center">
-        <h1 className="text-4xl font-bold text-sky-600 " >Syllabus</h1>
-        <p className=" text-gray-500 mb-4 px-[10%] ">Bihar Engineering University, Patna</p>
-      </header>
+    
+      <div className="heading m-12">
+          <h1 className="text-4xl font-semibold text-center CardTittle ">
+          Syllabus
+          </h1>
+          <p className="text-sm text-center text-gray-500 ">
+          Bihar Engineering University, Patna
+          </p>
+        </div>
 
       <section className="px-[5%]">
         <Accordion >

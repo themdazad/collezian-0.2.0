@@ -7,7 +7,7 @@ import { BEU_Syllabus } from "./pages/Engineering/Bihar/BEU_Patna/Syllabus.jsx";
 import { BEU_Notes } from "./pages/Engineering/Bihar/BEU_Patna/Notes.jsx";
 import { BEU_PYQS } from "./pages/Engineering/Bihar/BEU_Patna/QuestionBank.jsx";
 import Layout from "./layout.jsx";
-import { About } from "./pages/AboutPage/About.jsx";
+import { About } from "./pages/AboutPage/index.jsx";
 Engineering;
 export default function Path() {
   return (

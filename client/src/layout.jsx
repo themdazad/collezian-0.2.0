@@ -32,12 +32,12 @@ export function Header() {
   return (
     <>
       <div className="min-h-[90vh] px-[5%] grid place-content-center ">
-        <div className="text-center space-y-12">
-          <h3 className=" text-6xl lg:text-8xl ">
-           Collezian
+        <div className="text-center space-y-6">
+          <h3 className=" text-6xl lg:text-4xl ">
+           We collect resources for your better engineerig
           </h3>
           <p className="text-lg text-gray-500 ">
-          A unique platform for students to showcase their brilliant ideas and access study resources for free. <br /> Connect, collaborate, and get inspired by your peers.
+          Connect, collaborate, and get inspired by your peers.
           </p>
           <Button
             as={Link}

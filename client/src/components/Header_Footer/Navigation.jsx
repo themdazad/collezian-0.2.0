@@ -91,19 +91,7 @@ export function Navigation() {
                   setIsMenuOpen(!isMenuOpen);
                 }}
               >
-                Study Engineering
-              </DropdownItem>
-              <DropdownItem
-                as={NavLink}
-                to="/Result"
-                key="CheckResult"
-                className="text-danger"
-                color="danger"
-                onClick={() => {
-                  setIsMenuOpen(!isMenuOpen);
-                }}
-              >
-                Check Result
+                Bihar Engineering
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
