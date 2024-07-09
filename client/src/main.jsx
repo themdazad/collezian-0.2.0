@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <NextUIProvider>
-      <main className="dark:dark dark:text-foreground dark:bg-background bg-[url('/bg_image/blur_bg.png')] bg-cover bg-no-repeat max-w-[1920px] m-auto">
+      <main className="dark:dark dark:text-foreground dark:bg-[#040a14] bg-[#ececec] bg-[url('/bg_image/blur_bg.png')] bg-cover bg-no-repeat max-w-[1920px] m-auto">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           whileInView={{ opacity: 1, y: 0 }}
