@@ -21,7 +21,7 @@ export default function Engineering() {
           <div className="gap-12 m-auto border shadow-sm border-zinc-300/10 hover:shadow-xl bg-white/5 rounded-lg overflow-clip">
             <div>
               <Image
-                className="object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full "
+                className={` object-cover aspect-[16/9] ease-in duration-200 delay-0  z-0 w-full h-full `}
                 src="/images/plant.jpg"
                 alt=""
               />

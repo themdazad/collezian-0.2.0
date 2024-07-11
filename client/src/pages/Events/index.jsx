@@ -1,7 +1,7 @@
-import { Link} from "@nextui-org/react";
-import { Carousel } from "flowbite-react";
+import { Image, Link } from "@nextui-org/react";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const event_data = [
   {
@@ -13,38 +13,56 @@ const event_data = [
     registration_link:
       "https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
   },
+  {
+    image: "/events/techkshitizThumbnail.jpg",
+    tittle: "TechKshitiz '24",
+    description:
+      "First ever technical event organizing",
+    last_date: "Last Date - 30 June 2024",
+    registration_link:
+      "https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
+  },
+  {
+    image: "/events/techkshitizThumbnail.jpg",
+    tittle: "TechKshitiz '24",
+    description:
+      "First ever technical event organizing by Government Engineering College, Siwan",
+    last_date: "Last Date - 30 June 2024",
+    registration_link:
+      "https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
+  },
 ];
 
-export function Events(){
+export function Events() {
   return (
     <>
-      <div className="my-16 px-[5%]">
-        <div className="m-auto overflow-hidden  shadow-xl rounded-3xl relative aspect-[16/9] md:aspect-[4/1]">
-          <Carousel leftControl="" rightControl="">
-            <img
-              alt="banner_image"
-              className="object-cover w-full h-full in"
-              src="/events/TechKshitizBanner.jpg"
-            />
-            <img
-              alt="banner_image"
-              className="object-cover w-full h-full in"
-              src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-          </Carousel>
-        </div>
+      <div className="heading m-12">
+        <h1 className="text-4xl font-semibold text-center CardTittle ">
+          Events
+        </h1>
+        <p className="text-sm text-center text-gray-500 ">
+          Catch up with the latest college events happening around you.
+        </p>
+      </div>
 
-        <h1 className="m-4 mt-12 text-lg font-semibold ">Events Schedule</h1>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="my-16 min-h-[90vh] px-[5%]">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
           {event_data.map((event, i) => (
             <motion.div
-              whileHover={{ scale: 0.9 }}
+              whileHover={{ scale: 1.05 }}
               onHoverStart={(e) => {}}
               onHoverEnd={(e) => {}}
-              key={i}
-              className="z-0 relative shadow-md hover:shadow-lg transition-shadow duration-350  min-w-[250px] h-full  gap-8 m-auto  bg-white/5  rounded-3xl"
+              key={1}
+              className=" min-w-[240px] gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-lg overflow-clip my-2"
             >
-              <div className="flex flex-col w-full m-auto p-[5%]">
+              <Image
+                className=" object-cover aspect-[16/9]  ease-in duration-350 delay-0  z-0 w-full h-full "
+                src={event.image}
+                radius="none"
+                alt="collezian-study-materials-image"
+              />
+
+              <div className="grid justify-center justif p-[5%] ">
                 <h1>
                   {event.tittle.length === 0 ? "Coming Soon" : event.tittle}{" "}
                 </h1>
@@ -75,4 +93,4 @@ export function Events(){
       </div>
     </>
   );
-};
+}

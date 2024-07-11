@@ -3,6 +3,7 @@ import { MdOutlineArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa"
+import Engineering from "./pages/Engineering";
 
 const image1 =
   "https://img.freepik.com/free-photo/front-view-stacked-books-earth-globe-open-book-pencils-education-day_23-2149241018.jpg?w=740&t=st=1717795530~exp=1717796130~hmac=bd7486b8ade9fcbdf05d3f9ed1335b1c496fd200f752021ff295a9936dcb2479";
@@ -21,7 +22,9 @@ const Layout = () => {
         viewport={{ once: true, amount: 0 }}
       >
         <Header />
-      </motion.div>     
+      </motion.div>    
+
+      <Engineering ishidded="hidden" /> 
     </>
   );
 };
