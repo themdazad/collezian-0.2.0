@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import {
   Dropdown,
   DropdownTrigger,
@@ -30,14 +29,18 @@ export function Navigation() {
         <NavbarBrand>
           <NavLink as={NavLink} to="/">
             <Image
-              src='/images/Collezian_Logo.svg' alt="collezian logo" height={100} width={100}
+              src="/images/Collezian_Logo.svg"
+              alt="collezian logo"
+              height={100}
+              width={100}
               className=" w-12  hover:-rotate-[360deg] transition-transform duration-[2000]"
             />
           </NavLink>
-          {
-            (window.location.pathname!=="/") && <NavLink as={NavLink} to="/" className="font-semibold text-lg">COLLEZIAN</NavLink>
-          }
-         
+          {window.location.pathname !== "/" && (
+            <NavLink as={NavLink} to="/" className="font-semibold text-lg">
+              COLLEZIAN
+            </NavLink>
+          )}
         </NavbarBrand>
 
         <NavbarMenuToggle
@@ -110,13 +113,6 @@ export function Navigation() {
               <DropdownItem key="new" startContent={<PiLaptopDuotone />}>
                 Intenships
               </DropdownItem>
-              <DropdownItem
-                key="CheckResult"
-                className="text-danger"
-                color="danger"
-              >
-                Check Certificate
-              </DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </NavbarItem>
@@ -130,6 +126,18 @@ export function Navigation() {
             }}
           >
             About us
+          </Button>
+        </NavbarItem>
+        <NavbarItem>
+        <Button
+            as={NavLink}
+            to="/login"
+            variant="flat"
+            onClick={() => {
+              setIsMenuOpen(!isMenuOpen);
+            }}
+          >
+            Login
           </Button>
         </NavbarItem>
       </NavbarContent>
@@ -191,18 +199,6 @@ export function Navigation() {
               >
                 Study Engineering
               </DropdownItem>
-              <DropdownItem
-                as={NavLink}
-                to="/Result"
-                key="CheckResult"
-                className="text-danger"
-                color="danger"
-                onClick={() => {
-                  setIsMenuOpen(!isMenuOpen);
-                }}
-              >
-                Check Result
-              </DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </NavbarItem>
@@ -236,16 +232,6 @@ export function Navigation() {
                 }}
               >
                 Intenships
-              </DropdownItem>
-              <DropdownItem
-                key="CheckResult"
-                className="text-danger"
-                color="danger"
-                onClick={() => {
-                  setIsMenuOpen(!isMenuOpen);
-                }}
-              >
-                Check Certificate
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
