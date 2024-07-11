@@ -103,30 +103,15 @@ export function Navigation() {
           <Dropdown>
             <DropdownTrigger>
               <Button variant="light" endContent={<FiChevronDown />}>
-                Careers
+                Other
               </Button>
             </DropdownTrigger>
             <DropdownMenu variant="faded" aria-label="Static Actions">
-              <DropdownItem key="new" startContent={<PiBagDuotone />}>
-                Jobs
-              </DropdownItem>
-              <DropdownItem key="new" startContent={<PiLaptopDuotone />}>
-                Intenships
+              <DropdownItem as={NavLink} to='recursive_coder' startContent={<PiLaptopDuotone />}>
+                Recursive Coder
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
-        </NavbarItem>
-        <NavbarItem>
-          <Button
-            as={NavLink}
-            to="/about"
-            variant="light"
-            onClick={() => {
-              setIsMenuOpen(!isMenuOpen);
-            }}
-          >
-            About us
-          </Button>
         </NavbarItem>
         <NavbarItem>
         <Button
@@ -144,7 +129,7 @@ export function Navigation() {
 
       {/* ****************************** Navigation menu for Mobile *****************************/}
       <NavbarMenu
-        className={`items-center space-y-2 justify-center bg-transparent md:hidden sm:flex `}
+        className={` space-y-2 px-20 bg-transparent md:hidden sm:flex justify-center items-start `}
       >
         <NavbarItem>
           <Button
@@ -207,7 +192,7 @@ export function Navigation() {
           <Dropdown>
             <DropdownTrigger className="text-3xl font-bold">
               <Button variant="light" endContent={<FiChevronDown />}>
-                Careers
+                Other
               </Button>
             </DropdownTrigger>
             <DropdownMenu
@@ -216,39 +201,19 @@ export function Navigation() {
               aria-label="Static Actions"
             >
               <DropdownItem
-                key="Jobs"
-                startContent={<PiBagDuotone />}
+                as={NavLink} to='recursive_coder'
+                startContent={<PiLaptopDuotone />}
                 onClick={() => {
                   setIsMenuOpen(!isMenuOpen);
                 }}
               >
                 Jobs
               </DropdownItem>
-              <DropdownItem
-                key="Internships"
-                startContent={<PiLaptopDuotone />}
-                onClick={() => {
-                  setIsMenuOpen(!isMenuOpen);
-                }}
-              >
-                Intenships
-              </DropdownItem>
+              
             </DropdownMenu>
           </Dropdown>
         </NavbarItem>
-        <NavbarItem>
-          <Button
-            className="text-3xl font-bold"
-            as={NavLink}
-            to="/about"
-            variant="light"
-            onClick={() => {
-              setIsMenuOpen(!isMenuOpen);
-            }}
-          >
-            About us
-          </Button>
-        </NavbarItem>
+       
       </NavbarMenu>
     </Navbar>
   );

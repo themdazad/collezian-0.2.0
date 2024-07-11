@@ -9,6 +9,7 @@ import { BEU_PYQS } from "./pages/Engineering/Bihar/BEU_Patna/QuestionBank.jsx";
 import Layout from "./layout.jsx";
 import { About } from "./pages/AboutPage/index.jsx";
 import { Login } from "./pages/Auth/Login/index.jsx";
+import { Recursive_Coder } from "./pages/RecursiveCoderPage/index.jsx";
 
 export default function Path() {
 
@@ -19,6 +20,7 @@ export default function Path() {
       <Route path="/Events" element={<Events />} />
       <Route path="/about" element={<About />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/recursive_coder" element={<Recursive_Coder />} />
      
       {/* Bihar  */}
       

@@ -23,8 +23,6 @@ const Layout = () => {
       >
         <Header />
       </motion.div>    
-
-      <Engineering ishidded="hidden" /> 
     </>
   );
 };
