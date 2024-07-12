@@ -207,7 +207,7 @@ export function Navigation() {
                   setIsMenuOpen(!isMenuOpen);
                 }}
               >
-                Jobs
+                Recusive Coder
               </DropdownItem>
               
             </DropdownMenu>
