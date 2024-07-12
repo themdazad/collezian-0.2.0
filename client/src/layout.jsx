@@ -3,7 +3,7 @@ import { MdOutlineArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa"
-import Engineering from "./pages/Engineering";
+import { BEU_Syllabus } from "./pages/Engineering/Bihar/BEU_Patna/Syllabus";
 
 const image1 =
   "https://img.freepik.com/free-photo/front-view-stacked-books-earth-globe-open-book-pencils-education-day_23-2149241018.jpg?w=740&t=st=1717795530~exp=1717796130~hmac=bd7486b8ade9fcbdf05d3f9ed1335b1c496fd200f752021ff295a9936dcb2479";
@@ -22,7 +22,8 @@ const Layout = () => {
         viewport={{ once: true, amount: 0 }}
       >
         <Header />
-      </motion.div>    
+      </motion.div>   
+      <BEU_Syllabus/>
     </>
   );
 };
@@ -32,7 +33,7 @@ export function Header() {
   
   return (
     <>
-      <div className="min-h-[90vh] px-[5%] grid place-content-center ">
+      <div className="min-h-[80vh] px-[5%] grid place-content-center ">
         <div className="text-center space-y-6">
           <h3 className=" text-6xl lg:text-4xl ">
            We collect resources for your better engineerig
@@ -58,6 +59,7 @@ export function Header() {
     </>
   );
 }
+
 
 // eslint-disable-next-line react-refresh/only-export-components
 export function Features_Card() {

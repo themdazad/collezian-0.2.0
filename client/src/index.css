@@ -13,9 +13,6 @@ body{
   }
 
 h3,h4,h5{
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-optical-sizing: auto;
 }
-/* ::-webkit-scrollbar{
-  width: 0;
-} */

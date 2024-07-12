@@ -18,7 +18,6 @@ import { NavLink } from "react-router-dom";
 import {
   PiNotebookDuotone,
   PiLaptopDuotone,
-  PiBagDuotone,
 } from "react-icons/pi";
 
 export function Navigation() {
@@ -36,11 +35,9 @@ export function Navigation() {
               className=" w-12  hover:-rotate-[360deg] transition-transform duration-[2000]"
             />
           </NavLink>
-          {window.location.pathname !== "/" && (
             <NavLink as={NavLink} to="/" className="font-semibold text-lg">
               COLLEZIAN
             </NavLink>
-          )}
         </NavbarBrand>
 
         <NavbarMenuToggle
