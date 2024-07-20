@@ -7,7 +7,8 @@ export const Top_Message_Bar = () => {
 };
 
 export function Morquee() {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
+  // change it to 'true' | currently this is hidden.
   return (
     <>
       {show && (

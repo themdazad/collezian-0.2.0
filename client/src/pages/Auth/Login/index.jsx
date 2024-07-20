@@ -1,5 +1,5 @@
-import { Input } from "@nextui-org/react";
-import { Button } from "@nextui-org/react";
+import { Input, Button } from "@nextui-org/react";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 export const Login = () => {
@@ -8,42 +8,47 @@ export const Login = () => {
   const toggleVisibility = () => setIsVisible(!isVisible);
   return (
     <>
-      <div className="login-page grid place-content-center">
-    
-      <div className="  login-form space-y-4">
-        <Input
-          isRequired
-          type="email"
-          label="Email"
-          variant="bordered"
-          defaultValue="junior@nextui.org"
-          className="max-w-xs"
-        />
-        <Input
-          isRequired
-          label="Password"
-          variant="bordered"
-          placeholder="Enter your password"
-          endContent={
-            <button
-              className="focus:outline-none"
-              type="button"
-              onClick={toggleVisibility}
-            >
-              {isVisible ? (
-                <EyeSlashFilledIcon className="text-2xl text-default-400 pointer-events-none" />
-              ) : (
-                <EyeFilledIcon className="text-2xl text-default-400 pointer-events-none" />
-              )}
-            </button>
-          }
-          type={isVisible ? "text" : "password"}
-          className="max-w-xs"
-        />
+      <div className="login-page bg-[url('/bg_image/blue_pattern_design.jpg')] h-screen w-full grid place-content-center">
+      
+        {/* Login form  */}
+        <div className=" login-form-section bg-white dark:bg-black rounded-3xl p-12 grid place-content-center space-y-4">
+          <div className="relative login-form space-y-6 grid justify-center w-[360px]">
+            <NavLink className="absolute text-sm -top-6  -right-2">Create a new accout</NavLink>
+            <h1 className="text-3xl font-semibold text-center">Login</h1>
+            <Input
+              isRequired  
+              type="email"
+              label="Email"
+              variant="bordered"
+              placeholder="Example@email.com"
+              className="max-w-xs"
+            />
+            <Input
+              isRequired
+              label="Password"
+              variant="bordered"
+              placeholder="Enter your password"
+              endContent={
+                <button
+                  className="focus:outline-none"
+                  type="button"
+                  onClick={toggleVisibility}
+                >
+                  {isVisible ? (
+                    <EyeSlashFilledIcon className="text-2xl text-default-400 pointer-events-none" />
+                  ) : (
+                    <EyeFilledIcon className="text-2xl text-default-400 pointer-events-none" />
+                  )}
+                </button>
+              }
+              type={isVisible ? "text" : "password"}
+              className="max-w-xs"
+            />
 
-        <Button>Login</Button>
-      </div>
-          
+            <Button>Login</Button>
+          </div>
+        </div>
+
       </div>
     </>
   );

@@ -23,6 +23,7 @@ const Layout = () => {
       >
         <Header />
       </motion.div>   
+      <Features_Card/>
       <BEU_Syllabus/>
     </>
   );
