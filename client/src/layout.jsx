@@ -23,7 +23,8 @@ const Layout = () => {
       >
         <Header />
       </motion.div>   
-      <BEU_Syllabus/>
+      <Features_Card/>
+         
     </>
   );
 };
@@ -33,7 +34,7 @@ export function Header() {
   
   return (
     <>
-      <div className="min-h-[80vh] px-[5%] grid place-content-center ">
+      <div className="min-h-[540px] px-[5%] grid place-content-center ">
         <div className="text-center space-y-6">
           <h3 className=" text-6xl lg:text-4xl ">
            We collect resources for your better engineerig
@@ -72,13 +73,13 @@ export function Features_Card() {
         </p>
       </center>
 
-      <div className=" flex scrollbar-hide overflow-scroll card  gap-4 px-[5%] content-stretch ">
+      <div className=" flex scrollbar-hide overflow-scroll card  gap-12 px-[5%] content-stretch ">
         <motion.div
           whileHover={{ scale: 0.9 }}
           onHoverStart={(e) => {}}
           onHoverEnd={(e) => {}}
           key={1}
-          className=" min-w-[320px] gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-lg overflow-clip my-2"
+          className=" min-w-[320px] gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2"
         >
           <Image
             className=" object-cover aspect-[16/9]  ease-in duration-350 delay-0  z-0 w-full h-full "
@@ -111,7 +112,7 @@ export function Features_Card() {
           onHoverStart={(e) => {}}
           onHoverEnd={(e) => {}}
           key={2}
-          className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-lg overflow-clip my-2"
+          className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2"
         >
           <Image
             className="object-cover  aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full "
@@ -143,7 +144,7 @@ export function Features_Card() {
           onHoverStart={(e) => {}}
           onHoverEnd={(e) => {}}
           key={3}
-          className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-lg overflow-clip my-2"
+          className=" min-w-[300px] content-start h-full gap-12 m-auto shadow-md  transition-shadow duration-350  bg-white/5 rounded-3xl overflow-clip my-2"
         >
           <Image
             className="object-cover aspect-[16/9] ease-in duration-350 delay-0  z-0 w-full h-full "
