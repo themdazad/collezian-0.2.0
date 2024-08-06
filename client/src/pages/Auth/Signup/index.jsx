@@ -8,7 +8,7 @@ export const Signup = () => {
   const toggleVisibility = () => setIsVisible(!isVisible);
   return (
     <>
-      <div className="login-page bg-[url('/bg_image/blue_pattern_design.jpg')] h-screen w-full grid place-content-center">
+      <div className="login-page bg-[url('/bg_image/blur_bg.png')] bg-cover h-screen w-full grid place-content-center">
       
         {/* Login form  */}
         <div className=" login-form-section w-full bg-white dark:bg-black rounded-3xl p-12 grid place-content-center space-y-4">
