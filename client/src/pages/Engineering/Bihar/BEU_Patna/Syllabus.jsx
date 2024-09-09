@@ -20,7 +20,7 @@ export const BEU_Syllabus = () => {
             <div className="flex gap-4 my-2 pdf_download_btn">
               <Button variant="flat" color="primary" >1st </Button>
               <Button isDisabled variant="flat" color="primary" >2nd </Button>
-              <Button as={NavLink} to="https://drive.google.com/file/d/11yV_uiqtJT5jI_sinUxCJEfdX-JOviEO/view?usp=drive_link" variant="flat" color="primary" >3rd </Button>
+              <Button as={NavLink} to="https://drive.google.com/file/d/11yV_uiqtJT5jI_sinUxCJEfdX-JOviEO/view?usp=sharing" variant="flat" color="primary" >3rd </Button>
               <Button isDisabled variant="flat" color="primary" >4th </Button>
               <Button  variant="flat" color="primary" >5th </Button>
               <Button isDisabled variant="flat" color="primary" >6th </Button>
