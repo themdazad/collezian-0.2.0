@@ -2,7 +2,7 @@ import { Image, Button, Link } from "@nextui-org/react";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FaWhatsapp } from "react-icons/fa"
+import { FaWhatsapp } from "react-icons/fa";
 import { BEU_Syllabus } from "./pages/Engineering/Bihar/BEU_Patna/Syllabus";
 
 const image1 =
@@ -15,32 +15,24 @@ const image3 =
 const Layout = () => {
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.8 }}
-        viewport={{ once: true, amount: 0 }}
-      >
-        <Header />
-      </motion.div>   
-      <Features_Card/>
-         
+      <Header />
+      <Features_Card />
     </>
   );
 };
 export default Layout;
 
 export function Header() {
-  
   return (
     <>
       <div className="min-h-[540px] px-[5%] grid place-content-center ">
         <div className="text-center space-y-6">
-          <h3 className=" text-6xl lg:text-4xl ">
-           We collect resources for your better engineerig
+          <h3 className=" text-6xl font-bold">
+            We collect resources for your <br /> better engineerig
           </h3>
+
           <p className="text-lg text-gray-500 ">
-          Connect, collaborate, and get inspired by your peers.
+            Connect, collaborate, and get inspired by your peers.
           </p>
           <Button
             as={Link}
@@ -60,7 +52,6 @@ export function Header() {
     </>
   );
 }
-
 
 // eslint-disable-next-line react-refresh/only-export-components
 export function Features_Card() {
