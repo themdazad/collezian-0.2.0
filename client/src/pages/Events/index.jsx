@@ -1,33 +1,32 @@
 import { Image, Link } from "@nextui-org/react";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
 
 const event_data = [
   {
-    image: "/events/techkshitizThumbnail.jpg",
+    image: "/events/techkshitizThumbnail.png",
     tittle: "TechKshitiz '24",
     description:
       "First ever technical event organizing by Government Engineering College, Siwan",
-    last_date: "Last Date - 30 June 2024",
+    last_date: "Last Date - 19 Sept 2024",
     registration_link:
       "https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
   },
   {
-    image: "/events/techkshitizThumbnail.jpg",
+    image: "/events/techkshitizThumbnail.png",
     tittle: "TechKshitiz '24",
     description:
       "First ever technical event organizing",
-    last_date: "Last Date - 30 June 2024",
+    last_date: "Last Date - 19 Sept 2024",
     registration_link:
       "https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
   },
   {
-    image: "/events/techkshitizThumbnail.jpg",
+    image: "/events/techkshitizThumbnail.png",
     tittle: "TechKshitiz '24",
     description:
       "First ever technical event organizing by Government Engineering College, Siwan",
-    last_date: "Last Date - 30 June 2024",
+    last_date: "Last Date - 19 Sept 2024",
     registration_link:
       "https://techkshitiz.in/government-engineering-college-siwan/total/events/list",
   },

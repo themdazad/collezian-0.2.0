@@ -21,8 +21,8 @@ export const BEU_Syllabus = () => {
               <Button variant="flat" color="primary" >1st </Button>
               <Button isDisabled variant="flat" color="primary" >2nd </Button>
               <Button as={NavLink} to="https://drive.google.com/file/d/11yV_uiqtJT5jI_sinUxCJEfdX-JOviEO/view?usp=sharing" variant="flat" color="primary" >3rd </Button>
-              <Button isDisabled variant="flat" color="primary" >4th </Button>
-              <Button  variant="flat" color="primary" >5th </Button>
+              <Button as={NavLink} to="https://drive.google.com/file/d/1C3VeBfl9k5dl0wWNygM1Mgky2-IyNUkg/view?usp=sharing" variant="flat" color="primary" >4th </Button>
+              <Button isDisabled variant="flat" color="primary" >5th </Button>
               <Button isDisabled variant="flat" color="primary" >6th </Button>
               <Button isDisabled variant="flat" color="primary" >7th </Button>
               <Button isDisabled variant="flat" color="primary" >8th </Button>
