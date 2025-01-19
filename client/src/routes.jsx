@@ -2,9 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import Engineering from "./pages/Engineering/index.jsx";
 import { Events } from "./pages/Events/index.jsx";
 
-// Authentication 
-import { Login } from "./pages/Auth/Login/index.jsx";
-import { Signup } from "./pages/Auth/Signup/index.jsx";
+// Adminentication 
+import { Login } from "./pages/Admin/Authentication/Login/index.jsx";
+import { Signup } from "./pages/Admin/Authentication/Signup/index.jsx";
 
 // Bihar
 import { BEU_Syllabus } from "./pages/Engineering/Bihar/BEU_Patna/Syllabus.jsx";
@@ -19,7 +19,7 @@ export default function Path() {
   return (
     <Routes>
       <Route path="" element={<Layout />} />
-      {/* User Authentication  */}
+      {/* User Adminentication  */}
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
 

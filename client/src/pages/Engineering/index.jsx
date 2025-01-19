@@ -1,6 +1,6 @@
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 import { NavLink } from "react-router-dom";
-import { Image } from "@nextui-org/react";
+import { Image } from "@heroui/react";
 
 export default function Engineering() {
   return (

@@ -1,5 +1,5 @@
 import ThemeSwitch from "../utils/ThemeSwitch";
-import { Divider } from "@nextui-org/react";
+import { Divider } from "@heroui/react";
 import { FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 export function Footer() {
@@ -8,15 +8,15 @@ export function Footer() {
       <Divider />
       <footer className="flex flex-wrap justify-center max-sm:text-center md:justify-between items-centerm py-4  px-[5%] max-sm:space-y-6">
         <p className="text-[12px]">
-          © 2024 Collezian. All Rights Reserved.
+          © 2024 Collezian Community. All Rights Reserved.
           <br />
-          Designed and Developed with <span>❤</span> By {" "}
+          Developed with <span>❤</span> By {" "}
           <a
             className="font-semibold text-sky-600"
             target="_blank"
             href="https://www.instagram.com/the_mdazad/"
           >
-            Azad
+            Collezian Community
           </a>
         </p>
         <div className="icons flex items-center space-x-4 text-2xl">

@@ -1,6 +1,6 @@
 import { MdBook } from "react-icons/md";
 import { MdDownload } from "react-icons/md";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 

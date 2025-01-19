@@ -1,4 +1,4 @@
-import { Image,Button } from "@nextui-org/react";
+import { Image,Button } from "@heroui/react";
 import { NavLink } from "react-router-dom";
 
 const card = {

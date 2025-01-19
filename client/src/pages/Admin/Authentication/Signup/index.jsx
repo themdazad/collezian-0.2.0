@@ -1,4 +1,4 @@
-import { Input, Button } from "@nextui-org/react";
+import { Input, Button } from "@heroui/react";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 

@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { NextUIProvider } from "@nextui-org/react";
+import { HeroUIProvider } from "@heroui/react";
 import Path from "./routes.jsx";
 import { Navigation } from "./components/Header_Footer/Navigation.jsx";
 import { BrowserRouter } from "react-router-dom";
@@ -10,7 +10,7 @@ import { Top_Message_Bar } from "./components/utils/Notifications/Top_Message_Ba
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <NextUIProvider>
+    <HeroUIProvider>
       <main className="dark:dark dark:text-foreground dark:bg-[#040a14] bg-[#ececec] bg-[url('/bg_image/blur_bg.png')] bg-cover bg-no-repeat max-w-[1920px] m-auto">
       {/* New Announcement  */}
       <Top_Message_Bar/>
@@ -25,6 +25,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Path />
         <Footer/>
       </main>
-    </NextUIProvider>
+    </HeroUIProvider>
   </BrowserRouter>
 );

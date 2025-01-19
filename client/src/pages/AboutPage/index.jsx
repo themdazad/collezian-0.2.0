@@ -1,4 +1,4 @@
-import { User, Link } from "@nextui-org/react";
+import { User, Link } from "@heroui/react";
 import { FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 export const About = () => {
   return (

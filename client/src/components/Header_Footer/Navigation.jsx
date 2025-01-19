@@ -12,7 +12,7 @@ import {
   NavbarItem,
   NavbarMenuToggle,
   Image,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { FiChevronDown } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 import {
@@ -35,9 +35,9 @@ export function Navigation() {
               className=" w-12  hover:-rotate-[360deg] transition-transform duration-[2000]"
             />
           </NavLink>
-            <NavLink as={NavLink} to="/" className="font-semibold text-lg">
-              COLLEZIAN
-            </NavLink>
+            {/* <NavLink as={NavLink} to="/" className="font-semibold text-lg">
+              Brand-Name
+            </NavLink> */}
         </NavbarBrand>
 
         <NavbarMenuToggle
@@ -62,40 +62,7 @@ export function Navigation() {
             Home
           </Button>
         </NavbarItem>
-        <NavbarItem>
-          <Button
-            as={NavLink}
-            to="/Events"
-            variant="light"
-            onClick={() => {
-              setIsMenuOpen(!isMenuOpen);
-            }}
-          >
-            Events
-          </Button>
-        </NavbarItem>
-        <NavbarItem>
-          <Dropdown>
-            <DropdownTrigger>
-              <Button variant="light" endContent={<FiChevronDown />}>
-                Engineering
-              </Button>
-            </DropdownTrigger>
-            <DropdownMenu variant="faded" aria-label="Static Actions">
-              <DropdownItem
-                as={NavLink}
-                to="/Engineering"
-                key="Engineering"
-                startContent={<PiNotebookDuotone />}
-                onClick={() => {
-                  setIsMenuOpen(!isMenuOpen);
-                }}
-              >
-                Bihar Engineering
-              </DropdownItem>
-            </DropdownMenu>
-          </Dropdown>
-        </NavbarItem>
+        
         <NavbarItem>
           <Dropdown>
             <DropdownTrigger>
@@ -141,50 +108,6 @@ export function Navigation() {
             Home
           </Button>
         </NavbarItem>
-        <NavbarItem>
-          <Button
-            className="text-3xl font-bold"
-            as={NavLink}
-            to="/Events"
-            variant="light"
-            onClick={() => {
-              setIsMenuOpen(!isMenuOpen);
-            }}
-          >
-            Events
-          </Button>
-        </NavbarItem>
-        <NavbarItem>
-          <Dropdown>
-            <DropdownTrigger>
-              <Button
-                className="text-3xl font-bold"
-                variant="light"
-                endContent={<FiChevronDown />}
-              >
-                Engineering
-              </Button>
-            </DropdownTrigger>
-            <DropdownMenu
-              className="text-2xl"
-              variant="faded"
-              aria-label="Static Actions"
-            >
-              <DropdownItem
-                as={NavLink}
-                to="/Engineering"
-                key="Engineering"
-                startContent={<PiNotebookDuotone />}
-                onClick={() => {
-                  setIsMenuOpen(!isMenuOpen);
-                }}
-              >
-                Study Engineering
-              </DropdownItem>
-            </DropdownMenu>
-          </Dropdown>
-        </NavbarItem>
-
         <NavbarItem>
           <Dropdown>
             <DropdownTrigger className="text-3xl font-bold">

@@ -1,9 +1,9 @@
-import { Switch } from "@nextui-org/react"
+import { Switch } from "@heroui/react"
 import { useState, useEffect } from "react"
 import { MdDarkMode, MdOutlineWbSunny } from "react-icons/md";
 
 const ThemeSwitch = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || "light")
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || "dark")
 
   useEffect(() => {
     localStorage.setItem('theme', theme);
@@ -20,7 +20,7 @@ const ThemeSwitch = () => {
       endContent={<MdDarkMode />}
 
       onChange={() => {
-        setTheme(theme === "light" ? "dark" : "light")
+        setTheme(theme === "dark" ? "light" : "dark")
       }}
     >
     </Switch>

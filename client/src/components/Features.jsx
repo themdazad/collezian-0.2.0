@@ -1,4 +1,4 @@
-import { Image, Link } from "@nextui-org/react";
+import { Image, Link } from "@heroui/react";
 import { MdOutlineArrowRight } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
